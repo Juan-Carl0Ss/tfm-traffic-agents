@@ -1,0 +1,41 @@
+# ── PCAPs (archivos grandes de captura de red) ──────────────────
+*.pcap
+*.pcapng
+*.cap
+
+# ── Perfil persistente de Chrome (contiene sesiones y cookies) ──
+chrome_profile_tfm/
+
+# ── Drivers y ejecutables binarios ──────────────────────────────
+chromedriver.exe
+*.exe
+*.lnk
+
+# ── Instaladores / drivers de terceros ──────────────────────────
+VBCABLE_Driver_Pack45/
+VBCABLE_Driver_Pack45.zip
+
+# ── Credenciales y variables de entorno ─────────────────────────
+.env
+.env.local
+
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── IDEs ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ── Claude Code (contexto local de sesiones) ────────────────────
+.claude/
+
+# ── Capturas de pantalla de depuración ──────────────────────────
+*.png
