@@ -1,0 +1,137 @@
+{
+  "file": "C:\\Users\\juanc\\Desktop\\tfm\\captura1.pcapng",
+  "scapy_report": {
+    "total_packets": 115003,
+    "total_bytes": 127476728,
+    "capture_start_ts": 1760275200.696076,
+    "capture_end_ts": 1760275614.524078,
+    "duration_seconds": 413.8280019760132,
+    "gaps_over_threshold": 423,
+    "gap_threshold_ms": 100.0,
+    "inter_arrival": {
+      "mean_s": 0.003598852927820654,
+      "median_s": 0.0,
+      "p95_s": 0.0022249221801757812,
+      "max_s": 7.897902965545654
+    },
+    "packet_sizes": {
+      "mean_bytes": 1108.4643704946827,
+      "median_bytes": 1292.0,
+      "p95_bytes": 1494.0,
+      "max_bytes": 13733
+    },
+    "throughput": {
+      "peak_bps": 128648712,
+      "peak_pps": 13880,
+      "average_bps": 2464342.236703237,
+      "average_pps": 277.90047906585585
+    },
+    "duplicates_approx": 121,
+    "protocols": {
+      "ethertypes": {
+        "IPv4": 114821,
+        "IPv6": 161,
+        "ARP": 21
+      },
+      "ip_protocols": {
+        "UDP": 81474,
+        "TCP": 33491,
+        "ICMPv6": 7,
+        "0": 5,
+        "2": 5
+      },
+      "top_tcp_ports": [
+        {
+          "port": 443,
+          "count": 26488
+        },
+        {
+          "port": 53375,
+          "count": 7338
+        },
+        {
+          "port": 65408,
+          "count": 7230
+        },
+        {
+          "port": 54509,
+          "count": 6686
+        },
+        {
+          "port": 80,
+          "count": 6686
+        },
+        {
+          "port": 49404,
+          "count": 6459
+        },
+        {
+          "port": 51483,
+          "count": 346
+        },
+        {
+          "port": 65501,
+          "count": 317
+        },
+        {
+          "port": 62358,
+          "count": 305
+        },
+        {
+          "port": 53,
+          "count": 279
+        }
+      ],
+      "top_udp_ports": [
+        {
+          "port": 443,
+          "count": 80569
+        },
+        {
+          "port": 53565,
+          "count": 37134
+        },
+        {
+          "port": 54566,
+          "count": 9030
+        },
+        {
+          "port": 51069,
+          "count": 4724
+        },
+        {
+          "port": 63806,
+          "count": 2670
+        },
+        {
+          "port": 62136,
+          "count": 2575
+        },
+        {
+          "port": 64105,
+          "count": 2151
+        },
+        {
+          "port": 60611,
+          "count": 2054
+        },
+        {
+          "port": 63157,
+          "count": 1661
+        },
+        {
+          "port": 54833,
+          "count": 1442
+        }
+      ]
+    },
+    "tcp_quality": {
+      "retransmissions": 74,
+      "out_of_order": 7644,
+      "note": "Heurística simple basada en next_seq por flujo direccional."
+    }
+  },
+  "zeek": {
+    "note": "Zeek no se ejecutó / no está disponible."
+  }
+}
