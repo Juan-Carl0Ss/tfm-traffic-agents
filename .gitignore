@@ -37,5 +37,5 @@ build/
 # ── Claude Code (contexto local de sesiones) ────────────────────
 .claude/
 
-# ── Capturas de pantalla de depuración ──────────────────────────
-*.png
+# ── Capturas de pantalla de depuración (solo raíz del proyecto) ─
+/*.png
