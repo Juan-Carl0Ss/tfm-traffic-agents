@@ -94,8 +94,8 @@ def get_chrome_major(exe_path):
             return int(m.group(1))
     except Exception as e:
         print("No se pudo leer la versión de Chrome:", e)
-    # Por si falla, intenta con 141 (tu caso actual)
-    return 141
+    # Si falla la detección, devolver None para que uc la detecte automáticamente
+    return None
 
 def clear_uc_cache():
     """Borra la caché de undetected_chromedriver para forzar descarga del driver correcto."""
@@ -683,7 +683,7 @@ if __name__ == "__main__":
 
     # --- Crear driver alineado con tu versión de Chrome ---
     driver = uc.Chrome(
-        version_main=major,               # detectado automáticamente con get_chrome_major()
+        version_main=major,               # None = uc detecta la versión automáticamente
         options=options,
         browser_executable_path=chrome_exe  # soporta portátil o instalación estándar
         # No pasamos driver_executable_path: uc se encarga de descargar el correcto
