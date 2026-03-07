@@ -85,16 +85,35 @@ def get_chrome_exe():
     return "chrome.exe"
 
 def get_chrome_major(exe_path):
-    """Devuelve la versión mayor (int) de Chrome a partir de 'chrome --version'."""
+    """Devuelve la versión mayor (int) de Chrome. Primero intenta el registro de Windows."""
+    # 1) Registro de Windows (más fiable que subprocess en Windows)
+    try:
+        import winreg
+        for hive in (winreg.HKEY_LOCAL_MACHINE, winreg.HKEY_CURRENT_USER):
+            for subkey in (
+                r"SOFTWARE\Google\Chrome\BLBeacon",
+                r"SOFTWARE\WOW6432Node\Google\Chrome\BLBeacon",
+            ):
+                try:
+                    with winreg.OpenKey(hive, subkey) as k:
+                        version, _ = winreg.QueryValueEx(k, "version")
+                        m = re.search(r"^(\d+)\.", str(version))
+                        if m:
+                            return int(m.group(1))
+                except OSError:
+                    continue
+    except Exception:
+        pass
+
+    # 2) Fallback: ejecutar chrome --version
     try:
         out = subprocess.check_output([exe_path, "--version"], stderr=subprocess.STDOUT, text=True)
-        # Ej: "Google Chrome 141.0.7390.66"
         m = re.search(r"\b(\d+)\.\d+\.\d+\.\d+\b", out)
         if m:
             return int(m.group(1))
     except Exception as e:
         print("No se pudo leer la versión de Chrome:", e)
-    # Si falla la detección, devolver None para que uc la detecte automáticamente
+
     return None
 
 def clear_uc_cache():
