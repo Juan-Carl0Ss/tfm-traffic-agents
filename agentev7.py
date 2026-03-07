@@ -26,7 +26,7 @@ GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 # --- Rutas Chrome/Driver ---
 CHROME_PATH = os.environ.get(
     "CHROME_PATH",
-    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 )
 
 # --- Perfil persistente (para guardar sesión/cookies) ---
@@ -667,10 +667,10 @@ def simular_actividad(driver, delay):
 if __name__ == "__main__":
     fin = datetime.now() + timedelta(seconds=DURACION_TOTAL_SEGUNDOS)
 
-    # --- Detectar Chrome y versión, y limpiar caché de uc si venías de driver 138 ---
+    # --- Detectar Chrome y versión ---
     chrome_exe = get_chrome_exe()
     major = get_chrome_major(chrome_exe)
-    clear_uc_cache()  # fuerza a uc a descargar el driver para 'major'
+    print(f"🔍 Chrome detectado: {chrome_exe} | versión mayor: {major}")
 
     # --- Opciones Chrome ---
     options = uc.ChromeOptions()
