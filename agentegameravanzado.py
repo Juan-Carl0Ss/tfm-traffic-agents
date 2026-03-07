@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-orquestador.py — Orquestador de Agentes TFM
+agentegameravanzado.py — Orquestador de Agentes TFM
 
 Lanza de forma secuencial el agente web (agentev7.py) y el agente gamer
 (agentegamer3.py) en turnos configurables. Los agentes no pueden correr
 en paralelo porque el gamer usa pyautogui para controlar el teclado/ratón.
 
 Modos de funcionamiento:
-  - ciclico   : alterna entre agentes N veces según ORDEN y CICLOS
-  - secuencia : ejecuta una lista de turnos definida manualmente
+  - ciclico      : alterna entre agentes N veces según ORDEN y CICLOS
+  - secuencia    : ejecuta la lista SECUENCIA definida en el script
+  - tiempo_total : define duración total y % de tráfico por agente
 
 Uso:
-  python orquestador.py                          # configuración por defecto
-  MODO=secuencia python orquestador.py           # modo secuencia
-  CICLOS=4 DURACION_WEB_S=1800 python orquestador.py
+  python agentegameravanzado.py
+  MODO=tiempo_total TIEMPO_TOTAL_S=3600 PORCENTAJE_WEB=60 python agentegameravanzado.py
+  MODO=tiempo_total TIEMPO_TOTAL_S=7200 PORCENTAJE_WEB=40 TURNO_S=900 python agentegameravanzado.py
+  CICLOS=4 DURACION_WEB_S=1800 python agentegameravanzado.py
 
 Requisitos:
   - agentev7.py y agentegamer3.py en el mismo directorio
@@ -33,19 +35,20 @@ from datetime import datetime, timedelta
 # ══════════════════════════════════════════════════════════
 
 # ── Modo de operación ─────────────────────────────────────
-# "ciclico"  : alterna entre los agentes de ORDEN, CICLOS veces
-# "secuencia": ejecuta la lista SECUENCIA en orden
+# "ciclico"     : alterna entre los agentes de ORDEN, CICLOS veces
+# "secuencia"   : ejecuta la lista SECUENCIA en orden
+# "tiempo_total": define duración total y % de tráfico por agente
 MODO = os.environ.get("MODO", "ciclico")
 
 # ── Modo cíclico ──────────────────────────────────────────
-CICLOS = int(os.environ.get("CICLOS", "2"))          # número de repeticiones completas
-ORDEN  = os.environ.get("ORDEN", "web,gamer").split(",")  # orden de los agentes
+CICLOS = int(os.environ.get("CICLOS", "2"))
+ORDEN  = os.environ.get("ORDEN", "web,gamer").split(",")
 
 DURACION_WEB_S   = int(os.environ.get("DURACION_WEB_S",   "1800"))  # 30 min por turno web
 DURACION_GAMER_S = int(os.environ.get("DURACION_GAMER_S", "1800"))  # 30 min por turno gamer
 
 # ── Pausa entre agentes ───────────────────────────────────
-PAUSA_ENTRE_S = int(os.environ.get("PAUSA_ENTRE_S", "30"))  # segundos entre turnos
+PAUSA_ENTRE_S = int(os.environ.get("PAUSA_ENTRE_S", "30"))
 
 # ── Modo secuencia ────────────────────────────────────────
 # Lista de turnos: {"agente": "web"|"gamer", "duracion": segundos}
@@ -55,6 +58,18 @@ SECUENCIA = [
     {"agente": "web",   "duracion": 1800},   # 30 min web
     {"agente": "gamer", "duracion": 1800},   # 30 min gamer
 ]
+
+# ── Modo tiempo_total ─────────────────────────────────────
+# Define la duración total de la sesión y el porcentaje de tiempo
+# que genera cada agente. Los turnos se reparten automáticamente.
+#
+# Ejemplo: TIEMPO_TOTAL_S=3600 PORCENTAJE_WEB=60
+#   → 2160s web + 1440s gamer, divididos en turnos de TURNO_S segundos
+#   → resultado: web(900s) gamer(600s) web(900s) gamer(600s) ...
+#
+TIEMPO_TOTAL_S  = int(os.environ.get("TIEMPO_TOTAL_S",  "3600"))  # duración total sesión
+PORCENTAJE_WEB  = int(os.environ.get("PORCENTAJE_WEB",  "50"))    # % de tiempo para web (0-100)
+TURNO_S         = int(os.environ.get("TURNO_S",         "900"))   # duración de cada turno individual
 
 # ── Rutas a los scripts de los agentes ───────────────────
 BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
@@ -155,10 +170,57 @@ def lanzar_agente(agente: str, duracion: int) -> int:
     return ret
 
 
+def _construir_turnos_tiempo_total() -> list:
+    """
+    Reparte TIEMPO_TOTAL_S entre web y gamer según PORCENTAJE_WEB,
+    alternando turnos de TURNO_S segundos.
+
+    Ejemplo: TIEMPO_TOTAL_S=3600, PORCENTAJE_WEB=60, TURNO_S=900
+      → tiempo_web=2160s, tiempo_gamer=1440s
+      → turnos: web(900) gamer(600) web(900) gamer(600) web(360)
+    """
+    porcentaje_web   = max(0, min(100, PORCENTAJE_WEB))
+    porcentaje_gamer = 100 - porcentaje_web
+
+    tiempo_web   = int(TIEMPO_TOTAL_S * porcentaje_web   / 100)
+    tiempo_gamer = int(TIEMPO_TOTAL_S * porcentaje_gamer / 100)
+
+    print(f"[Orquestador] tiempo_total: {_segundos_a_hms(TIEMPO_TOTAL_S)} | "
+          f"web {porcentaje_web}% ({_segundos_a_hms(tiempo_web)}) | "
+          f"gamer {porcentaje_gamer}% ({_segundos_a_hms(tiempo_gamer)}) | "
+          f"turno: {_segundos_a_hms(TURNO_S)}")
+
+    restante_web   = tiempo_web
+    restante_gamer = tiempo_gamer
+    turnos = []
+
+    # Alterna web → gamer mientras quede tiempo en alguno
+    for agente in ["web", "gamer"] * (TIEMPO_TOTAL_S // TURNO_S + 2):
+        if restante_web <= 0 and restante_gamer <= 0:
+            break
+        if agente == "web":
+            if restante_web <= 0:
+                continue
+            dur = min(TURNO_S, restante_web)
+            restante_web -= dur
+        else:
+            if restante_gamer <= 0:
+                continue
+            dur = min(TURNO_S, restante_gamer)
+            restante_gamer -= dur
+        if dur > 0:
+            turnos.append({"agente": agente, "duracion": dur})
+
+    return turnos
+
+
 def construir_turnos() -> list:
     """Construye la lista de turnos según el modo configurado."""
     if MODO == "secuencia":
         return list(SECUENCIA)
+
+    if MODO == "tiempo_total":
+        return _construir_turnos_tiempo_total()
 
     # Modo cíclico: repite ORDEN × CICLOS
     turnos = []
@@ -195,6 +257,11 @@ if __name__ == "__main__":
         print(f"  Orden:          {' → '.join(ORDEN)}")
         print(f"  Duración web:   {_segundos_a_hms(DURACION_WEB_S)} por turno")
         print(f"  Duración gamer: {_segundos_a_hms(DURACION_GAMER_S)} por turno")
+    elif MODO == "tiempo_total":
+        print(f"  Tiempo total:   {_segundos_a_hms(TIEMPO_TOTAL_S)}")
+        print(f"  Web:            {PORCENTAJE_WEB}%  ({_segundos_a_hms(int(TIEMPO_TOTAL_S * PORCENTAJE_WEB / 100))})")
+        print(f"  Gamer:          {100 - PORCENTAJE_WEB}%  ({_segundos_a_hms(int(TIEMPO_TOTAL_S * (100 - PORCENTAJE_WEB) / 100))})")
+        print(f"  Tamaño turno:   {_segundos_a_hms(TURNO_S)}")
     print(f"  Turnos totales: {len(turnos)}")
     print(f"  Pausa entre:    {PAUSA_ENTRE_S}s")
     print(f"  Tiempo total:   ~{_segundos_a_hms(total_s)}")
