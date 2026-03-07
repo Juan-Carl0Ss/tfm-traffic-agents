@@ -683,7 +683,7 @@ if __name__ == "__main__":
 
     # --- Crear driver alineado con tu versión de Chrome ---
     driver = uc.Chrome(
-        version_main=143,                 # <-- clave: alinea con tu Chrome (p.ej. 141)
+        version_main=major,               # detectado automáticamente con get_chrome_major()
         options=options,
         browser_executable_path=chrome_exe  # soporta portátil o instalación estándar
         # No pasamos driver_executable_path: uc se encarga de descargar el correcto
