@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────────────────
+#  TFM · Generación de tráfico benigno etiquetado — dependencias
+#  Instalación:  pip install -r requirements.txt
+#  Recomendado:  Python 3.10+  (probado en 3.11)
+# ─────────────────────────────────────────────────────────────────────
+
+# ── Agente web (agentev7.py) ─────────────────────────────────────────
+selenium                    # control del navegador
+undetected-chromedriver     # Chrome sin fingerprint de automatización
+requests                    # llamadas a la API de Groq (planner LLM)
+
+# ── Agente gamer (agentegamer3.py / agentegameravanzado.py) ──────────
+pyautogui                   # automatización de ratón/teclado
+pynput                      # grabación de secuencias de input (grabador.py)
+keyboard                    # captura de teclas (push-to-talk)
+sounddevice                 # síntesis de voz hacia VB-CABLE (opcional)
+soundfile                   # I/O de audio (opcional)
+
+# ── Agente admin de red (AgenteAdminDeRed.py / agenteadminavanzado.py) ─
+paramiko                    # SSH/SFTP multi-host
+PyYAML                      # inventario hosts.yaml
+
+# ── Análisis de capturas y experimentos (estadisticas*.py, exp1, exp2) ─
+scapy                       # parseo de PCAP y extracción de features
+pandas                      # tablas de flujos y agregados
+numpy                       # cálculo numérico
+scipy                       # distancias de distribución (KS, JS, Wasserstein)
+matplotlib                  # gráficas
