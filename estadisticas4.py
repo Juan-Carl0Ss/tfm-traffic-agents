@@ -493,18 +493,19 @@ def main():
         proto = proto_name(ipver, proto_num)
         ip_proto[proto] += 1
 
-        
-    if ipver and src and dst:
-        src_ips[src] += 1
-        dst_ips[dst] += 1
-        pairs[(src, dst)] += 1
+        # FIX regresión v4: este bloque debe ejecutarse POR PAQUETE (dentro del bucle),
+        # como en estadisticas3.py; estaba mal indentado y corría una sola vez al final.
+        if ipver and src and dst:
+            src_ips[src] += 1
+            dst_ips[dst] += 1
+            pairs[(src, dst)] += 1
 
-        # Inferencia ligera de IP local si no se proporcionó (elige la IP privada más frecuente como src)
-        if not local_ip and is_private_ip(src) and total_pkts >= 200:
-            private_src = [(ip, c) for ip, c in src_ips.items() if is_private_ip(ip)]
-            if private_src:
-                local_ip = max(private_src, key=lambda x: x[1])[0]
-                local_ip_source = "inferred"
+            # Inferencia ligera de IP local si no se proporcionó (elige la IP privada más frecuente como src)
+            if not local_ip and is_private_ip(src) and total_pkts >= 200:
+                private_src = [(ip, c) for ip, c in src_ips.items() if is_private_ip(ip)]
+                if private_src:
+                    local_ip = max(private_src, key=lambda x: x[1])[0]
+                    local_ip_source = "inferred"
 
             # L4
             sport = None
@@ -839,21 +840,23 @@ def main():
         print(f"  {k}: {v}")
     print()
 
-# Resumen de puertos salientes (host -> red) para servicios típicos
-if local_ip:
-    print(f"[INFO] IP local usada para outbound: {local_ip} ({local_ip_source})")
-    print("Outbound (host->red) puertos destino (Top):")
-    for k, v in tcp_dport_out.most_common(min(args.top, 10)):
-        print(f"  TCP dport {k}: {v} pkts")
-    for k, v in udp_dport_out.most_common(min(args.top, 10)):
-        print(f"  UDP dport {k}: {v} pkts")
-    print(f"TCP outbound dport=443: {tcp_dport_out.get(443,0)} pkts")
-    print(f"UDP outbound dport=443: {udp_dport_out.get(443,0)} pkts")
-    print(f"UDP outbound dport=53 (DNS): {udp_dport_out.get(53,0)} pkts")
-    print()
-else:
-    print("[INFO] No se ha podido determinar IP local para outbound. Usa --local_ip para contar servicios (443/53) correctamente.")
-    print()
+    # Resumen de puertos salientes (host -> red) para servicios típicos
+    # FIX regresión v4: este bloque estaba a nivel de módulo (fuera de main) y
+    # rompía el script/import con NameError al cargar el fichero.
+    if local_ip:
+        print(f"[INFO] IP local usada para outbound: {local_ip} ({local_ip_source})")
+        print("Outbound (host->red) puertos destino (Top):")
+        for k, v in tcp_dport_out.most_common(min(args.top, 10)):
+            print(f"  TCP dport {k}: {v} pkts")
+        for k, v in udp_dport_out.most_common(min(args.top, 10)):
+            print(f"  UDP dport {k}: {v} pkts")
+        print(f"TCP outbound dport=443: {tcp_dport_out.get(443,0)} pkts")
+        print(f"UDP outbound dport=443: {udp_dport_out.get(443,0)} pkts")
+        print(f"UDP outbound dport=53 (DNS): {udp_dport_out.get(53,0)} pkts")
+        print()
+    else:
+        print("[INFO] No se ha podido determinar IP local para outbound. Usa --local_ip para contar servicios (443/53) correctamente.")
+        print()
 
 
     if http_hosts:
@@ -1009,13 +1012,14 @@ else:
 
 
 
-# Puertos outbound (host->red) - más interpretables que dst_ports generales
-if tcp_dport_out:
-    plot_bar(tcp_dport_out.most_common(args.top), "TCP dports outbound (host->red)", "pkts", "dport",
-             os.path.join(args.outdir, "tcp_outbound_dports.png"), top=args.top, show=show_plots)
-if udp_dport_out:
-    plot_bar(udp_dport_out.most_common(args.top), "UDP dports outbound (host->red)", "pkts", "dport",
-             os.path.join(args.outdir, "udp_outbound_dports.png"), top=args.top, show=show_plots)
+    # Puertos outbound (host->red) - más interpretables que dst_ports generales
+    # FIX regresión v4: bloque desindentado a nivel de módulo (NameError al importar)
+    if tcp_dport_out:
+        plot_bar(tcp_dport_out.most_common(args.top), "TCP dports outbound (host->red)", "pkts", "dport",
+                 os.path.join(args.outdir, "tcp_outbound_dports.png"), top=args.top, show=show_plots)
+    if udp_dport_out:
+        plot_bar(udp_dport_out.most_common(args.top), "UDP dports outbound (host->red)", "pkts", "dport",
+                 os.path.join(args.outdir, "udp_outbound_dports.png"), top=args.top, show=show_plots)
 
     # Top destinos
     plot_bar(dst_ips.most_common(args.top), "Top dst IPs", "count", "dst_ip", os.path.join(args.outdir, "top_dst_ips.png"), top=args.top, show=show_plots)
