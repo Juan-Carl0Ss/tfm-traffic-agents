@@ -9,27 +9,38 @@ Flujo:
   3. Ejecuta AgenteAdminDeRed.py en la VM admin vía SSH con la duración indicada
   4. Al terminar, opcionalmente apaga las VMs
 
-Modos de funcionamiento (mismo esquema que agentegameravanzado.py):
+Modos de funcionamiento:
   - ciclico      : repite N sesiones del agente admin
   - secuencia    : ejecuta una lista de sesiones con duración variable
-  - tiempo_total : duración total y distribución porcentual (si hay un agente mixto)
+  - tiempo_total : duración total; reparte el tiempo en turnos de TURNO_S
+
+Agente web (agentev7.py) opcional — dos sub-modos:
+  - paralelo : admin (SSH) + web (navegador) corren AL MISMO TIEMPO
+  - turnos   : alternan admin → web → admin → web ... (como agentegameravanzado)
 
 Uso rápido:
   python agenteadminavanzado.py
+  # Solo admin, 3 ciclos de 10 min
   MODO=ciclico CICLOS=3 DURACION_ADMIN_S=600 python agenteadminavanzado.py
-  MODO=tiempo_total TIEMPO_TOTAL_S=3600 python agenteadminavanzado.py
-  RUN_DURATION_S=900 python agenteadminavanzado.py
+  # Admin + web en PARALELO durante 1 hora
+  INCLUIR_WEB=1 MODO_WEB=paralelo MODO=tiempo_total TIEMPO_TOTAL_S=3600 python agenteadminavanzado.py
+  # Admin + web en TURNOS alternos (50/50)
+  INCLUIR_WEB=1 MODO_WEB=turnos PORCENTAJE_ADMIN=50 MODO=tiempo_total TIEMPO_TOTAL_S=3600 python agenteadminavanzado.py
 
 Variables de entorno clave:
   MODO                 ciclico | secuencia | tiempo_total  (default: ciclico)
   CICLOS               número de repeticiones en modo ciclico (default: 2)
   DURACION_ADMIN_S     segundos por turno admin (default: 300)
-  PAUSA_ENTRE_S        pausa entre sesiones (default: 30)
+  PAUSA_ENTRE_S        pausa entre sesiones/turnos (default: 30)
   TIEMPO_TOTAL_S       duración total en modo tiempo_total (default: 3600)
-  TURNO_S              tamaño de cada turno en modo tiempo_total (default: 900)
-  APAGAR_VMS_AL_FINAL  1 para apagar VMs al terminar (default: 0)
+  TURNO_S              tamaño de cada turno (default: 900)
+  APAGAR_VMS_AL_FINAL  1 para apagar VMs al terminar (default: 1)
   SUBIR_SCRIPT         1 para copiar AgenteAdminDeRed.py a la VM antes de ejecutar (default: 0)
   HIPERVISOR           virtualbox | hyperv | vmware (default: virtualbox)
+  INCLUIR_WEB          1 para activar el agente web (default: 0)
+  MODO_WEB             paralelo | turnos (default: paralelo)
+  DURACION_WEB_S       segundos por turno web en modo turnos (default: igual a DURACION_ADMIN_S)
+  PORCENTAJE_ADMIN     % de tiempo para admin en modo tiempo_total+turnos (default: 50)
 """
 
 import os
@@ -127,6 +138,15 @@ TURNO_S          = int(os.environ.get("TURNO_S",          "900"))
 
 APAGAR_VMS_AL_FINAL = os.environ.get("APAGAR_VMS_AL_FINAL", "1") == "1"
 
+# ── Agente web opcional ────────────────────────────────────
+INCLUIR_WEB      = os.environ.get("INCLUIR_WEB",      "0") == "1"
+# "paralelo" : admin SSH + web navegador corren a la vez
+# "turnos"   : alternan admin → web → admin → web ...
+MODO_WEB         = os.environ.get("MODO_WEB",         "paralelo").lower()
+DURACION_WEB_S   = int(os.environ.get("DURACION_WEB_S",   "0")) or None  # None = igual a DURACION_ADMIN_S
+PORCENTAJE_ADMIN = int(os.environ.get("PORCENTAJE_ADMIN", "50"))  # solo en tiempo_total+turnos
+SCRIPT_WEB       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "agentev7.py")
+
 # ══════════════════════════════════════════════════════════
 #  CONFIGURACIÓN DEL HIPERVISOR
 # ══════════════════════════════════════════════════════════
@@ -160,20 +180,23 @@ SECUENCIA = [
 # ══════════════════════════════════════════════════════════
 
 _sesion_ssh_activa: "paramiko.Channel | None" = None
+_proceso_web: "subprocess.Popen | None" = None
 _stop_event = threading.Event()
 
 
 def _handler_sigint(sig, frame):
-    global _sesion_ssh_activa
-    print("\n[Orquestador] Ctrl+C detectado. Deteniendo agente remoto...")
+    global _sesion_ssh_activa, _proceso_web
+    print("\n[Orquestador] Ctrl+C detectado. Deteniendo agentes...")
     _stop_event.set()
     if _sesion_ssh_activa and not _sesion_ssh_activa.closed:
         try:
-            _sesion_ssh_activa.send("\x03")  # Ctrl+C al proceso remoto
+            _sesion_ssh_activa.send("\x03")
             time.sleep(1)
             _sesion_ssh_activa.close()
         except Exception:
             pass
+    if _proceso_web and _proceso_web.poll() is None:
+        _proceso_web.terminate()
     sys.exit(0)
 
 
@@ -193,11 +216,11 @@ def _segundos_a_hms(s: int) -> str:
     return f"{sec}s"
 
 
-def _banner(turno: int, total: int, duracion: int, inicio: datetime):
+def _banner(turno: int, total: int, agente: str, duracion: int, inicio: datetime):
     fin = inicio + timedelta(seconds=duracion)
     print()
     print("=" * 60)
-    print(f"  Turno {turno}/{total}  |  Agente: ADMIN")
+    print(f"  Turno {turno}/{total}  |  Agente: {agente.upper()}")
     print(f"  Duración: {_segundos_a_hms(duracion)}")
     print(f"  Inicio:   {inicio.strftime('%H:%M:%S')}  →  Fin: {fin.strftime('%H:%M:%S')}")
     print("=" * 60)
@@ -529,32 +552,117 @@ def ejecutar_agente_admin_remoto(duracion: int) -> int:
             pass
 
 # ══════════════════════════════════════════════════════════
+#  AGENTE WEB (proceso local Windows)
+# ══════════════════════════════════════════════════════════
+
+def lanzar_web(duracion: int) -> "subprocess.Popen | None":
+    global _proceso_web
+    if not os.path.isfile(SCRIPT_WEB):
+        print(f"  [Web] Script no encontrado: {SCRIPT_WEB}")
+        return None
+    env = os.environ.copy()
+    env["DURACION_TOTAL_SEGUNDOS"] = str(duracion)
+    print(f"  [Web] Lanzando agentev7.py (DURACION={duracion}s)...")
+    _proceso_web = subprocess.Popen([sys.executable, SCRIPT_WEB], env=env)
+    print(f"  [Web] PID={_proceso_web.pid}")
+    return _proceso_web
+
+
+def detener_web():
+    global _proceso_web
+    if _proceso_web and _proceso_web.poll() is None:
+        print(f"  [Web] Deteniendo agente web (PID={_proceso_web.pid})...")
+        _proceso_web.terminate()
+        try:
+            _proceso_web.wait(timeout=15)
+        except subprocess.TimeoutExpired:
+            _proceso_web.kill()
+        print("  [Web] Agente web detenido.")
+    _proceso_web = None
+
+
+def esperar_web(duracion: int):
+    """Espera a que el agente web termine o se cumpla la duración."""
+    if _proceso_web is None:
+        return
+    t0 = time.time()
+    while time.time() - t0 < duracion and not _stop_event.is_set():
+        if _proceso_web.poll() is not None:
+            print(f"  [Web] Agente web terminó antes de tiempo.")
+            break
+        time.sleep(3)
+
+
+# ══════════════════════════════════════════════════════════
 #  CONSTRUCCIÓN DE TURNOS
 # ══════════════════════════════════════════════════════════
 
+def _dur_web(dur_admin: int) -> int:
+    """Duración para un turno web (usa DURACION_WEB_S o hereda la del admin)."""
+    return DURACION_WEB_S if DURACION_WEB_S else dur_admin
+
+
 def _construir_turnos_tiempo_total() -> list:
     """
-    En modo tiempo_total con un solo agente (admin), genera turnos de TURNO_S
-    hasta cubrir TIEMPO_TOTAL_S.
+    Genera turnos de TURNO_S hasta cubrir TIEMPO_TOTAL_S.
+    Si INCLUIR_WEB+MODO_WEB=turnos: reparte según PORCENTAJE_ADMIN.
     """
-    restante = TIEMPO_TOTAL_S
-    turnos = []
-    while restante > 0:
-        dur = min(TURNO_S, restante)
-        turnos.append({"duracion": dur})
-        restante -= dur
-    print(f"[Orquestador] tiempo_total={_segundos_a_hms(TIEMPO_TOTAL_S)} | "
-          f"turno={_segundos_a_hms(TURNO_S)} | turnos={len(turnos)}")
-    return turnos
+    if INCLUIR_WEB and MODO_WEB == "turnos":
+        porc_admin = max(0, min(100, PORCENTAJE_ADMIN))
+        porc_web   = 100 - porc_admin
+        t_admin = int(TIEMPO_TOTAL_S * porc_admin / 100)
+        t_web   = int(TIEMPO_TOTAL_S * porc_web   / 100)
+        print(f"[Orquestador] tiempo_total={_segundos_a_hms(TIEMPO_TOTAL_S)} | "
+              f"admin {porc_admin}% ({_segundos_a_hms(t_admin)}) | "
+              f"web {porc_web}% ({_segundos_a_hms(t_web)}) | turno={_segundos_a_hms(TURNO_S)}")
+        rest_admin, rest_web = t_admin, t_web
+        turnos = []
+        for agente in ["admin", "web"] * (TIEMPO_TOTAL_S // TURNO_S + 2):
+            if rest_admin <= 0 and rest_web <= 0:
+                break
+            if agente == "admin":
+                if rest_admin <= 0:
+                    continue
+                dur = min(TURNO_S, rest_admin)
+                rest_admin -= dur
+            else:
+                if rest_web <= 0:
+                    continue
+                dur = min(TURNO_S, rest_web)
+                rest_web -= dur
+            if dur > 0:
+                turnos.append({"agente": agente, "duracion": dur})
+        return turnos
+    else:
+        # Solo admin (o paralelo: el turno entero corre admin+web juntos)
+        restante = TIEMPO_TOTAL_S
+        turnos = []
+        while restante > 0:
+            dur = min(TURNO_S, restante)
+            turnos.append({"agente": "admin", "duracion": dur})
+            restante -= dur
+        print(f"[Orquestador] tiempo_total={_segundos_a_hms(TIEMPO_TOTAL_S)} | "
+              f"turno={_segundos_a_hms(TURNO_S)} | turnos={len(turnos)}")
+        return turnos
 
 
 def construir_turnos() -> list:
     if MODO == "secuencia":
-        return list(SECUENCIA)
+        # Añadir campo agente si no tiene
+        return [{"agente": t.get("agente", "admin"), "duracion": t["duracion"]} for t in SECUENCIA]
+
     if MODO == "tiempo_total":
         return _construir_turnos_tiempo_total()
-    # Modo cíclico: CICLOS repeticiones de DURACION_ADMIN_S
-    return [{"duracion": DURACION_ADMIN_S} for _ in range(CICLOS)]
+
+    # Modo cíclico
+    if INCLUIR_WEB and MODO_WEB == "turnos":
+        turnos = []
+        for _ in range(CICLOS):
+            turnos.append({"agente": "admin", "duracion": DURACION_ADMIN_S})
+            turnos.append({"agente": "web",   "duracion": _dur_web(DURACION_ADMIN_S)})
+        return turnos
+
+    return [{"agente": "admin", "duracion": DURACION_ADMIN_S} for _ in range(CICLOS)]
 
 # ══════════════════════════════════════════════════════════
 #  MAIN
@@ -571,9 +679,14 @@ if __name__ == "__main__":
 
     print("=" * 60)
     print("  Orquestador Avanzado — Agente Administrador de Red")
+    modo_web_str = f"{MODO_WEB}" if INCLUIR_WEB else "no"
+
+    print("=" * 60)
+    print("  Orquestador Avanzado — Agente Administrador de Red")
     print("=" * 60)
     print(f"  Hipervisor:     {HIPERVISOR}")
     print(f"  Modo:           {MODO}")
+    print(f"  Agente web:     {modo_web_str}")
     print(f"  Turnos:         {len(turnos)}")
     print(f"  Pausa entre:    {PAUSA_ENTRE_S}s")
     print(f"  Tiempo total:   ~{_segundos_a_hms(total_s)}")
@@ -581,6 +694,10 @@ if __name__ == "__main__":
     print(f"  Script remoto:  {RUTA_SCRIPT_REMOTO}")
     print(f"  Subir script:   {'Sí' if SUBIR_SCRIPT else 'No'}")
     print(f"  Apagar VMs al final: {'Sí' if APAGAR_VMS_AL_FINAL else 'No'}")
+    print()
+    print("  Turnos planificados:")
+    for i, t in enumerate(turnos, 1):
+        print(f"    {i:2d}. [{t['agente'].upper():5s}] {_segundos_a_hms(t['duracion'])}")
     print()
     print("  VMs configuradas:")
     for vm in VMS:
@@ -597,11 +714,30 @@ if __name__ == "__main__":
         if _stop_event.is_set():
             break
 
+        agente   = turno["agente"]
         duracion = turno["duracion"]
         inicio   = datetime.now()
 
-        _banner(i, len(turnos), duracion, inicio)
-        ejecutar_agente_admin_remoto(duracion)
+        if INCLUIR_WEB and MODO_WEB == "paralelo":
+            # ── Modo paralelo: admin SSH + web navegador simultáneos ──
+            _banner(i, len(turnos), "admin+web paralelo", duracion, inicio)
+            lanzar_web(duracion)
+            ejecutar_agente_admin_remoto(duracion)  # bloquea hasta terminar admin
+            detener_web()                           # para el web si sigue activo
+
+        elif agente == "web":
+            # ── Turno web ──
+            _banner(i, len(turnos), "web", duracion, inicio)
+            lanzar_web(duracion)
+            esperar_web(duracion)
+            detener_web()
+            estado = "completado" if not _stop_event.is_set() else "interrumpido"
+            print(f"[Orquestador] Agente web {estado}.")
+
+        else:
+            # ── Turno admin ──
+            _banner(i, len(turnos), "admin", duracion, inicio)
+            ejecutar_agente_admin_remoto(duracion)
 
         if i < len(turnos) and not _stop_event.is_set():
             _pausa(PAUSA_ENTRE_S)

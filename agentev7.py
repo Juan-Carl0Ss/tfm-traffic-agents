@@ -354,7 +354,9 @@ def generar_accion_fallback() -> dict:
     return accion
 
 # ========== LLM: decidir acción (robusto) ==========
-def obtener_accion_json_llm(reintentos: int = 2):
+def obtener_accion_json_llm(reintentos: int = 2, trace: "list | None" = None):
+    """Pide una acción al LLM. Si se pasa `trace` (lista), anota en ella un dict
+    por intento con prompt/respuesta/resultado, y un registro final si se usó fallback."""
     perfiles = [
         "un estudiante de informática curioso",
         "una persona interesada en tecnología",
@@ -406,25 +408,45 @@ def obtener_accion_json_llm(reintentos: int = 2):
             ],
             "response_format": {"type": "json_object"}  # si no se soporta, lo ignoran
         }
+        registro = {
+            "intento": intento,
+            "model": data["model"],
+            "temperature": data["temperature"],
+            "prompt": prompt,
+            "respuesta_cruda": None,
+            "accion": None,
+            "error": None,
+        }
         try:
             resp = requests.post(GROQ_API_URL, headers=headers, json=data, timeout=30)
             resp.raise_for_status()
             raw = resp.json()
             content = raw["choices"][0]["message"]["content"]
             print("📦 LLM:\n", content)
+            registro["respuesta_cruda"] = content
 
             cleaned = _clean_possible_json(content)
             accion = _try_parse_json(cleaned)
             accion = _validar_accion(accion)
             if accion:
+                registro["accion"] = dict(accion)
+                if trace is not None:
+                    trace.append(registro)
                 return accion
             else:
+                registro["error"] = "json_invalido_o_rechazado_por_validacion"
                 print("⚠️ JSON recibido pero inválido. Reintentando…")
         except Exception as e:
+            registro["error"] = f"{type(e).__name__}: {e}"
             print(f"❌ Intento {intento}: error solicitando/parsing: {e}")
+        if trace is not None:
+            trace.append(registro)
 
     print("⚠️ LLM sin JSON válido. Usando acción de respaldo.")
-    return generar_accion_fallback()
+    accion_fb = generar_accion_fallback()
+    if trace is not None:
+        trace.append({"fallback": True, "accion": dict(accion_fb)})
+    return accion_fb
 
 # ========== YouTube helpers ==========
 def youtube_click_random_organic_result(driver, only_live=False):
@@ -583,7 +605,9 @@ def navegar_twitter(driver):
         print(f"⚠️ Error scroll Twitter/X: {e}")
 
 # ========== Dispatcher principal ==========
-def ejecutar_accion_browser(info, driver):
+def ejecutar_accion_browser(info, driver) -> bool:
+    """Ejecuta la acción en el navegador. Devuelve True si terminó sin error,
+    False si hubo excepción o fallo claro (login imposible, error en correo)."""
     try:
         tipo = info.get("tipo", "")
         if tipo == "mirar_youtube":
@@ -649,6 +673,7 @@ def ejecutar_accion_browser(info, driver):
                 print("📬 Primer correo abierto")
             except Exception as e:
                 print("❌ Error al revisar el correo:", e)
+                return False
 
         elif tipo == "ver_streaming":
             busqueda = random.choice([
@@ -667,11 +692,14 @@ def ejecutar_accion_browser(info, driver):
             if not is_twitter_logged_in(driver, timeout=5):
                 if not login_twitter_con_email_password(driver):
                     print("⚠️ No se pudo iniciar sesión (quizá challenge/2FA).")
-                    return
+                    return False
             navegar_twitter(driver)
+
+        return True
 
     except Exception as e:
         print("❌ Error acción navegador:", e)
+        return False
 
 def simular_actividad(driver, delay):
     start = time.time()
@@ -682,10 +710,9 @@ def simular_actividad(driver, delay):
             print(f"⬇️ Scroll {distancia}px")
         time.sleep(random.uniform(2, 5))
 
-# ========== MAIN ==========
-if __name__ == "__main__":
-    fin = datetime.now() + timedelta(seconds=DURACION_TOTAL_SEGUNDOS)
-
+# ========== Driver ==========
+def crear_driver():
+    """Crea el driver de Chrome (undetected_chromedriver) con el perfil persistente."""
     # --- Detectar Chrome y versión ---
     chrome_exe = get_chrome_exe()
     major = get_chrome_major(chrome_exe)
@@ -701,12 +728,18 @@ if __name__ == "__main__":
     options.add_argument(f"--user-data-dir={PROFILE_DIR}")  # PERFIL PERSISTENTE
 
     # --- Crear driver alineado con tu versión de Chrome ---
-    driver = uc.Chrome(
+    return uc.Chrome(
         version_main=major,               # None = uc detecta la versión automáticamente
         options=options,
         browser_executable_path=chrome_exe  # soporta portátil o instalación estándar
         # No pasamos driver_executable_path: uc se encarga de descargar el correcto
     )
+
+# ========== MAIN ==========
+if __name__ == "__main__":
+    fin = datetime.now() + timedelta(seconds=DURACION_TOTAL_SEGUNDOS)
+
+    driver = crear_driver()
 
     try:
         while datetime.now() < fin:
