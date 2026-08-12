@@ -1,0 +1,194 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run02] Nueva acción (21:17:13)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "conciertos en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'conciertos en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 301px
+⬇️ Scroll 181px
+⬇️ Scroll 227px
+⬇️ Scroll 313px
+🕒 [llm_run02] Nueva acción (21:18:21)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 145px
+⬇️ Scroll 285px
+⬇️ Scroll 273px
+🕒 [llm_run02] Nueva acción (21:19:18)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de última hora",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de última hora', 'delay': 12}
+🔗 Clic aleatorio en: https://elpais.com/espana/2026-07-10/ultimas-noticias-del-incendio-forestal-de-los-gallardos-almeria-en-directo.html
+⏳ Simulando actividad 12s…
+⬇️ Scroll 243px
+⬇️ Scroll 173px
+⬇️ Scroll 329px
+🕒 [llm_run02] Nueva acción (21:19:43)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 192px
+⬇️ Scroll 274px
+⬇️ Scroll 142px
+🕒 [llm_run02] Nueva acción (21:20:39)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 12}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x81b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x81b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x621ea0]
+	undetected_chromedriver!(No symbol) [0x66b28a]
+	undetected_chromedriver!(No symbol) [0x66b52b]
+	undetected_chromedriver!(No symbol) [0x6ad052]
+	undetected_chromedriver!(No symbol) [0x68d7c4]
+	undetected_chromedriver!(No symbol) [0x6aa936]
+	undetected_chromedriver!(No symbol) [0x68d516]
+	undetected_chromedriver!(No symbol) [0x6608e9]
+	undetected_chromedriver!(No symbol) [0x6616a4]
+	undetected_chromedriver!GetHandleVerifier [0xaa3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xa9e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xabea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8354e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x83cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x823e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x824015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x80d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+⬇️ Scroll 149px
+⬇️ Scroll 272px
+⬇️ Scroll 267px
+🕒 [llm_run02] Nueva acción (21:21:47)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.eleconomista.es/tecnologia/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 325px
+⬇️ Scroll 356px
+🕒 [llm_run02] Nueva acción (21:22:26)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 179px
+⬇️ Scroll 165px
+⬇️ Scroll 126px
+🕒 [llm_run02] Nueva acción (21:23:23)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos de tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos de tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 201px
+⬇️ Scroll 207px
+🕒 [llm_run02] Nueva acción (21:24:58)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 229px
+⬇️ Scroll 232px
+⬇️ Scroll 263px
+🕒 [llm_run02] Nueva acción (21:25:56)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://revistabyte.es/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 233px
+⬇️ Scroll 294px
+⬇️ Scroll 312px
+🕒 [llm_run02] Nueva acción (21:27:54)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de programación",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de programación', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 218px
+⬇️ Scroll 179px
+⬇️ Scroll 347px
+⬇️ Scroll 180px
+🕒 [llm_run02] Nueva acción (21:29:24)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos educativos de programación",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos educativos de programación', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 161px
+⬇️ Scroll 276px
+⬇️ Scroll 300px
+🕒 [llm_run02] Nueva acción (21:30:48)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://es.wired.com/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 135px
+⬇️ Scroll 329px
+⬇️ Scroll 337px
+🕒 [llm_run02] Nueva acción (21:31:17)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos de ciencia ficción",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos de ciencia ficción', 'delay': 18}
+✅ Sesión terminada: {'emitidas': 14, 'validas': 14, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 1} | errores=0

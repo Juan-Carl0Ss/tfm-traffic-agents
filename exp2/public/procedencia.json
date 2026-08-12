@@ -1,0 +1,18 @@
+{
+  "ctu": {
+    "url": "https://mcfp.felk.cvut.cz/publicDatasets/CTU-Normal-7/2013-12-17_capture1.pcap",
+    "fichero": "ctu_normal_7.pcap",
+    "bytes": 417195191,
+    "sha256": "9daf9c1746dae37a234bac32090e8bc925e837af78cfffc3b4cc7c46d901542b",
+    "descargado_utc": "2026-07-14T16:20:18+00:00",
+    "descripcion": "Stratosphere IPS CTU-Normal-7 (portátil Debian, tráfico normal real)"
+  },
+  "ids2018": {
+    "url": "https://cse-cic-ids2018.s3.amazonaws.com/Processed%20Traffic%20Data%20for%20ML%20Algorithms/Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+    "fichero": "ids2018_wednesday-14-02-2018.csv",
+    "bytes": 358223333,
+    "sha256": "acff8bc61376ee031d80878ee6099e0b1a87a1bd711d8068298421418c9f8147",
+    "descargado_utc": "2026-07-14T16:33:02+00:00",
+    "descripcion": "CSE-CIC-IDS2018 Wednesday-14-02-2018, flujos CICFlowMeter (clase Benign)"
+  }
+}

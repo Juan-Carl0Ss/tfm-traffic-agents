@@ -1,0 +1,99 @@
+[20:28:39] Interfaz activa detectada por ruta por defecto: 5. \Device\NPF_{FBE55F81-56FF-41D5-B1DB-FDC2C2B0E2A4} (Wi-Fi)
+[20:28:39] ════════════════════════════════════════════════════════════
+[20:28:39] Experimento 1 — planners=['llm', 'random', 'rule'] runs=10 duración=900s base_seed=1000 iface=5 out=C:\Users\juanc\Desktop\tfm\exp1
+[20:28:39] ════════════════════════════════════════════════════════════
+[20:28:39] [llm_run01] seed=1001 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_01
+[20:44:54] [llm_run01] métricas: 218137 pkts, 6440 flows, 188566413 bytes
+[20:44:54] [llm_run01] → completed (exit=0)
+[20:45:04] [random_run01] seed=1001 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_01
+[21:01:18] [random_run01] métricas: 84952 pkts, 3444 flows, 63307456 bytes
+[21:01:18] [random_run01] → completed (exit=0)
+[21:01:28] [rule_run01] seed=1001 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_01
+[21:16:52] [rule_run01] métricas: 60201 pkts, 3416 flows, 40826520 bytes
+[21:16:52] [rule_run01] → completed (exit=0)
+[21:17:03] [llm_run02] seed=1002 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_02
+[21:32:41] [llm_run02] métricas: 53716 pkts, 2908 flows, 38767330 bytes
+[21:32:41] [llm_run02] → completed (exit=0)
+[21:32:51] [random_run02] seed=1002 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_02
+[21:48:14] [random_run02] métricas: 66703 pkts, 2573 flows, 49552181 bytes
+[21:48:14] [random_run02] → completed (exit=0)
+[21:48:24] [rule_run02] seed=1002 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_02
+[22:04:34] [rule_run02] métricas: 53961 pkts, 2690 flows, 38896244 bytes
+[22:04:34] [rule_run02] → completed (exit=0)
+[22:04:44] [llm_run03] seed=1003 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_03
+[22:20:10] [llm_run03] métricas: 73437 pkts, 3015 flows, 56216596 bytes
+[22:20:10] [llm_run03] → completed (exit=0)
+[22:20:20] [random_run03] seed=1003 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_03
+[22:36:37] [random_run03] métricas: 67419 pkts, 2821 flows, 49086809 bytes
+[22:36:37] [random_run03] → completed (exit=0)
+[22:36:47] [rule_run03] seed=1003 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_03
+[22:53:31] [rule_run03] métricas: 59628 pkts, 3461 flows, 39724307 bytes
+[22:53:31] [rule_run03] → completed (exit=0)
+[22:53:41] [llm_run04] seed=1004 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_04
+[23:09:01] [llm_run04] métricas: 54780 pkts, 2424 flows, 41187548 bytes
+[23:09:01] [llm_run04] → completed (exit=0)
+[23:09:11] [random_run04] seed=1004 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_04
+[23:24:31] [random_run04] métricas: 50895 pkts, 2218 flows, 40002853 bytes
+[23:24:31] [random_run04] → completed (exit=0)
+[23:24:41] [rule_run04] seed=1004 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_04
+[23:40:09] [rule_run04] ERROR extrayendo métricas: PcapNg: Invalid Block body length (too short)
+[23:40:09] [rule_run04] → failed (exit=0)
+[23:40:20] [llm_run05] seed=1005 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_05
+[23:56:38] [llm_run05] métricas: 49822 pkts, 2219 flows, 41599078 bytes
+[23:56:38] [llm_run05] → completed (exit=0)
+[23:56:48] [random_run05] seed=1005 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_05
+[00:12:37] [random_run05] métricas: 51203 pkts, 2131 flows, 41495229 bytes
+[00:12:37] [random_run05] → completed (exit=0)
+[00:12:47] [rule_run05] seed=1005 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_05
+[00:28:17] [rule_run05] métricas: 52306 pkts, 3227 flows, 35195622 bytes
+[00:28:17] [rule_run05] → completed (exit=0)
+[00:28:27] [llm_run06] seed=1006 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_06
+[00:43:42] [llm_run06] métricas: 39181 pkts, 1874 flows, 30359100 bytes
+[00:43:42] [llm_run06] → completed (exit=0)
+[00:43:52] [random_run06] seed=1006 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_06
+[00:59:18] [random_run06] métricas: 64572 pkts, 3415 flows, 47090754 bytes
+[00:59:18] [random_run06] → completed (exit=0)
+[00:59:28] [rule_run06] seed=1006 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_06
+[01:15:31] [rule_run06] métricas: 63910 pkts, 3993 flows, 41278204 bytes
+[01:15:31] [rule_run06] → completed (exit=0)
+[01:15:41] [llm_run07] seed=1007 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_07
+[01:31:39] [llm_run07] métricas: 77992 pkts, 3425 flows, 61167706 bytes
+[01:31:39] [llm_run07] → completed (exit=0)
+[01:31:49] [random_run07] seed=1007 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_07
+[01:47:09] [random_run07] métricas: 50960 pkts, 2496 flows, 39297451 bytes
+[01:47:09] [random_run07] → completed (exit=0)
+[01:47:19] [rule_run07] seed=1007 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_07
+[02:04:08] [rule_run07] métricas: 65261 pkts, 4191 flows, 37024419 bytes
+[02:04:08] [rule_run07] → completed (exit=0)
+[02:04:18] [llm_run08] seed=1008 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_08
+[02:19:39] [llm_run08] métricas: 54534 pkts, 3154 flows, 37495628 bytes
+[02:19:39] [llm_run08] → completed (exit=0)
+[02:19:49] [random_run08] seed=1008 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_08
+[02:37:05] [random_run08] métricas: 68532 pkts, 3330 flows, 49905235 bytes
+[02:37:05] [random_run08] → completed (exit=0)
+[02:37:15] [rule_run08] seed=1008 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_08
+[02:54:15] [rule_run08] métricas: 59929 pkts, 3693 flows, 39033771 bytes
+[02:54:15] [rule_run08] → completed (exit=0)
+[02:54:25] [llm_run09] seed=1009 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_09
+[03:09:46] [llm_run09] métricas: 59368 pkts, 3857 flows, 39265643 bytes
+[03:09:46] [llm_run09] → completed (exit=0)
+[03:09:57] [random_run09] seed=1009 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_09
+[03:25:42] [random_run09] métricas: 64822 pkts, 3514 flows, 44869679 bytes
+[03:25:42] [random_run09] → completed (exit=0)
+[03:25:52] [rule_run09] seed=1009 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_09
+[03:41:19] [rule_run09] métricas: 82514 pkts, 3533 flows, 65296805 bytes
+[03:41:19] [rule_run09] → completed (exit=0)
+[03:41:29] [llm_run10] seed=1010 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\llm\run_10
+[03:57:15] [llm_run10] métricas: 66315 pkts, 4079 flows, 44140955 bytes
+[03:57:15] [llm_run10] → completed (exit=0)
+[03:57:26] [random_run10] seed=1010 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\random\run_10
+[04:13:18] [random_run10] métricas: 54463 pkts, 2756 flows, 36810857 bytes
+[04:13:18] [random_run10] → completed (exit=0)
+[04:13:28] [rule_run10] seed=1010 dur=900s → C:\Users\juanc\Desktop\tfm\exp1\rule\run_10
+[04:32:56] [rule_run10] ERROR extrayendo métricas: PcapNg: Invalid Block body length (too short)
+[04:32:56] [rule_run10] → failed (exit=0)
+[04:33:06] ════════════════════════════════════════════════════════════
+[04:33:06] llm: completed=10 failed=0 skipped=0
+[04:33:06] random: completed=10 failed=0 skipped=0
+[04:33:06] rule: completed=8 failed=2 skipped=0
+[04:33:06] Tiempo total: 484.5 min

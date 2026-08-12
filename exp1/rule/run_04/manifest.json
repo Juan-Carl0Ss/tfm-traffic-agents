@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "experimento": "exp1_planner_comparison",
+  "perfil": "regular_user",
+  "planner": "rule",
+  "run_id": "rule_run04",
+  "seed": 1004,
+  "duracion_solicitada_s": 900,
+  "inicio": "2026-07-10T23:24:41.176731+02:00",
+  "fin": "2026-07-10T23:39:52.253592+02:00",
+  "duracion_real_s": 907.3,
+  "entorno": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "hostname": "DESKTOP-0EML0CS",
+    "python": "3.11.2",
+    "maquina": "AMD64"
+  },
+  "git": {
+    "commit_hash": "8a1ef84052a277d43fdb9cece92fb61169a2b592",
+    "branch": "master",
+    "dirty": true,
+    "dirty_files": [
+      "M agenteadminavanzado.py",
+      " M agentev7.py",
+      " M estadisticas4.py",
+      "?? captura_combinada.py",
+      "?? exp1/",
+      "?? mergecapturas.py",
+      "?? test_vms.py"
+    ]
+  },
+  "red": {
+    "iface_captura": "5",
+    "ip_local": "192.168.18.134"
+  },
+  "llm": null,
+  "rutas": {
+    "pcap": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\rule\\run_04\\capture.pcap",
+    "actions_csv": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\rule\\run_04\\actions.csv",
+    "llm_trace": null,
+    "session_log": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\rule\\run_04\\session.log",
+    "metrics_json": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\rule\\run_04\\metrics.json"
+  },
+  "acciones": {
+    "emitidas": 16,
+    "validas": 16,
+    "rechazadas_validacion": 0,
+    "llm_intentos_rechazados": 0,
+    "fallbacks": 0,
+    "ejecutadas_ok": 14,
+    "ejecutadas_fallo": 2
+  },
+  "errores": [
+    "metricas: PcapNg: Invalid Block body length (too short)"
+  ],
+  "status": "completed",
+  "session_exit_code": 0,
+  "recuperado_de_truncamiento": true
+}

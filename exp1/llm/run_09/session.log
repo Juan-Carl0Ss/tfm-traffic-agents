@@ -1,0 +1,162 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run09] Nueva acción (02:54:34)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 174px
+⬇️ Scroll 172px
+⬇️ Scroll 292px
+⬇️ Scroll 266px
+⬇️ Scroll 250px
+🕒 [llm_run09] Nueva acción (02:56:08)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 236px
+🕒 [llm_run09] Nueva acción (02:57:41)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 122px
+🕒 [llm_run09] Nueva acción (02:58:58)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x8bb593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x8bb6c4+10704]
+	undetected_chromedriver!(No symbol) [0x6c1ea0]
+	undetected_chromedriver!(No symbol) [0x70b28a]
+	undetected_chromedriver!(No symbol) [0x70b52b]
+	undetected_chromedriver!(No symbol) [0x74d052]
+	undetected_chromedriver!(No symbol) [0x72d7c4]
+	undetected_chromedriver!(No symbol) [0x74a936]
+	undetected_chromedriver!(No symbol) [0x72d516]
+	undetected_chromedriver!(No symbol) [0x7008e9]
+	undetected_chromedriver!(No symbol) [0x7016a4]
+	undetected_chromedriver!GetHandleVerifier [0xb43014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xb3e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xb5ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8d54e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x8dcd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x8c3e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x8c4015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x8ad65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 227px
+🕒 [llm_run09] Nueva acción (03:00:12)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 187px
+⬇️ Scroll 245px
+⬇️ Scroll 242px
+🕒 [llm_run09] Nueva acción (03:01:50)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 356px
+⬇️ Scroll 355px
+🕒 [llm_run09] Nueva acción (03:03:11)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 141px
+⬇️ Scroll 341px
+⬇️ Scroll 281px
+⬇️ Scroll 248px
+⬇️ Scroll 272px
+🕒 [llm_run09] Nueva acción (03:04:11)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 297px
+⬇️ Scroll 164px
+⬇️ Scroll 228px
+🕒 [llm_run09] Nueva acción (03:05:38)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 350px
+🕒 [llm_run09] Nueva acción (03:07:11)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 193px
+🕒 [llm_run09] Nueva acción (03:07:37)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.eleconomista.es/tecnologia/
+⏳ Simulando actividad 12s…
+🕒 [llm_run09] Nueva acción (03:08:16)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos de tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos de tecnología', 'delay': 18}
+✅ Sesión terminada: {'emitidas': 12, 'validas': 12, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 11, 'ejecutadas_fallo': 1} | errores=0

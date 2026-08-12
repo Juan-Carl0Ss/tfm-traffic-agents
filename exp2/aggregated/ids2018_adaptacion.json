@@ -1,0 +1,18 @@
+{
+  "csv_origen": "ids2018_wednesday-14-02-2018.csv",
+  "filas_totales": 1048575,
+  "etiquetas": {
+    "Benign": 667626,
+    "FTP-BruteForce": 193360,
+    "SSH-Bruteforce": 187589
+  },
+  "flujos_benign_tcp_udp": 655744,
+  "descartados": 11882,
+  "protocolos_benign": {
+    "TCP": 448360,
+    "UDP": 207384
+  },
+  "muestra_escrita": 50000,
+  "seed": 2000,
+  "metodo_muestreo": "reservorio uniforme sobre los flujos Benign TCP/UDP"
+}

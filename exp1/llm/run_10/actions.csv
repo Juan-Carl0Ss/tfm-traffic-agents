@@ -1,0 +1,335 @@
+idx,ts_iso,run_id,planner,seed,tipo,params_json,source,validada,motivo_rechazo,ejecutada,error_ejecucion,delay_s,exec_s,llm_model,llm_temperature,llm_prompt,llm_respuesta
+1,2026-07-11T03:41:39.671788+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,37.47,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona aburrida que busca algo interesante que quiere leer noticias actuales.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""buscar_google"",
+  ""termino"": ""noticias de última hora"",
+  ""delay"": 12
+}"
+2,2026-07-11T03:42:30.176731+02:00,llm_run10,llm,1010,usar_twitter,{},llm,ok,,ok,,12,14.22,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona aburrida que busca algo interesante que quiere usar Twitter.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""usar_twitter"",
+  ""delay"": 12
+}"
+3,2026-07-11T03:42:59.747757+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,18.98,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona interesada en tecnología que quiere leer noticias actuales.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""buscar_google"",
+  ""termino"": ""últimas noticias de tecnología"",
+  ""delay"": 12
+}"
+4,2026-07-11T03:43:33.415249+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,68.41,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona interesada en tecnología que quiere ver un vídeo en YouTube.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""últimos avances en inteligencia artificial"",
+  ""delay"": 18
+}"
+5,2026-07-11T03:45:00.713504+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,69.59,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona aburrida que busca algo interesante que quiere ver un streaming en vivo.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""conciertos en vivo"",
+  ""delay"": 12
+}"
+6,2026-07-11T03:46:26.490142+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,68.02,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona aburrida que busca algo interesante que quiere ver un streaming en vivo.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""conciertos en vivo"",
+  ""delay"": 12
+}"
+7,2026-07-11T03:47:47.989695+02:00,llm_run10,llm,1010,usar_twitter,{},llm,ok,,ok,,12,15.54,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de un estudiante de informática curioso que quiere usar Twitter.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""usar_twitter"",
+  ""delay"": 12
+}"
+8,2026-07-11T03:48:20.153139+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,68.95,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona interesada en tecnología que quiere ver un vídeo en YouTube.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""últimos avances en inteligencia artificial"",
+  ""delay"": 18
+}"
+9,2026-07-11T03:49:48.799866+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,64.64,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de un lector habitual de periódicos online que quiere ver un streaming en vivo.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""streaming en vivo"",
+  ""delay"": 12
+}"
+10,2026-07-11T03:51:06.809206+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,72.87,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de alguien que quiere ver un vídeo educativo que quiere revisar su correo electrónico.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""videos educativos de programación"",
+  ""delay"": 18
+}"
+11,2026-07-11T03:52:40.958321+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,75.04,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de un estudiante de informática curioso que quiere visitar una página web interesante.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""buscar_google"",
+  ""termino"": ""últimos avances en inteligencia artificial"",
+  ""delay"": 12
+}"
+12,2026-07-11T03:54:09.793288+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,23.14,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de un lector habitual de periódicos online que quiere visitar una página web interesante.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""buscar_google"",
+  ""termino"": ""noticias de tecnología"",
+  ""delay"": 12
+}"
+13,2026-07-11T03:54:46.475482+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,38.92,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona interesada en tecnología que quiere ver un streaming en vivo.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""mirar_youtube"",
+  ""busqueda"": ""streaming en vivo de tecnología"",
+  ""delay"": 12
+}"
+14,2026-07-11T03:55:40.767226+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,75.7,meta-llama/llama-4-scout-17b-16e-instruct,0.2,"Eres un agente autónomo que simula el comportamiento de una persona interesada en tecnología que quiere leer noticias actuales.
+Elige UNA acción para realizar en el navegador.
+
+Opciones válidas:
+- buscar_google: requiere campo 'termino'
+- abrir_url: requiere campo 'url'
+- mirar_youtube: opcionalmente campo 'busqueda'
+- revisar_correo: no requiere campos adicionales
+- ver_streaming: (solo en YouTube Live)
+- usar_twitter: no requiere campos adicionales
+
+Incluye un campo ""delay"" (entero 8–25).
+Devuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.
+Ejemplos:
+{ ""tipo"": ""buscar_google"", ""termino"": ""últimas noticias de IA"", ""delay"": 15 }
+{ ""tipo"": ""abrir_url"", ""url"": ""https://www.bbc.com/mundo"", ""delay"": 10 }
+{ ""tipo"": ""mirar_youtube"", ""busqueda"": ""videos de ciberseguridad"", ""delay"": 20 }
+{ ""tipo"": ""revisar_correo"", ""delay"": 20 }
+{ ""tipo"": ""ver_streaming"", ""delay"": 18 }
+{ ""tipo"": ""usar_twitter"", ""delay"": 16 }","{
+""tipo"": ""buscar_google"",
+  ""termino"": ""últimas noticias de tecnología"",
+  ""delay"": 12
+}"

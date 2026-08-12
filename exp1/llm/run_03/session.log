@@ -1,0 +1,237 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run03] Nueva acción (22:04:57)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 284px
+🕒 [llm_run03] Nueva acción (22:06:24)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "conciertos en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'conciertos en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 258px
+🕒 [llm_run03] Nueva acción (22:07:44)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://am.pictet.com/pictetparati/invertir-en-innovacion/2026/diez-avances-cambiando-mundo
+⏳ Simulando actividad 12s…
+⬇️ Scroll 339px
+🕒 [llm_run03] Nueva acción (22:08:11)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 12}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x74b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x74b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x551ea0]
+	undetected_chromedriver!(No symbol) [0x59b28a]
+	undetected_chromedriver!(No symbol) [0x59b52b]
+	undetected_chromedriver!(No symbol) [0x5dd052]
+	undetected_chromedriver!(No symbol) [0x5bd7c4]
+	undetected_chromedriver!(No symbol) [0x5da936]
+	undetected_chromedriver!(No symbol) [0x5bd516]
+	undetected_chromedriver!(No symbol) [0x5908e9]
+	undetected_chromedriver!(No symbol) [0x5916a4]
+	undetected_chromedriver!GetHandleVerifier [0x9d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x9ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x9eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x7654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x76cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x753e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x754015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x73d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+⬇️ Scroll 170px
+⬇️ Scroll 235px
+🕒 [llm_run03] Nueva acción (22:09:21)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 180px
+⬇️ Scroll 173px
+🕒 [llm_run03] Nueva acción (22:10:46)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+🕒 [llm_run03] Nueva acción (22:11:17)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "vídeos educativos de inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'vídeos educativos de inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 162px
+⬇️ Scroll 196px
+⬇️ Scroll 223px
+🕒 [llm_run03] Nueva acción (22:12:55)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnologia",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnologia', 'delay': 12}
+🔗 Clic aleatorio en: https://es.wired.com/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 241px
+⬇️ Scroll 275px
+⬇️ Scroll 204px
+⬇️ Scroll 182px
+🕒 [llm_run03] Nueva acción (22:13:25)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 183px
+⬇️ Scroll 139px
+⬇️ Scroll 255px
+🕒 [llm_run03] Nueva acción (22:13:53)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.instagram.com/reel/DZBVXUmnX99/?hl=es
+⏳ Simulando actividad 12s…
+⬇️ Scroll 299px
+⬇️ Scroll 231px
+🕒 [llm_run03] Nueva acción (22:14:24)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 281px
+⬇️ Scroll 182px
+🕒 [llm_run03] Nueva acción (22:14:52)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "vídeos educativos de inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'vídeos educativos de inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+🕒 [llm_run03] Nueva acción (22:16:26)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.elmundo.es/cronica/2026/07/10/6a43cc61fc6c83ca018b4579.html
+⏳ Simulando actividad 12s…
+⬇️ Scroll 341px
+⬇️ Scroll 345px
+🕒 [llm_run03] Nueva acción (22:17:02)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x74b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x74b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x551ea0]
+	undetected_chromedriver!(No symbol) [0x59b28a]
+	undetected_chromedriver!(No symbol) [0x59b52b]
+	undetected_chromedriver!(No symbol) [0x5dd052]
+	undetected_chromedriver!(No symbol) [0x5bd7c4]
+	undetected_chromedriver!(No symbol) [0x5da936]
+	undetected_chromedriver!(No symbol) [0x5bd516]
+	undetected_chromedriver!(No symbol) [0x5908e9]
+	undetected_chromedriver!(No symbol) [0x5916a4]
+	undetected_chromedriver!GetHandleVerifier [0x9d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x9ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x9eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x7654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x76cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x753e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x754015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x73d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 350px
+🕒 [llm_run03] Nueva acción (22:18:10)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://es.wired.com/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 242px
+⬇️ Scroll 354px
+🕒 [llm_run03] Nueva acción (22:18:40)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://www.crescendo.ai/news/latest-ai-news-and-updates#:~:text=(AI%20Breakthrough)%20Anthropic%20Launches%20Claude,for%20Drug%20Discovery%2C%20Enters%20Biotech&text=Summary%3A%20Anthropic%20unveiled%20Claude%20Science,genomics%20resources%20for%20drug%20research.
+✅ Sesión terminada: {'emitidas': 16, 'validas': 16, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 14, 'ejecutadas_fallo': 2} | errores=0

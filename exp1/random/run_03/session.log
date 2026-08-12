@@ -1,0 +1,196 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run03] Nueva acción (22:20:29)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 25}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x86b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x86b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x671ea0]
+	undetected_chromedriver!(No symbol) [0x6bb28a]
+	undetected_chromedriver!(No symbol) [0x6bb52b]
+	undetected_chromedriver!(No symbol) [0x6fd052]
+	undetected_chromedriver!(No symbol) [0x6dd7c4]
+	undetected_chromedriver!(No symbol) [0x6fa936]
+	undetected_chromedriver!(No symbol) [0x6dd516]
+	undetected_chromedriver!(No symbol) [0x6b08e9]
+	undetected_chromedriver!(No symbol) [0x6b16a4]
+	undetected_chromedriver!GetHandleVerifier [0xaf3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xaee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xb0ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x88cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x873e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x874015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x85d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 25s…
+⬇️ Scroll 284px
+⬇️ Scroll 201px
+⬇️ Scroll 155px
+🕒 [random_run03] Nueva acción (22:21:49)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 15, 'busqueda': 'música en vivo'}
+⏳ Simulando actividad 15s…
+⬇️ Scroll 188px
+⬇️ Scroll 339px
+⬇️ Scroll 170px
+🕒 [random_run03] Nueva acción (22:23:09)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 22}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x86b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x86b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x671ea0]
+	undetected_chromedriver!(No symbol) [0x6bb28a]
+	undetected_chromedriver!(No symbol) [0x6bb52b]
+	undetected_chromedriver!(No symbol) [0x6fd052]
+	undetected_chromedriver!(No symbol) [0x6dd7c4]
+	undetected_chromedriver!(No symbol) [0x6fa936]
+	undetected_chromedriver!(No symbol) [0x6dd516]
+	undetected_chromedriver!(No symbol) [0x6b08e9]
+	undetected_chromedriver!(No symbol) [0x6b16a4]
+	undetected_chromedriver!GetHandleVerifier [0xaf3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xaee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xb0ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x88cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x873e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x874015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x85d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 22s…
+⬇️ Scroll 313px
+⬇️ Scroll 269px
+🕒 [random_run03] Nueva acción (22:24:23)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 22}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 22s…
+⬇️ Scroll 235px
+⬇️ Scroll 261px
+🕒 [random_run03] Nueva acción (22:25:03)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 8}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x86b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x86b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x671ea0]
+	undetected_chromedriver!(No symbol) [0x6bb28a]
+	undetected_chromedriver!(No symbol) [0x6bb52b]
+	undetected_chromedriver!(No symbol) [0x6fd052]
+	undetected_chromedriver!(No symbol) [0x6dd7c4]
+	undetected_chromedriver!(No symbol) [0x6fa936]
+	undetected_chromedriver!(No symbol) [0x6dd516]
+	undetected_chromedriver!(No symbol) [0x6b08e9]
+	undetected_chromedriver!(No symbol) [0x6b16a4]
+	undetected_chromedriver!GetHandleVerifier [0xaf3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xaee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xb0ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x88cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x873e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x874015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x85d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 8s…
+⬇️ Scroll 180px
+🕒 [random_run03] Nueva acción (22:26:06)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 18}
+⏳ Simulando actividad 18s…
+🕒 [random_run03] Nueva acción (22:27:37)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 23, 'url': 'https://www.genbeta.com'}
+⏳ Simulando actividad 23s…
+⬇️ Scroll 352px
+⬇️ Scroll 162px
+⬇️ Scroll 196px
+⬇️ Scroll 223px
+🕒 [random_run03] Nueva acción (22:28:05)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 24}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x86b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x86b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x671ea0]
+	undetected_chromedriver!(No symbol) [0x6bb28a]
+	undetected_chromedriver!(No symbol) [0x6bb52b]
+	undetected_chromedriver!(No symbol) [0x6fd052]
+	undetected_chromedriver!(No symbol) [0x6dd7c4]
+	undetected_chromedriver!(No symbol) [0x6fa936]
+	undetected_chromedriver!(No symbol) [0x6dd516]
+	undetected_chromedriver!(No symbol) [0x6b08e9]
+	undetected_chromedriver!(No symbol) [0x6b16a4]
+	undetected_chromedriver!GetHandleVerifier [0xaf3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0xaee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0xb0ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x8854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x88cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x873e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x874015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x85d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 24s…
+⬇️ Scroll 302px
+⬇️ Scroll 321px
+⬇️ Scroll 241px
+⬇️ Scroll 275px
+⬇️ Scroll 204px
+⬇️ Scroll 182px
+⬇️ Scroll 283px
+🕒 [random_run03] Nueva acción (22:29:23)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 17, 'url': 'https://www.elmundo.es'}
+⏳ Simulando actividad 17s…
+⬇️ Scroll 183px
+⬇️ Scroll 139px
+⬇️ Scroll 255px
+⬇️ Scroll 154px
+🕒 [random_run03] Nueva acción (22:29:47)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 24}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 24s…
+⬇️ Scroll 299px
+⬇️ Scroll 231px
+⬇️ Scroll 166px
+🕒 [random_run03] Nueva acción (22:30:28)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 9}
+⏳ Simulando actividad 9s…
+⬇️ Scroll 295px
+⬇️ Scroll 150px
+⬇️ Scroll 333px
+🕒 [random_run03] Nueva acción (22:31:45)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 15}
+⏳ Simulando actividad 15s…
+⬇️ Scroll 265px
+⬇️ Scroll 341px
+🕒 [random_run03] Nueva acción (22:33:02)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 25}
+⏳ Simulando actividad 25s…
+⬇️ Scroll 284px
+🕒 [random_run03] Nueva acción (22:34:42)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 9}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 9s…
+🕒 [random_run03] Nueva acción (22:35:05)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 15, 'busqueda': 'música en vivo'}
+✅ Sesión terminada: {'emitidas': 15, 'validas': 15, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 11, 'ejecutadas_fallo': 4} | errores=0

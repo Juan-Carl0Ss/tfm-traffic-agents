@@ -1,0 +1,163 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run09] Nueva acción (03:10:06)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 8, 'termino': 'noticias tecnología'}
+🔗 Clic aleatorio en: https://elpais.com/tecnologia/
+⏳ Simulando actividad 8s…
+⬇️ Scroll 248px
+🕒 [random_run09] Nueva acción (03:10:30)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 24, 'url': 'https://www.xataka.com'}
+⏳ Simulando actividad 24s…
+⬇️ Scroll 190px
+⬇️ Scroll 170px
+⬇️ Scroll 266px
+⬇️ Scroll 250px
+⬇️ Scroll 155px
+🕒 [random_run09] Nueva acción (03:11:00)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 24, 'termino': 'últimas noticias tecnología'}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+⏳ Simulando actividad 24s…
+⬇️ Scroll 236px
+⬇️ Scroll 153px
+🕒 [random_run09] Nueva acción (03:12:56)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 16, 'termino': 'tendencias ciberseguridad 2025'}
+🔗 Clic aleatorio en: https://techfablab.es/wp-content/uploads/2025/02/Worsley_RETECH_Informe-Ciberseguridad_v2.pdf
+⏳ Simulando actividad 16s…
+⬇️ Scroll 349px
+⬇️ Scroll 227px
+🕒 [random_run09] Nueva acción (03:14:11)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 14, 'url': 'https://elpais.com'}
+⏳ Simulando actividad 14s…
+⬇️ Scroll 159px
+🕒 [random_run09] Nueva acción (03:14:34)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 10}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 10s…
+⬇️ Scroll 245px
+⬇️ Scroll 242px
+🕒 [random_run09] Nueva acción (03:15:00)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 23}
+⏳ Simulando actividad 23s…
+⬇️ Scroll 356px
+⬇️ Scroll 355px
+⬇️ Scroll 179px
+🕒 [random_run09] Nueva acción (03:16:31)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 24, 'termino': 'tendencias ciberseguridad 2025'}
+🔗 Clic aleatorio en: https://www.gartner.es/es/ciberseguridad/temas/tendencias-ciberseguridad
+⏳ Simulando actividad 24s…
+⬇️ Scroll 281px
+⬇️ Scroll 248px
+⬇️ Scroll 272px
+⬇️ Scroll 123px
+⬇️ Scroll 149px
+⬇️ Scroll 297px
+🕒 [random_run09] Nueva acción (03:17:57)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 18}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 18s…
+⬇️ Scroll 147px
+⬇️ Scroll 131px
+🕒 [random_run09] Nueva acción (03:18:33)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 8}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x126b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x126b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x1071ea0]
+	undetected_chromedriver!(No symbol) [0x10bb28a]
+	undetected_chromedriver!(No symbol) [0x10bb52b]
+	undetected_chromedriver!(No symbol) [0x10fd052]
+	undetected_chromedriver!(No symbol) [0x10dd7c4]
+	undetected_chromedriver!(No symbol) [0x10fa936]
+	undetected_chromedriver!(No symbol) [0x10dd516]
+	undetected_chromedriver!(No symbol) [0x10b08e9]
+	undetected_chromedriver!(No symbol) [0x10b16a4]
+	undetected_chromedriver!GetHandleVerifier [0x14f3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x14ee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x150ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x12854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x128cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x1273e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x1274015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x125d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 8s…
+⬇️ Scroll 289px
+⬇️ Scroll 131px
+🕒 [random_run09] Nueva acción (03:19:34)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 249px
+🕒 [random_run09] Nueva acción (03:20:03)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 19}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 19s…
+⬇️ Scroll 150px
+⬇️ Scroll 193px
+🕒 [random_run09] Nueva acción (03:20:40)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 12}
+⏳ Simulando actividad 12s…
+🕒 [random_run09] Nueva acción (03:22:03)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 22, 'termino': 'últimas noticias tecnología'}
+🔗 Clic aleatorio en: https://elpais.com/economia/2026-07-10/apple-demanda-a-open-ai-ante-un-tribunal-de-ee-uu-por-robo-de-informacion-confidencial.html
+⏳ Simulando actividad 22s…
+⬇️ Scroll 278px
+⬇️ Scroll 260px
+⬇️ Scroll 294px
+🕒 [random_run09] Nueva acción (03:22:47)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 8}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x126b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x126b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x1071ea0]
+	undetected_chromedriver!(No symbol) [0x10bb28a]
+	undetected_chromedriver!(No symbol) [0x10bb52b]
+	undetected_chromedriver!(No symbol) [0x10fd052]
+	undetected_chromedriver!(No symbol) [0x10dd7c4]
+	undetected_chromedriver!(No symbol) [0x10fa936]
+	undetected_chromedriver!(No symbol) [0x10dd516]
+	undetected_chromedriver!(No symbol) [0x10b08e9]
+	undetected_chromedriver!(No symbol) [0x10b16a4]
+	undetected_chromedriver!GetHandleVerifier [0x14f3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x14ee603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x150ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x12854e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x128cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x1273e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x1274015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x125d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 8s…
+⬇️ Scroll 288px
+🕒 [random_run09] Nueva acción (03:23:44)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 22, 'termino': 'noticias tecnología'}
+🔗 Clic aleatorio en: https://revistabyte.es/
+✅ Sesión terminada: {'emitidas': 16, 'validas': 16, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 14, 'ejecutadas_fallo': 2} | errores=0

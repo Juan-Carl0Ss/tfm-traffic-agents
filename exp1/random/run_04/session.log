@@ -1,0 +1,120 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run04] Nueva acción (23:09:24)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 11}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x110b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x110b6c4+10704]
+	undetected_chromedriver!(No symbol) [0xf11ea0]
+	undetected_chromedriver!(No symbol) [0xf5b28a]
+	undetected_chromedriver!(No symbol) [0xf5b52b]
+	undetected_chromedriver!(No symbol) [0xf9d052]
+	undetected_chromedriver!(No symbol) [0xf7d7c4]
+	undetected_chromedriver!(No symbol) [0xf9a936]
+	undetected_chromedriver!(No symbol) [0xf7d516]
+	undetected_chromedriver!(No symbol) [0xf508e9]
+	undetected_chromedriver!(No symbol) [0xf516a4]
+	undetected_chromedriver!GetHandleVerifier [0x1393014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x138e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x13aea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x11254e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x112cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x1113e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x1114015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x10fd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 11s…
+⬇️ Scroll 304px
+⬇️ Scroll 317px
+⬇️ Scroll 207px
+🕒 [random_run04] Nueva acción (23:10:28)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 25}
+⏳ Simulando actividad 25s…
+⬇️ Scroll 156px
+⬇️ Scroll 159px
+⬇️ Scroll 150px
+⬇️ Scroll 343px
+⬇️ Scroll 183px
+🕒 [random_run04] Nueva acción (23:12:04)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 24}
+⏳ Simulando actividad 24s…
+⬇️ Scroll 239px
+⬇️ Scroll 125px
+🕒 [random_run04] Nueva acción (23:13:41)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 14}
+⏳ Simulando actividad 14s…
+🕒 [random_run04] Nueva acción (23:15:05)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 18, 'termino': 'últimas noticias de IA'}
+🔗 Clic aleatorio en: https://es.wired.com/tag/inteligencia-artificial
+⏳ Simulando actividad 18s…
+⬇️ Scroll 175px
+⬇️ Scroll 299px
+🕒 [random_run04] Nueva acción (23:16:23)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 170px
+🕒 [random_run04] Nueva acción (23:17:42)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 19}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 19s…
+⬇️ Scroll 310px
+⬇️ Scroll 160px
+⬇️ Scroll 196px
+🕒 [random_run04] Nueva acción (23:18:15)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 24, 'url': 'https://elpais.com'}
+⏳ Simulando actividad 24s…
+⬇️ Scroll 351px
+⬇️ Scroll 280px
+⬇️ Scroll 122px
+⬇️ Scroll 200px
+⬇️ Scroll 347px
+⬇️ Scroll 328px
+🕒 [random_run04] Nueva acción (23:18:47)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 8}
+⏳ Simulando actividad 8s…
+⬇️ Scroll 275px
+🕒 [random_run04] Nueva acción (23:20:03)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 8, 'termino': 'python asyncio tutorial'}
+🔗 Clic aleatorio en: https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html
+⏳ Simulando actividad 8s…
+⬇️ Scroll 179px
+🕒 [random_run04] Nueva acción (23:21:28)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 10, 'termino': 'mejores frameworks python 2025'}
+🔗 Clic aleatorio en: https://www.youtube.com/watch?v=Z4bLipQLdpo
+⏳ Simulando actividad 10s…
+⬇️ Scroll 334px
+⬇️ Scroll 145px
+🕒 [random_run04] Nueva acción (23:23:24)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 17}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x110b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x110b6c4+10704]
+	undetected_chromedriver!(No symbol) [0xf11ea0]
+	undetected_chromedriver!(No symbol) [0xf5b28a]
+	undetected_chromedriver!(No symbol) [0xf5b52b]
+	undetected_chromedriver!(No symbol) [0xf9d052]
+	undetected_chromedriver!(No symbol) [0xf7d7c4]
+	undetected_chromedriver!(No symbol) [0xf9a936]
+	undetected_chromedriver!(No symbol) [0xf7d516]
+	undetected_chromedriver!(No symbol) [0xf508e9]
+	undetected_chromedriver!(No symbol) [0xf516a4]
+	undetected_chromedriver!GetHandleVerifier [0x1393014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x138e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x13aea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x11254e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x112cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x1113e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x1114015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x10fd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+✅ Sesión terminada: {'emitidas': 12, 'validas': 12, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 10, 'ejecutadas_fallo': 2} | errores=0

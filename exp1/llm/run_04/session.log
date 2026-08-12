@@ -1,0 +1,292 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run04] Nueva acción (22:53:51)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos de tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos de tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 336px
+⬇️ Scroll 249px
+⬇️ Scroll 156px
+⬇️ Scroll 159px
+🕒 [llm_run04] Nueva acción (22:55:24)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 183px
+⬇️ Scroll 289px
+🕒 [llm_run04] Nueva acción (22:56:53)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x32b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x32b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x131ea0]
+	undetected_chromedriver!(No symbol) [0x17b28a]
+	undetected_chromedriver!(No symbol) [0x17b52b]
+	undetected_chromedriver!(No symbol) [0x1bd052]
+	undetected_chromedriver!(No symbol) [0x19d7c4]
+	undetected_chromedriver!(No symbol) [0x1ba936]
+	undetected_chromedriver!(No symbol) [0x19d516]
+	undetected_chromedriver!(No symbol) [0x1708e9]
+	undetected_chromedriver!(No symbol) [0x1716a4]
+	undetected_chromedriver!GetHandleVerifier [0x5b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x5ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x5cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x3454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x34cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x333e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x334015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x31d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+	(No symbol) [(nil)]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 240px
+⬇️ Scroll 125px
+🕒 [llm_run04] Nueva acción (22:58:05)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 232px
+⬇️ Scroll 187px
+⬇️ Scroll 156px
+🕒 [llm_run04] Nueva acción (22:58:36)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://elpais.com/tecnologia/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 216px
+⬇️ Scroll 145px
+🕒 [llm_run04] Nueva acción (22:59:04)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de última hora",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de última hora', 'delay': 12}
+🔗 Clic aleatorio en: https://www.20minutos.es/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 327px
+⬇️ Scroll 330px
+🕒 [llm_run04] Nueva acción (22:59:47)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 196px
+⬇️ Scroll 351px
+🕒 [llm_run04] Nueva acción (23:01:16)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 18}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 18s…
+⬇️ Scroll 347px
+⬇️ Scroll 328px
+⬇️ Scroll 246px
+🕒 [llm_run04] Nueva acción (23:01:49)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 320px
+⬇️ Scroll 179px
+🕒 [llm_run04] Nueva acción (23:03:16)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x32b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x32b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x131ea0]
+	undetected_chromedriver!(No symbol) [0x17b28a]
+	undetected_chromedriver!(No symbol) [0x17b52b]
+	undetected_chromedriver!(No symbol) [0x1bd052]
+	undetected_chromedriver!(No symbol) [0x19d7c4]
+	undetected_chromedriver!(No symbol) [0x1ba936]
+	undetected_chromedriver!(No symbol) [0x19d516]
+	undetected_chromedriver!(No symbol) [0x1708e9]
+	undetected_chromedriver!(No symbol) [0x1716a4]
+	undetected_chromedriver!GetHandleVerifier [0x5b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x5ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x5cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x3454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x34cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x333e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x334015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x31d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+	(No symbol) [(nil)]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 334px
+⬇️ Scroll 145px
+⬇️ Scroll 309px
+⬇️ Scroll 300px
+🕒 [llm_run04] Nueva acción (23:04:27)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 214px
+⬇️ Scroll 358px
+⬇️ Scroll 198px
+🕒 [llm_run04] Nueva acción (23:04:56)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.instagram.com/reel/DZBVXUmnX99/?hl=es
+⏳ Simulando actividad 12s…
+⬇️ Scroll 210px
+⬇️ Scroll 244px
+⬇️ Scroll 152px
+⬇️ Scroll 264px
+🕒 [llm_run04] Nueva acción (23:05:28)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x32b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x32b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x131ea0]
+	undetected_chromedriver!(No symbol) [0x17b28a]
+	undetected_chromedriver!(No symbol) [0x17b52b]
+	undetected_chromedriver!(No symbol) [0x1bd052]
+	undetected_chromedriver!(No symbol) [0x19d7c4]
+	undetected_chromedriver!(No symbol) [0x1ba936]
+	undetected_chromedriver!(No symbol) [0x19d516]
+	undetected_chromedriver!(No symbol) [0x1708e9]
+	undetected_chromedriver!(No symbol) [0x1716a4]
+	undetected_chromedriver!GetHandleVerifier [0x5b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x5ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x5cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x3454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x34cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x333e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x334015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x31d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+	(No symbol) [(nil)]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 330px
+⬇️ Scroll 123px
+⬇️ Scroll 337px
+🕒 [llm_run04] Nueva acción (23:06:39)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "nuevas tecnologías",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'nuevas tecnologías', 'delay': 12}
+🔗 Clic aleatorio en: https://www.telefonica.com/es/sala-comunicacion/blog/nuevas-tecnologias/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 207px
+🕒 [llm_run04] Nueva acción (23:07:48)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x32b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x32b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x131ea0]
+	undetected_chromedriver!(No symbol) [0x17b28a]
+	undetected_chromedriver!(No symbol) [0x17b52b]
+	undetected_chromedriver!(No symbol) [0x1bd052]
+	undetected_chromedriver!(No symbol) [0x19d7c4]
+	undetected_chromedriver!(No symbol) [0x1ba936]
+	undetected_chromedriver!(No symbol) [0x19d516]
+	undetected_chromedriver!(No symbol) [0x1708e9]
+	undetected_chromedriver!(No symbol) [0x1716a4]
+	undetected_chromedriver!GetHandleVerifier [0x5b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x5ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x5cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x3454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x34cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x333e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x334015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x31d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+	(No symbol) [(nil)]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 225px
+✅ Sesión terminada: {'emitidas': 15, 'validas': 15, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 11, 'ejecutadas_fallo': 4} | errores=0

@@ -1,0 +1,301 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run05] Nueva acción (23:40:30)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x67b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x67b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x481ea0]
+	undetected_chromedriver!(No symbol) [0x4cb28a]
+	undetected_chromedriver!(No symbol) [0x4cb52b]
+	undetected_chromedriver!(No symbol) [0x50d052]
+	undetected_chromedriver!(No symbol) [0x4ed7c4]
+	undetected_chromedriver!(No symbol) [0x50a936]
+	undetected_chromedriver!(No symbol) [0x4ed516]
+	undetected_chromedriver!(No symbol) [0x4c08e9]
+	undetected_chromedriver!(No symbol) [0x4c16a4]
+	undetected_chromedriver!GetHandleVerifier [0x903014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x8fe603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x91ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x6954e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x69cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x683e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x684015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x66d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 245px
+⬇️ Scroll 327px
+⬇️ Scroll 196px
+🕒 [llm_run05] Nueva acción (23:41:42)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos educativos de programación",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos educativos de programación', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 188px
+🕒 [llm_run05] Nueva acción (23:43:11)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x67b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x67b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x481ea0]
+	undetected_chromedriver!(No symbol) [0x4cb28a]
+	undetected_chromedriver!(No symbol) [0x4cb52b]
+	undetected_chromedriver!(No symbol) [0x50d052]
+	undetected_chromedriver!(No symbol) [0x4ed7c4]
+	undetected_chromedriver!(No symbol) [0x50a936]
+	undetected_chromedriver!(No symbol) [0x4ed516]
+	undetected_chromedriver!(No symbol) [0x4c08e9]
+	undetected_chromedriver!(No symbol) [0x4c16a4]
+	undetected_chromedriver!GetHandleVerifier [0x903014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x8fe603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x91ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x6954e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x69cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x683e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x684015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x66d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 215px
+🕒 [llm_run05] Nueva acción (23:44:21)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 152px
+⬇️ Scroll 349px
+⬇️ Scroll 207px
+⬇️ Scroll 195px
+🕒 [llm_run05] Nueva acción (23:45:14)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://elpais.com/tecnologia/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 138px
+⬇️ Scroll 221px
+🕒 [llm_run05] Nueva acción (23:45:48)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 270px
+⬇️ Scroll 340px
+⬇️ Scroll 234px
+🕒 [llm_run05] Nueva acción (23:46:16)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x67b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x67b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x481ea0]
+	undetected_chromedriver!(No symbol) [0x4cb28a]
+	undetected_chromedriver!(No symbol) [0x4cb52b]
+	undetected_chromedriver!(No symbol) [0x50d052]
+	undetected_chromedriver!(No symbol) [0x4ed7c4]
+	undetected_chromedriver!(No symbol) [0x50a936]
+	undetected_chromedriver!(No symbol) [0x4ed516]
+	undetected_chromedriver!(No symbol) [0x4c08e9]
+	undetected_chromedriver!(No symbol) [0x4c16a4]
+	undetected_chromedriver!GetHandleVerifier [0x903014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x8fe603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x91ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x6954e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x69cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x683e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x684015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x66d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 139px
+🕒 [llm_run05] Nueva acción (23:47:29)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de última hora",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de última hora', 'delay': 12}
+🔗 Clic aleatorio en: https://www.euskadi.eus/gobierno-vasco/-/noticia/2026/maria-jesus-san-jose-reafirma-ermua-compromiso-del-gobierno-vasco-memoria-victimas-y-educacion-valores-democraticos-generaciones-mas-jovenes/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 130px
+🕒 [llm_run05] Nueva acción (23:47:54)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 221px
+⬇️ Scroll 217px
+⬇️ Scroll 219px
+🕒 [llm_run05] Nueva acción (23:48:47)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 142px
+🕒 [llm_run05] Nueva acción (23:49:18)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 220px
+🕒 [llm_run05] Nueva acción (23:50:08)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 301px
+⬇️ Scroll 225px
+⬇️ Scroll 168px
+⬇️ Scroll 293px
+🕒 [llm_run05] Nueva acción (23:51:08)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x67b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x67b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x481ea0]
+	undetected_chromedriver!(No symbol) [0x4cb28a]
+	undetected_chromedriver!(No symbol) [0x4cb52b]
+	undetected_chromedriver!(No symbol) [0x50d052]
+	undetected_chromedriver!(No symbol) [0x4ed7c4]
+	undetected_chromedriver!(No symbol) [0x50a936]
+	undetected_chromedriver!(No symbol) [0x4ed516]
+	undetected_chromedriver!(No symbol) [0x4c08e9]
+	undetected_chromedriver!(No symbol) [0x4c16a4]
+	undetected_chromedriver!GetHandleVerifier [0x903014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x8fe603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x91ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x6954e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x69cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x683e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x684015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x66d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 294px
+⬇️ Scroll 197px
+⬇️ Scroll 137px
+⬇️ Scroll 258px
+🕒 [llm_run05] Nueva acción (23:52:20)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 299px
+⬇️ Scroll 302px
+⬇️ Scroll 180px
+⬇️ Scroll 230px
+⬇️ Scroll 162px
+⬇️ Scroll 334px
+⬇️ Scroll 279px
+🕒 [llm_run05] Nueva acción (23:53:17)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "conciertos en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'conciertos en vivo', 'delay': 12}
+⚠️ No encontré resultados orgánicos en YouTube.
+⚠️ Sin resultados orgánicos en YouTube.
+⏳ Simulando actividad 12s…
+⬇️ Scroll 267px
+🕒 [llm_run05] Nueva acción (23:54:14)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "vídeos educativos de inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'vídeos educativos de inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 137px
+🕒 [llm_run05] Nueva acción (23:55:14)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+✅ Sesión terminada: {'emitidas': 17, 'validas': 17, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 4} | errores=0

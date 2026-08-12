@@ -1,0 +1,13 @@
+idx,ts_iso,run_id,planner,seed,tipo,params_json,source,validada,motivo_rechazo,ejecutada,error_ejecucion,delay_s,exec_s,llm_model,llm_temperature,llm_prompt,llm_respuesta
+1,2026-07-11T01:31:59.590671+02:00,random_run07,random,1007,abrir_url,"{""url"": ""https://www.elmundo.es""}",random,ok,,ok,,13,6.09,,,,
+2,2026-07-11T01:32:21.832536+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,13,56.88,,,,
+3,2026-07-11T01:33:32.568619+02:00,random_run07,random,1007,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,24,75.42,,,,
+4,2026-07-11T01:35:13.964354+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,14,57.45,,,,
+5,2026-07-11T01:36:27.465654+02:00,random_run07,random,1007,usar_twitter,{},random,ok,,ok,,9,15.15,,,,
+6,2026-07-11T01:36:53.342620+02:00,random_run07,random,1007,revisar_correo,{},random,ok,,fallo,ver session.log,17,51.91,,,,
+7,2026-07-11T01:38:05.050322+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,9,35.34,,,,
+8,2026-07-11T01:38:50.979534+02:00,random_run07,random,1007,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,21,103.76,,,,
+9,2026-07-11T01:40:58.153901+02:00,random_run07,random,1007,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,10,87.25,,,,
+10,2026-07-11T01:42:36.536504+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,9,60.36,,,,
+11,2026-07-11T01:43:47.399661+02:00,random_run07,random,1007,mirar_youtube,"{""busqueda"": ""tutorial python""}",random,ok,,ok,,21,71.21,,,,
+12,2026-07-11T01:45:20.665867+02:00,random_run07,random,1007,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,15,76.18,,,,

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "experimento": "exp1_planner_comparison",
+  "perfil": "regular_user",
+  "planner": "llm",
+  "run_id": "llm_run03",
+  "seed": 1003,
+  "duracion_solicitada_s": 900,
+  "inicio": "2026-07-10T22:04:44.324244+02:00",
+  "fin": "2026-07-10T22:19:48.575351+02:00",
+  "duracion_real_s": 900.5,
+  "entorno": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "hostname": "DESKTOP-0EML0CS",
+    "python": "3.11.2",
+    "maquina": "AMD64"
+  },
+  "git": {
+    "commit_hash": "8a1ef84052a277d43fdb9cece92fb61169a2b592",
+    "branch": "master",
+    "dirty": true,
+    "dirty_files": [
+      "M agenteadminavanzado.py",
+      " M agentev7.py",
+      " M estadisticas4.py",
+      "?? captura_combinada.py",
+      "?? exp1/",
+      "?? mergecapturas.py",
+      "?? test_vms.py"
+    ]
+  },
+  "red": {
+    "iface_captura": "5",
+    "ip_local": "192.168.18.134"
+  },
+  "llm": {
+    "modelo": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "temperaturas": [
+      0.2,
+      0.3
+    ],
+    "prompt_base": "Eres un agente autónomo que simula el comportamiento de un lector habitual de periódicos online que quiere ver un streaming en vivo.\nElige UNA acción para realizar en el navegador.\n\nOpciones válidas:\n- buscar_google: requiere campo 'termino'\n- abrir_url: requiere campo 'url'\n- mirar_youtube: opcionalmente campo 'busqueda'\n- revisar_correo: no requiere campos adicionales\n- ver_streaming: (solo en YouTube Live)\n- usar_twitter: no requiere campos adicionales\n\nIncluye un campo \"delay\" (entero 8–25).\nDevuelve EXCLUSIVAMENTE un JSON válido, sin texto adicional ni comillas triples.\nEjemplos:\n{ \"tipo\": \"buscar_google\", \"termino\": \"últimas noticias de IA\", \"delay\": 15 }\n{ \"tipo\": \"abrir_url\", \"url\": \"https://www.bbc.com/mundo\", \"delay\": 10 }\n{ \"tipo\": \"mirar_youtube\", \"busqueda\": \"videos de ciberseguridad\", \"delay\": 20 }\n{ \"tipo\": \"revisar_correo\", \"delay\": 20 }\n{ \"tipo\": \"ver_streaming\", \"delay\": 18 }\n{ \"tipo\": \"usar_twitter\", \"delay\": 16 }",
+    "api": "groq/chat.completions"
+  },
+  "rutas": {
+    "pcap": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\llm\\run_03\\capture.pcap",
+    "actions_csv": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\llm\\run_03\\actions.csv",
+    "llm_trace": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\llm\\run_03\\llm_trace.jsonl",
+    "session_log": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\llm\\run_03\\session.log",
+    "metrics_json": "C:\\Users\\juanc\\Desktop\\tfm\\exp1\\llm\\run_03\\metrics.json"
+  },
+  "acciones": {
+    "emitidas": 16,
+    "validas": 16,
+    "rechazadas_validacion": 0,
+    "llm_intentos_rechazados": 0,
+    "fallbacks": 0,
+    "ejecutadas_ok": 14,
+    "ejecutadas_fallo": 2
+  },
+  "errores": [],
+  "status": "completed",
+  "session_exit_code": 0
+}

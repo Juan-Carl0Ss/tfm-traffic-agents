@@ -1,0 +1,204 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run08] Nueva acción (02:04:27)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 12}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x111b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x111b6c4+10704]
+	undetected_chromedriver!(No symbol) [0xf21ea0]
+	undetected_chromedriver!(No symbol) [0xf6b28a]
+	undetected_chromedriver!(No symbol) [0xf6b52b]
+	undetected_chromedriver!(No symbol) [0xfad052]
+	undetected_chromedriver!(No symbol) [0xf8d7c4]
+	undetected_chromedriver!(No symbol) [0xfaa936]
+	undetected_chromedriver!(No symbol) [0xf8d516]
+	undetected_chromedriver!(No symbol) [0xf608e9]
+	undetected_chromedriver!(No symbol) [0xf616a4]
+	undetected_chromedriver!GetHandleVerifier [0x13a3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x139e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x13bea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x11354e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x113cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x1123e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x1124015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x110d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+⬇️ Scroll 301px
+⬇️ Scroll 132px
+⬇️ Scroll 343px
+🕒 [llm_run08] Nueva acción (02:05:32)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 257px
+⬇️ Scroll 308px
+⬇️ Scroll 216px
+⬇️ Scroll 157px
+🕒 [llm_run08] Nueva acción (02:06:23)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 258px
+⬇️ Scroll 176px
+🕒 [llm_run08] Nueva acción (02:07:54)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "educación en tecnología",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'educación en tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 146px
+⬇️ Scroll 156px
+⬇️ Scroll 246px
+🕒 [llm_run08] Nueva acción (02:09:27)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 208px
+⬇️ Scroll 123px
+⬇️ Scroll 156px
+🕒 [llm_run08] Nueva acción (02:11:12)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 246px
+⬇️ Scroll 249px
+🕒 [llm_run08] Nueva acción (02:11:42)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 174px
+⬇️ Scroll 253px
+⬇️ Scroll 323px
+🕒 [llm_run08] Nueva acción (02:12:58)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 360px
+🕒 [llm_run08] Nueva acción (02:13:24)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos educativos de programación",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos educativos de programación', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 131px
+⬇️ Scroll 277px
+⬇️ Scroll 196px
+🕒 [llm_run08] Nueva acción (02:14:53)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de última hora",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de última hora', 'delay': 12}
+🔗 Clic aleatorio en: https://www.tudn.com/mundial-2026/espana-vs-belgica-goles-resultado-y-resumen-del-partido-de-cuartos-de-final-del-mundial-2026-video
+⏳ Simulando actividad 12s…
+⬇️ Scroll 248px
+⬇️ Scroll 302px
+⬇️ Scroll 337px
+⬇️ Scroll 272px
+🕒 [llm_run08] Nueva acción (02:15:22)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 183px
+⬇️ Scroll 120px
+🕒 [llm_run08] Nueva acción (02:16:39)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 229px
+⬇️ Scroll 269px
+⬇️ Scroll 236px
+🕒 [llm_run08] Nueva acción (02:17:35)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 18}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 18s…
+⬇️ Scroll 284px
+⬇️ Scroll 124px
+⬇️ Scroll 133px
+🕒 [llm_run08] Nueva acción (02:18:08)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 251px
+⬇️ Scroll 139px
+⬇️ Scroll 161px
+✅ Sesión terminada: {'emitidas': 14, 'validas': 14, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 1} | errores=0

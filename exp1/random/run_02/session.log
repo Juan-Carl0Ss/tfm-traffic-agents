@@ -1,0 +1,133 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run02] Nueva acción (21:33:01)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 21}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 21s…
+⬇️ Scroll 153px
+⬇️ Scroll 280px
+⬇️ Scroll 301px
+⬇️ Scroll 181px
+⬇️ Scroll 227px
+⬇️ Scroll 313px
+🕒 [random_run02] Nueva acción (21:33:40)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 12, 'termino': 'python asyncio tutorial'}
+🔗 Clic aleatorio en: https://realpython.com/async-io-python/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 145px
+⬇️ Scroll 285px
+🕒 [random_run02] Nueva acción (21:34:57)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 23, 'busqueda': 'ciberseguridad'}
+⏳ Simulando actividad 23s…
+⬇️ Scroll 324px
+⬇️ Scroll 141px
+⬇️ Scroll 243px
+⬇️ Scroll 173px
+⬇️ Scroll 329px
+⬇️ Scroll 141px
+🕒 [random_run02] Nueva acción (21:36:32)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 10}
+⏳ Simulando actividad 10s…
+⬇️ Scroll 192px
+🕒 [random_run02] Nueva acción (21:37:55)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 21}
+⏳ Simulando actividad 21s…
+⬇️ Scroll 149px
+⬇️ Scroll 272px
+⬇️ Scroll 267px
+🕒 [random_run02] Nueva acción (21:39:30)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 9}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 9s…
+⬇️ Scroll 325px
+🕒 [random_run02] Nueva acción (21:39:56)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 15, 'termino': 'últimas noticias de IA'}
+🔗 Clic aleatorio en: https://www.xataka.com/tag/inteligencia-artificial
+⏳ Simulando actividad 15s…
+🕒 [random_run02] Nueva acción (21:41:14)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 8}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0xeab593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0xeab6c4+10704]
+	undetected_chromedriver!(No symbol) [0xcb1ea0]
+	undetected_chromedriver!(No symbol) [0xcfb28a]
+	undetected_chromedriver!(No symbol) [0xcfb52b]
+	undetected_chromedriver!(No symbol) [0xd3d052]
+	undetected_chromedriver!(No symbol) [0xd1d7c4]
+	undetected_chromedriver!(No symbol) [0xd3a936]
+	undetected_chromedriver!(No symbol) [0xd1d516]
+	undetected_chromedriver!(No symbol) [0xcf08e9]
+	undetected_chromedriver!(No symbol) [0xcf16a4]
+	undetected_chromedriver!GetHandleVerifier [0x1133014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x112e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x114ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0xec54e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0xeccd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0xeb3e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0xeb4015+19055]
+	undetected_chromedriver!GetHandleVerifier [0xe9d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 8s…
+⬇️ Scroll 179px
+⬇️ Scroll 165px
+🕒 [random_run02] Nueva acción (21:42:13)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 25}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 25s…
+⬇️ Scroll 126px
+⬇️ Scroll 254px
+⬇️ Scroll 308px
+🕒 [random_run02] Nueva acción (21:42:56)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 359px
+⬇️ Scroll 229px
+🕒 [random_run02] Nueva acción (21:44:17)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 13}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 13s…
+⬇️ Scroll 263px
+⬇️ Scroll 336px
+🕒 [random_run02] Nueva acción (21:44:47)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 22, 'busqueda': 'música en vivo'}
+⏳ Simulando actividad 22s…
+⬇️ Scroll 312px
+⬇️ Scroll 250px
+⬇️ Scroll 190px
+⬇️ Scroll 218px
+⬇️ Scroll 179px
+🕒 [random_run02] Nueva acción (21:46:13)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 16}
+⏳ Simulando actividad 16s…
+⬇️ Scroll 189px
+⬇️ Scroll 356px
+⬇️ Scroll 140px
+🕒 [random_run02] Nueva acción (21:47:41)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 24, 'url': 'https://www.genbeta.com'}
+⏳ Simulando actividad 24s…
+⬇️ Scroll 161px
+⬇️ Scroll 276px
+✅ Sesión terminada: {'emitidas': 14, 'validas': 14, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 1} | errores=0

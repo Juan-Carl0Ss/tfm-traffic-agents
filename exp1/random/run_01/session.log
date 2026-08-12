@@ -1,0 +1,196 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run01] Nueva acción (20:45:14)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 14, 'url': 'https://www.bbc.com/mundo'}
+⏳ Simulando actividad 14s…
+⬇️ Scroll 340px
+🕒 [random_run01] Nueva acción (20:45:38)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 20}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 20s…
+⬇️ Scroll 127px
+⬇️ Scroll 352px
+⬇️ Scroll 124px
+⬇️ Scroll 282px
+🕒 [random_run01] Nueva acción (20:46:12)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 21, 'termino': 'mejores frameworks python 2025'}
+🔗 Clic aleatorio en: https://www.youtube.com/watch?v=o4MvIKFV8dI
+⏳ Simulando actividad 21s…
+⬇️ Scroll 259px
+⬇️ Scroll 158px
+⬇️ Scroll 121px
+⬇️ Scroll 257px
+🕒 [random_run01] Nueva acción (20:48:09)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 20}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 20s…
+⬇️ Scroll 135px
+⬇️ Scroll 333px
+⬇️ Scroll 296px
+⬇️ Scroll 130px
+⬇️ Scroll 252px
+🕒 [random_run01] Nueva acción (20:48:45)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 14}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 14s…
+⬇️ Scroll 157px
+⬇️ Scroll 339px
+🕒 [random_run01] Nueva acción (20:49:13)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 9}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 9s…
+🕒 [random_run01] Nueva acción (20:49:37)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 23, 'url': 'https://www.genbeta.com'}
+⏳ Simulando actividad 23s…
+⬇️ Scroll 352px
+⬇️ Scroll 138px
+🕒 [random_run01] Nueva acción (20:50:10)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 14}
+⏳ Simulando actividad 14s…
+⬇️ Scroll 290px
+⬇️ Scroll 251px
+⬇️ Scroll 237px
+🕒 [random_run01] Nueva acción (20:51:29)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 136px
+⬇️ Scroll 303px
+⬇️ Scroll 205px
+🕒 [random_run01] Nueva acción (20:51:55)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 11, 'url': 'https://www.xataka.com'}
+⏳ Simulando actividad 11s…
+⬇️ Scroll 357px
+⬇️ Scroll 185px
+🕒 [random_run01] Nueva acción (20:52:15)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 347px
+🕒 [random_run01] Nueva acción (20:53:37)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 16, 'url': 'https://www.xataka.com'}
+⏳ Simulando actividad 16s…
+⬇️ Scroll 169px
+⬇️ Scroll 346px
+🕒 [random_run01] Nueva acción (20:53:58)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 10}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 10s…
+⬇️ Scroll 124px
+🕒 [random_run01] Nueva acción (20:54:24)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 25}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 25s…
+⬇️ Scroll 278px
+⬇️ Scroll 332px
+⬇️ Scroll 211px
+⬇️ Scroll 279px
+⬇️ Scroll 234px
+🕒 [random_run01] Nueva acción (20:55:03)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 10}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0xf4b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0xf4b6c4+10704]
+	undetected_chromedriver!(No symbol) [0xd51ea0]
+	undetected_chromedriver!(No symbol) [0xd9b28a]
+	undetected_chromedriver!(No symbol) [0xd9b52b]
+	undetected_chromedriver!(No symbol) [0xddd052]
+	undetected_chromedriver!(No symbol) [0xdbd7c4]
+	undetected_chromedriver!(No symbol) [0xdda936]
+	undetected_chromedriver!(No symbol) [0xdbd516]
+	undetected_chromedriver!(No symbol) [0xd908e9]
+	undetected_chromedriver!(No symbol) [0xd916a4]
+	undetected_chromedriver!GetHandleVerifier [0x11d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x11ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x11eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0xf654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0xf6cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0xf53e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0xf54015+19055]
+	undetected_chromedriver!GetHandleVerifier [0xf3d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 10s…
+⬇️ Scroll 131px
+⬇️ Scroll 208px
+🕒 [random_run01] Nueva acción (20:56:09)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 19, 'busqueda': 'ciberseguridad'}
+⏳ Simulando actividad 19s…
+⬇️ Scroll 128px
+⬇️ Scroll 330px
+⬇️ Scroll 307px
+⬇️ Scroll 349px
+🕒 [random_run01] Nueva acción (20:57:40)
+🔎 [random] Acción decidida: {'tipo': 'revisar_correo', 'delay': 9}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0xf4b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0xf4b6c4+10704]
+	undetected_chromedriver!(No symbol) [0xd51ea0]
+	undetected_chromedriver!(No symbol) [0xd9b28a]
+	undetected_chromedriver!(No symbol) [0xd9b52b]
+	undetected_chromedriver!(No symbol) [0xddd052]
+	undetected_chromedriver!(No symbol) [0xdbd7c4]
+	undetected_chromedriver!(No symbol) [0xdda936]
+	undetected_chromedriver!(No symbol) [0xdbd516]
+	undetected_chromedriver!(No symbol) [0xd908e9]
+	undetected_chromedriver!(No symbol) [0xd916a4]
+	undetected_chromedriver!GetHandleVerifier [0x11d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x11ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x11eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0xf654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0xf6cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0xf53e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0xf54015+19055]
+	undetected_chromedriver!GetHandleVerifier [0xf3d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 9s…
+⬇️ Scroll 280px
+⬇️ Scroll 335px
+🕒 [random_run01] Nueva acción (20:58:44)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 11, 'termino': 'últimas noticias tecnología'}
+🔗 Clic aleatorio en: https://es.wired.com/
+⏳ Simulando actividad 11s…
+⬇️ Scroll 182px
+⬇️ Scroll 206px
+⬇️ Scroll 172px
+🕒 [random_run01] Nueva acción (20:59:13)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 21, 'url': 'https://www.genbeta.com'}
+⏳ Simulando actividad 21s…
+⬇️ Scroll 245px
+⬇️ Scroll 260px
+⬇️ Scroll 360px
+🕒 [random_run01] Nueva acción (20:59:41)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 14, 'busqueda': 'ciberseguridad'}
+✅ Sesión terminada: {'emitidas': 20, 'validas': 20, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 18, 'ejecutadas_fallo': 2} | errores=0

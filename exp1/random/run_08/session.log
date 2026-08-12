@@ -1,0 +1,102 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [random_run08] Nueva acción (02:19:59)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 22}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 22s…
+⬇️ Scroll 301px
+⬇️ Scroll 132px
+⬇️ Scroll 343px
+⬇️ Scroll 271px
+⬇️ Scroll 258px
+🕒 [random_run08] Nueva acción (02:20:38)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 10, 'busqueda': 'música en vivo'}
+⏳ Simulando actividad 10s…
+⬇️ Scroll 157px
+🕒 [random_run08] Nueva acción (02:21:56)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 9, 'url': 'https://elpais.com'}
+⏳ Simulando actividad 9s…
+⬇️ Scroll 232px
+⬇️ Scroll 232px
+🕒 [random_run08] Nueva acción (02:23:54)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 11}
+⏳ Simulando actividad 11s…
+⬇️ Scroll 247px
+⬇️ Scroll 176px
+🕒 [random_run08] Nueva acción (02:25:16)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 19}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 19s…
+⬇️ Scroll 347px
+⬇️ Scroll 146px
+⬇️ Scroll 156px
+⬇️ Scroll 246px
+🕒 [random_run08] Nueva acción (02:25:53)
+🔎 [random] Acción decidida: {'tipo': 'ver_streaming', 'delay': 8}
+⏳ Simulando actividad 8s…
+⬇️ Scroll 208px
+⬇️ Scroll 123px
+⬇️ Scroll 156px
+🕒 [random_run08] Nueva acción (02:27:05)
+🔎 [random] Acción decidida: {'tipo': 'usar_twitter', 'delay': 18}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 18s…
+⬇️ Scroll 246px
+⬇️ Scroll 249px
+🕒 [random_run08] Nueva acción (02:27:42)
+🔎 [random] Acción decidida: {'tipo': 'mirar_youtube', 'delay': 15, 'busqueda': 'programación en vivo'}
+⏳ Simulando actividad 15s…
+⬇️ Scroll 174px
+⬇️ Scroll 253px
+⬇️ Scroll 323px
+⬇️ Scroll 305px
+⬇️ Scroll 360px
+🕒 [random_run08] Nueva acción (02:28:58)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 25, 'termino': 'últimas noticias de IA'}
+🔗 Clic aleatorio en: https://www.youtube.com/watch?v=f5jT3YXD4JQ
+⏳ Simulando actividad 25s…
+⬇️ Scroll 309px
+⬇️ Scroll 164px
+⬇️ Scroll 131px
+⬇️ Scroll 277px
+⬇️ Scroll 196px
+🕒 [random_run08] Nueva acción (02:29:44)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 12, 'termino': 'tendencias ciberseguridad 2025'}
+🔗 Clic aleatorio en: https://www.gartner.es/es/ciberseguridad/temas/tendencias-ciberseguridad
+⏳ Simulando actividad 12s…
+⬇️ Scroll 248px
+⬇️ Scroll 302px
+⬇️ Scroll 337px
+⬇️ Scroll 272px
+🕒 [random_run08] Nueva acción (02:30:59)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 20, 'termino': 'mejores frameworks python 2025'}
+🔗 Clic aleatorio en: https://www.youtube.com/watch?v=o4MvIKFV8dI
+⏳ Simulando actividad 20s…
+⬇️ Scroll 183px
+⬇️ Scroll 120px
+⬇️ Scroll 135px
+🕒 [random_run08] Nueva acción (02:32:53)
+🔎 [random] Acción decidida: {'tipo': 'abrir_url', 'delay': 11, 'url': 'https://elpais.com'}
+⏳ Simulando actividad 11s…
+⬇️ Scroll 229px
+⬇️ Scroll 269px
+🕒 [random_run08] Nueva acción (02:34:51)
+🔎 [random] Acción decidida: {'tipo': 'buscar_google', 'delay': 19, 'termino': 'últimas noticias tecnología'}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+✅ Sesión terminada: {'emitidas': 13, 'validas': 13, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 0} | errores=0

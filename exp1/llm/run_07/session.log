@@ -1,0 +1,254 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run07] Nueva acción (01:15:51)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 262px
+⬇️ Scroll 128px
+⬇️ Scroll 181px
+🕒 [llm_run07] Nueva acción (01:16:42)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 205px
+⬇️ Scroll 182px
+⬇️ Scroll 271px
+⬇️ Scroll 236px
+🕒 [llm_run07] Nueva acción (01:17:40)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 12}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x74b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x74b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x551ea0]
+	undetected_chromedriver!(No symbol) [0x59b28a]
+	undetected_chromedriver!(No symbol) [0x59b52b]
+	undetected_chromedriver!(No symbol) [0x5dd052]
+	undetected_chromedriver!(No symbol) [0x5bd7c4]
+	undetected_chromedriver!(No symbol) [0x5da936]
+	undetected_chromedriver!(No symbol) [0x5bd516]
+	undetected_chromedriver!(No symbol) [0x5908e9]
+	undetected_chromedriver!(No symbol) [0x5916a4]
+	undetected_chromedriver!GetHandleVerifier [0x9d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x9ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x9eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x7654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x76cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x753e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x754015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x73d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+⬇️ Scroll 124px
+⬇️ Scroll 320px
+🕒 [llm_run07] Nueva acción (01:18:46)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 280px
+⬇️ Scroll 201px
+🕒 [llm_run07] Nueva acción (01:19:43)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://mexico.unir.net/noticias/ingenieria/avances-inteligencia-artificial/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 269px
+🕒 [llm_run07] Nueva acción (01:21:13)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de última hora",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de última hora', 'delay': 12}
+🔗 Clic aleatorio en: https://www.dazn.com/es-ES/news/f%C3%BAtbol/por-que-no-juega-pedri-espana-vs-belgica-cuartos-final-mundial-2026-motivos-decision-luis-de-la-fuente/1iwa1owemsssd1ezyzxedseqcv
+⏳ Simulando actividad 12s…
+🕒 [llm_run07] Nueva acción (01:21:41)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://www.crescendo.ai/news/latest-ai-news-and-updates#:~:text=(AI%20Breakthrough)%20Anthropic%20Launches%20Claude,for%20Drug%20Discovery%2C%20Enters%20Biotech&text=Summary%3A%20Anthropic%20unveiled%20Claude%20Science,genomics%20resources%20for%20drug%20research.
+⏳ Simulando actividad 12s…
+🕒 [llm_run07] Nueva acción (01:23:01)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 339px
+⬇️ Scroll 261px
+⬇️ Scroll 268px
+🕒 [llm_run07] Nueva acción (01:23:29)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 185px
+⬇️ Scroll 360px
+⬇️ Scroll 265px
+🕒 [llm_run07] Nueva acción (01:23:59)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://www.aecoc.es/innovation-hub-noticias/5-avances-de-la-inteligencia-artificial-que-probablemente-veremos-en-los-proximos-5-anos/
+⏳ Simulando actividad 12s…
+⬇️ Scroll 301px
+🕒 [llm_run07] Nueva acción (01:25:25)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "vídeos educativos de inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'vídeos educativos de inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 187px
+⬇️ Scroll 145px
+🕒 [llm_run07] Nueva acción (01:26:21)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 243px
+⬇️ Scroll 205px
+⬇️ Scroll 276px
+🕒 [llm_run07] Nueva acción (01:26:48)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "vídeos educativos de inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'vídeos educativos de inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 276px
+⬇️ Scroll 332px
+⬇️ Scroll 342px
+⬇️ Scroll 235px
+🕒 [llm_run07] Nueva acción (01:27:44)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+🕒 [llm_run07] Nueva acción (01:28:10)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://www.crescendo.ai/news/latest-ai-news-and-updates#:~:text=(AI%20Breakthrough)%20Anthropic%20Launches%20Claude,for%20Drug%20Discovery%2C%20Enters%20Biotech&text=Summary%3A%20Anthropic%20unveiled%20Claude%20Science,genomics%20resources%20for%20drug%20research.
+⏳ Simulando actividad 12s…
+⬇️ Scroll 329px
+🕒 [llm_run07] Nueva acción (01:29:27)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "tutoriales de programación en Python",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'tutoriales de programación en Python', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 244px
+⬇️ Scroll 208px
+🕒 [llm_run07] Nueva acción (01:30:26)
+📦 LLM:
+ {
+"tipo": "revisar_correo",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x74b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x74b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x551ea0]
+	undetected_chromedriver!(No symbol) [0x59b28a]
+	undetected_chromedriver!(No symbol) [0x59b52b]
+	undetected_chromedriver!(No symbol) [0x5dd052]
+	undetected_chromedriver!(No symbol) [0x5bd7c4]
+	undetected_chromedriver!(No symbol) [0x5da936]
+	undetected_chromedriver!(No symbol) [0x5bd516]
+	undetected_chromedriver!(No symbol) [0x5908e9]
+	undetected_chromedriver!(No symbol) [0x5916a4]
+	undetected_chromedriver!GetHandleVerifier [0x9d3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x9ce603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x9eea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x7654e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x76cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x753e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x754015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x73d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+✅ Sesión terminada: {'emitidas': 17, 'validas': 17, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 15, 'ejecutadas_fallo': 2} | errores=0

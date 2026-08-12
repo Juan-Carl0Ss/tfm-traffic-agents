@@ -1,0 +1,13 @@
+idx,ts_iso,run_id,planner,seed,tipo,params_json,source,validada,motivo_rechazo,ejecutada,error_ejecucion,delay_s,exec_s,llm_model,llm_temperature,llm_prompt,llm_respuesta
+1,2026-07-10T23:09:24.784624+02:00,random_run04,random,1004,revisar_correo,{},random,ok,,fallo,ver session.log,11,51.29,,,,
+2,2026-07-10T23:10:28.369584+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,25,69.03,,,,
+3,2026-07-10T23:12:04.965001+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,24,72.52,,,,
+4,2026-07-10T23:13:41.622045+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,14,68.24,,,,
+5,2026-07-10T23:15:05.882421+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,18,58.82,,,,
+6,2026-07-10T23:16:23.487994+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,12,66.64,,,,
+7,2026-07-10T23:17:42.333608+02:00,random_run04,random,1004,usar_twitter,{},random,ok,,ok,,19,12.73,,,,
+8,2026-07-10T23:18:15.543640+02:00,random_run04,random,1004,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,24,6.77,,,,
+9,2026-07-10T23:18:47.834224+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,8,67.16,,,,
+10,2026-07-10T23:20:03.167344+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""python asyncio tutorial""}",random,ok,,ok,,8,74.26,,,,
+11,2026-07-10T23:21:28.920595+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""mejores frameworks python 2025""}",random,ok,,ok,,10,103.58,,,,
+12,2026-07-10T23:23:24.388306+02:00,random_run04,random,1004,revisar_correo,{},random,ok,,fallo,ver session.log,17,51.57,,,,

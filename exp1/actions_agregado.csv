@@ -1,0 +1,454 @@
+idx,ts_iso,run_id,planner,seed,tipo,params_json,source,validada,motivo_rechazo,ejecutada,error_ejecucion,delay_s,exec_s
+1,2026-07-10T20:28:49.754548+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,10.86
+2,2026-07-10T20:29:13.959300+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,fallo,ver session.log,12,36.23
+3,2026-07-10T20:30:07.404702+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,143.29
+4,2026-07-10T20:32:50.777478+02:00,llm_run01,llm,1001,usar_twitter,{},llm,ok,,fallo,ver session.log,12,34.59
+5,2026-07-10T20:33:39.819803+02:00,llm_run01,llm,1001,usar_twitter,{},llm,ok,,fallo,ver session.log,12,32.94
+6,2026-07-10T20:34:26.225285+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,fallo,ver session.log,12,54.83
+7,2026-07-10T20:35:35.333261+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,65.23
+8,2026-07-10T20:36:54.719748+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,9.5
+9,2026-07-10T20:37:19.266854+02:00,llm_run01,llm,1001,usar_twitter,{},llm,ok,,ok,,12,14.67
+10,2026-07-10T20:37:48.564495+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,72.56
+11,2026-07-10T20:39:16.468796+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""streaming en vivo conciertos""}",llm,ok,,ok,,12,34.89
+12,2026-07-10T20:40:05.772492+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""noticias de tecnologia""}",llm,ok,,ok,,12,16.4
+13,2026-07-10T20:40:35.422093+02:00,llm_run01,llm,1001,buscar_google,"{""termino"": ""noticias de tecnologia""}",llm,ok,,ok,,12,23.11
+14,2026-07-10T20:41:13.151391+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,68.98
+15,2026-07-10T20:42:41.032647+02:00,llm_run01,llm,1001,mirar_youtube,"{""busqueda"": ""videos de ciencia ficción""}",llm,ok,,ok,,18,73.32
+1,2026-07-10T21:17:13.324540+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,54.3
+2,2026-07-10T21:18:21.649562+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,37.2
+3,2026-07-10T21:19:18.805789+02:00,llm_run02,llm,1002,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,11.72
+4,2026-07-10T21:19:43.729149+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,35.12
+5,2026-07-10T21:20:40.150207+02:00,llm_run02,llm,1002,revisar_correo,{},llm,ok,,fallo,ver session.log,12,52.5
+6,2026-07-10T21:21:47.555694+02:00,llm_run02,llm,1002,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,22.89
+7,2026-07-10T21:22:26.470771+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,38.01
+8,2026-07-10T21:23:24.007016+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""videos de tecnología""}",llm,ok,,ok,,18,73.73
+9,2026-07-10T21:24:58.871665+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,36.8
+10,2026-07-10T21:25:56.669607+02:00,llm_run02,llm,1002,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,104.06
+11,2026-07-10T21:27:54.444347+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""streaming en vivo de programación""}",llm,ok,,ok,,12,75.44
+12,2026-07-10T21:29:24.617840+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,62.24
+13,2026-07-10T21:30:48.344922+02:00,llm_run02,llm,1002,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,16.03
+14,2026-07-10T21:31:18.063085+02:00,llm_run02,llm,1002,mirar_youtube,"{""busqueda"": ""videos de ciencia ficción""}",llm,ok,,ok,,18,67.47
+1,2026-07-10T22:04:58.835878+02:00,llm_run03,llm,1003,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,72.15
+2,2026-07-10T22:06:24.941621+02:00,llm_run03,llm,1003,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,66.39
+3,2026-07-10T22:07:44.591777+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,13.8
+4,2026-07-10T22:08:12.066925+02:00,llm_run03,llm,1003,revisar_correo,{},llm,ok,,fallo,ver session.log,12,53.85
+5,2026-07-10T22:09:22.284584+02:00,llm_run03,llm,1003,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,69.1
+6,2026-07-10T22:10:47.665489+02:00,llm_run03,llm,1003,usar_twitter,{},llm,ok,,ok,,12,14.95
+7,2026-07-10T22:11:18.041244+02:00,llm_run03,llm,1003,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,77.69
+8,2026-07-10T22:12:55.585916+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""noticias de tecnologia""}",llm,ok,,ok,,12,16.08
+9,2026-07-10T22:13:25.488276+02:00,llm_run03,llm,1003,usar_twitter,{},llm,ok,,ok,,12,13.78
+10,2026-07-10T22:13:54.971928+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,15.37
+11,2026-07-10T22:14:24.411725+02:00,llm_run03,llm,1003,usar_twitter,{},llm,ok,,ok,,12,12.19
+12,2026-07-10T22:14:53.196368+02:00,llm_run03,llm,1003,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,73.5
+13,2026-07-10T22:16:27.463125+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,22.74
+14,2026-07-10T22:17:02.694622+02:00,llm_run03,llm,1003,revisar_correo,{},llm,ok,,fallo,ver session.log,18,49.38
+15,2026-07-10T22:18:11.158928+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,16.44
+16,2026-07-10T22:18:40.831300+02:00,llm_run03,llm,1003,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,67.74
+1,2026-07-10T22:53:51.396379+02:00,llm_run04,llm,1004,mirar_youtube,"{""busqueda"": ""videos de tecnología""}",llm,ok,,ok,,18,72.97
+2,2026-07-10T22:55:24.879546+02:00,llm_run04,llm,1004,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,68.28
+3,2026-07-10T22:56:53.381629+02:00,llm_run04,llm,1004,revisar_correo,{},llm,ok,,fallo,ver session.log,18,52.46
+4,2026-07-10T22:58:05.315036+02:00,llm_run04,llm,1004,usar_twitter,{},llm,ok,,ok,,12,15.74
+5,2026-07-10T22:58:36.527305+02:00,llm_run04,llm,1004,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,12.55
+6,2026-07-10T22:59:04.935472+02:00,llm_run04,llm,1004,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,28.98
+7,2026-07-10T22:59:48.130669+02:00,llm_run04,llm,1004,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,67.84
+8,2026-07-10T23:01:16.541661+02:00,llm_run04,llm,1004,usar_twitter,{},llm,ok,,ok,,18,12.62
+9,2026-07-10T23:01:50.406771+02:00,llm_run04,llm,1004,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,69.9
+10,2026-07-10T23:03:16.778307+02:00,llm_run04,llm,1004,revisar_correo,{},llm,ok,,fallo,ver session.log,18,49.39
+11,2026-07-10T23:04:27.704550+02:00,llm_run04,llm,1004,usar_twitter,{},llm,ok,,ok,,12,14.27
+12,2026-07-10T23:04:56.780910+02:00,llm_run04,llm,1004,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,17.5
+13,2026-07-10T23:05:29.056218+02:00,llm_run04,llm,1004,revisar_correo,{},llm,ok,,fallo,ver session.log,18,50.73
+14,2026-07-10T23:06:39.299820+02:00,llm_run04,llm,1004,buscar_google,"{""termino"": ""nuevas tecnologías""}",llm,ok,,ok,,12,56.44
+15,2026-07-10T23:07:48.983786+02:00,llm_run04,llm,1004,revisar_correo,{},llm,ok,,fallo,ver session.log,18,52.42
+1,2026-07-10T23:40:30.895818+02:00,llm_run05,llm,1005,revisar_correo,{},llm,ok,,fallo,ver session.log,18,51.91
+2,2026-07-10T23:41:42.696341+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,69.0
+3,2026-07-10T23:43:11.657575+02:00,llm_run05,llm,1005,revisar_correo,{},llm,ok,,fallo,ver session.log,18,50.38
+4,2026-07-10T23:44:21.698619+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,37.36
+5,2026-07-10T23:45:14.495372+02:00,llm_run05,llm,1005,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,19.88
+6,2026-07-10T23:45:49.145715+02:00,llm_run05,llm,1005,usar_twitter,{},llm,ok,,ok,,12,12.76
+7,2026-07-10T23:46:16.576451+02:00,llm_run05,llm,1005,revisar_correo,{},llm,ok,,fallo,ver session.log,18,52.66
+8,2026-07-10T23:47:30.114862+02:00,llm_run05,llm,1005,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,11.31
+9,2026-07-10T23:47:54.294872+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,35.33
+10,2026-07-10T23:48:47.893090+02:00,llm_run05,llm,1005,usar_twitter,{},llm,ok,,ok,,12,15.49
+11,2026-07-10T23:49:18.811322+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,36.07
+12,2026-07-10T23:50:08.617157+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,37.76
+13,2026-07-10T23:51:09.128684+02:00,llm_run05,llm,1005,revisar_correo,{},llm,ok,,fallo,ver session.log,18,51.34
+14,2026-07-10T23:52:21.042897+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,34.97
+15,2026-07-10T23:53:18.253875+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,42.93
+16,2026-07-10T23:54:14.473591+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,37.5
+17,2026-07-10T23:55:14.658435+02:00,llm_run05,llm,1005,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,69.54
+1,2026-07-11T00:28:36.926723+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,35.86
+2,2026-07-11T00:29:33.167564+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,69.41
+3,2026-07-11T00:31:05.543476+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,36.91
+4,2026-07-11T00:31:55.972770+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,12,35.57
+5,2026-07-11T00:32:45.888432+02:00,llm_run06,llm,1006,revisar_correo,{},llm,ok,,fallo,ver session.log,12,52.16
+6,2026-07-11T00:33:53.725931+02:00,llm_run06,llm,1006,usar_twitter,{},llm,ok,,ok,,12,15.7
+7,2026-07-11T00:34:26.416948+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,69.3
+8,2026-07-11T00:35:54.679502+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,68.5
+9,2026-07-11T00:37:25.098106+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,66.11
+10,2026-07-11T00:38:52.104390+02:00,llm_run06,llm,1006,revisar_correo,{},llm,ok,,fallo,ver session.log,18,52.18
+11,2026-07-11T00:40:02.556037+02:00,llm_run06,llm,1006,revisar_correo,{},llm,ok,,fallo,ver session.log,18,51.59
+12,2026-07-11T00:41:16.021370+02:00,llm_run06,llm,1006,mirar_youtube,"{""busqueda"": ""videos de comedia""}",llm,ok,,ok,,12,35.36
+13,2026-07-11T00:42:05.947519+02:00,llm_run06,llm,1006,revisar_correo,{},llm,ok,,fallo,ver session.log,18,51.57
+14,2026-07-11T00:43:16.024885+02:00,llm_run06,llm,1006,usar_twitter,{},llm,ok,,ok,,12,12.53
+1,2026-07-11T01:15:51.376216+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,36.44
+2,2026-07-11T01:16:42.518207+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,38.9
+3,2026-07-11T01:17:40.712862+02:00,llm_run07,llm,1007,revisar_correo,{},llm,ok,,fallo,ver session.log,12,51.27
+4,2026-07-11T01:18:46.536455+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,36.97
+5,2026-07-11T01:19:44.159634+02:00,llm_run07,llm,1007,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,72.52
+6,2026-07-11T01:21:13.504507+02:00,llm_run07,llm,1007,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,14.86
+7,2026-07-11T01:21:41.435886+02:00,llm_run07,llm,1007,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,67.59
+8,2026-07-11T01:23:01.880292+02:00,llm_run07,llm,1007,usar_twitter,{},llm,ok,,ok,,12,13.27
+9,2026-07-11T01:23:29.248737+02:00,llm_run07,llm,1007,usar_twitter,{},llm,ok,,ok,,12,16.21
+10,2026-07-11T01:23:59.568485+02:00,llm_run07,llm,1007,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,70.6
+11,2026-07-11T01:25:25.721533+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,35.73
+12,2026-07-11T01:26:21.941890+02:00,llm_run07,llm,1007,usar_twitter,{},llm,ok,,ok,,12,12.99
+13,2026-07-11T01:26:48.975423+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""vídeos educativos de inteligencia artificial""}",llm,ok,,ok,,18,37.64
+14,2026-07-11T01:27:44.855826+02:00,llm_run07,llm,1007,usar_twitter,{},llm,ok,,ok,,12,12.57
+15,2026-07-11T01:28:10.653826+02:00,llm_run07,llm,1007,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,63.05
+16,2026-07-11T01:29:28.224188+02:00,llm_run07,llm,1007,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,37.86
+17,2026-07-11T01:30:26.445446+02:00,llm_run07,llm,1007,revisar_correo,{},llm,ok,,fallo,ver session.log,18,50.99
+1,2026-07-11T02:04:27.757689+02:00,llm_run08,llm,1008,revisar_correo,{},llm,ok,,fallo,ver session.log,12,51.24
+2,2026-07-11T02:05:32.415020+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,36.51
+3,2026-07-11T02:06:23.741132+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,69.43
+4,2026-07-11T02:07:54.882052+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,73.81
+5,2026-07-11T02:09:27.666506+02:00,llm_run08,llm,1008,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,88.05
+6,2026-07-11T02:11:12.396551+02:00,llm_run08,llm,1008,usar_twitter,{},llm,ok,,ok,,12,15.24
+7,2026-07-11T02:11:42.490843+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,63.73
+8,2026-07-11T02:12:58.648057+02:00,llm_run08,llm,1008,usar_twitter,{},llm,ok,,ok,,12,13.15
+9,2026-07-11T02:13:24.898262+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,68.14
+10,2026-07-11T02:14:53.373456+02:00,llm_run08,llm,1008,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,15.75
+11,2026-07-11T02:15:23.125684+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,63.91
+12,2026-07-11T02:16:39.453867+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""tutoriales de programación en Python""}",llm,ok,,ok,,18,35.8
+13,2026-07-11T02:17:35.765558+02:00,llm_run08,llm,1008,usar_twitter,{},llm,ok,,ok,,18,12.86
+14,2026-07-11T02:18:08.750431+02:00,llm_run08,llm,1008,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,59.5
+1,2026-07-11T02:54:35.037377+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,72.15
+2,2026-07-11T02:56:09.201366+02:00,llm_run09,llm,1009,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,80.27
+3,2026-07-11T02:57:42.045412+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,63.28
+4,2026-07-11T02:58:59.070527+02:00,llm_run09,llm,1009,revisar_correo,{},llm,ok,,fallo,ver session.log,18,53.48
+5,2026-07-11T03:00:12.394669+02:00,llm_run09,llm,1009,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,86.15
+6,2026-07-11T03:01:51.173964+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,64.86
+7,2026-07-11T03:03:11.485627+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,37.8
+8,2026-07-11T03:04:11.587159+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,67.41
+9,2026-07-11T03:05:39.127469+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""educación en tecnología""}",llm,ok,,ok,,18,71.68
+10,2026-07-11T03:07:12.055166+02:00,llm_run09,llm,1009,usar_twitter,{},llm,ok,,ok,,12,12.48
+11,2026-07-11T03:07:37.647455+02:00,llm_run09,llm,1009,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,23.89
+12,2026-07-11T03:08:16.400543+02:00,llm_run09,llm,1009,mirar_youtube,"{""busqueda"": ""videos de tecnología""}",llm,ok,,ok,,18,73.75
+1,2026-07-11T03:41:39.671788+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""noticias de última hora""}",llm,ok,,ok,,12,37.47
+2,2026-07-11T03:42:30.176731+02:00,llm_run10,llm,1010,usar_twitter,{},llm,ok,,ok,,12,14.22
+3,2026-07-11T03:42:59.747757+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,18.98
+4,2026-07-11T03:43:33.415249+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,68.41
+5,2026-07-11T03:45:00.713504+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,69.59
+6,2026-07-11T03:46:26.490142+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""conciertos en vivo""}",llm,ok,,ok,,12,68.02
+7,2026-07-11T03:47:47.989695+02:00,llm_run10,llm,1010,usar_twitter,{},llm,ok,,ok,,12,15.54
+8,2026-07-11T03:48:20.153139+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,18,68.95
+9,2026-07-11T03:49:48.799866+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""streaming en vivo""}",llm,ok,,ok,,12,64.64
+10,2026-07-11T03:51:06.809206+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""videos educativos de programación""}",llm,ok,,ok,,18,72.87
+11,2026-07-11T03:52:40.958321+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimos avances en inteligencia artificial""}",llm,ok,,ok,,12,75.04
+12,2026-07-11T03:54:09.793288+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""noticias de tecnología""}",llm,ok,,ok,,12,23.14
+13,2026-07-11T03:54:46.475482+02:00,llm_run10,llm,1010,mirar_youtube,"{""busqueda"": ""streaming en vivo de tecnología""}",llm,ok,,ok,,12,38.92
+14,2026-07-11T03:55:40.767226+02:00,llm_run10,llm,1010,buscar_google,"{""termino"": ""últimas noticias de tecnología""}",llm,ok,,ok,,12,75.7
+1,2026-07-10T20:45:14.262672+02:00,random_run01,random,1001,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",random,ok,,ok,,14,6.22
+2,2026-07-10T20:45:38.191434+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,20,14.43
+3,2026-07-10T20:46:12.901833+02:00,random_run01,random,1001,buscar_google,"{""termino"": ""mejores frameworks python 2025""}",random,ok,,ok,,21,94.74
+4,2026-07-10T20:48:09.952885+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,20,14.36
+5,2026-07-10T20:48:45.030088+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,14,14.23
+6,2026-07-10T20:49:13.811616+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,9,12.97
+7,2026-07-10T20:49:37.385229+02:00,random_run01,random,1001,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,23,6.54
+8,2026-07-10T20:50:10.342676+02:00,random_run01,random,1001,ver_streaming,{},random,ok,,ok,,14,64.46
+9,2026-07-10T20:51:29.417616+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,12,12.94
+10,2026-07-10T20:51:55.264050+02:00,random_run01,random,1001,abrir_url,"{""url"": ""https://www.xataka.com""}",random,ok,,ok,,11,5.13
+11,2026-07-10T20:52:15.864575+02:00,random_run01,random,1001,ver_streaming,{},random,ok,,ok,,12,66.53
+12,2026-07-10T20:53:37.024658+02:00,random_run01,random,1001,abrir_url,"{""url"": ""https://www.xataka.com""}",random,ok,,ok,,16,4.45
+13,2026-07-10T20:53:58.715644+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,10,12.51
+14,2026-07-10T20:54:24.219225+02:00,random_run01,random,1001,usar_twitter,{},random,ok,,ok,,25,12.2
+15,2026-07-10T20:55:03.147608+02:00,random_run01,random,1001,revisar_correo,{},random,ok,,fallo,ver session.log,10,52.25
+16,2026-07-10T20:56:09.159627+02:00,random_run01,random,1001,mirar_youtube,"{""busqueda"": ""ciberseguridad""}",random,ok,,ok,,19,69.96
+17,2026-07-10T20:57:40.741241+02:00,random_run01,random,1001,revisar_correo,{},random,ok,,fallo,ver session.log,9,51.31
+18,2026-07-10T20:58:44.336615+02:00,random_run01,random,1001,buscar_google,"{""termino"": ""últimas noticias tecnología""}",random,ok,,ok,,11,18.21
+19,2026-07-10T20:59:13.933284+02:00,random_run01,random,1001,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,21,4.59
+20,2026-07-10T20:59:41.722927+02:00,random_run01,random,1001,mirar_youtube,"{""busqueda"": ""ciberseguridad""}",random,ok,,ok,,14,73.25
+1,2026-07-10T21:33:01.139850+02:00,random_run02,random,1002,usar_twitter,{},random,ok,,ok,,21,16.13
+2,2026-07-10T21:33:40.779378+02:00,random_run02,random,1002,buscar_google,"{""termino"": ""python asyncio tutorial""}",random,ok,,ok,,12,62.01
+3,2026-07-10T21:34:57.205252+02:00,random_run02,random,1002,mirar_youtube,"{""busqueda"": ""ciberseguridad""}",random,ok,,ok,,23,71.82
+4,2026-07-10T21:36:32.890632+02:00,random_run02,random,1002,ver_streaming,{},random,ok,,ok,,10,70.63
+5,2026-07-10T21:37:55.215159+02:00,random_run02,random,1002,ver_streaming,{},random,ok,,ok,,21,72.55
+6,2026-07-10T21:39:30.323387+02:00,random_run02,random,1002,usar_twitter,{},random,ok,,ok,,9,15.54
+7,2026-07-10T21:39:56.743758+02:00,random_run02,random,1002,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,15,59.65
+8,2026-07-10T21:41:14.557617+02:00,random_run02,random,1002,revisar_correo,{},random,ok,,fallo,ver session.log,8,49.08
+9,2026-07-10T21:42:13.909315+02:00,random_run02,random,1002,usar_twitter,{},random,ok,,ok,,25,14.47
+10,2026-07-10T21:42:56.400224+02:00,random_run02,random,1002,ver_streaming,{},random,ok,,ok,,12,66.36
+11,2026-07-10T21:44:17.983586+02:00,random_run02,random,1002,usar_twitter,{},random,ok,,ok,,13,14.17
+12,2026-07-10T21:44:47.534995+02:00,random_run02,random,1002,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,22,60.51
+13,2026-07-10T21:46:13.380471+02:00,random_run02,random,1002,ver_streaming,{},random,ok,,ok,,16,72.06
+14,2026-07-10T21:47:41.640172+02:00,random_run02,random,1002,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,24,4.62
+1,2026-07-10T22:20:29.091171+02:00,random_run03,random,1003,revisar_correo,{},random,ok,,fallo,ver session.log,25,52.1
+2,2026-07-10T22:21:49.300237+02:00,random_run03,random,1003,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,15,64.15
+3,2026-07-10T22:23:09.122597+02:00,random_run03,random,1003,revisar_correo,{},random,ok,,fallo,ver session.log,22,52.15
+4,2026-07-10T22:24:23.642251+02:00,random_run03,random,1003,usar_twitter,{},random,ok,,ok,,22,13.73
+5,2026-07-10T22:25:03.851096+02:00,random_run03,random,1003,revisar_correo,{},random,ok,,fallo,ver session.log,8,51.8
+6,2026-07-10T22:26:06.826644+02:00,random_run03,random,1003,ver_streaming,{},random,ok,,ok,,18,71.13
+7,2026-07-10T22:27:37.227182+02:00,random_run03,random,1003,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,23,4.35
+8,2026-07-10T22:28:05.416592+02:00,random_run03,random,1003,revisar_correo,{},random,ok,,fallo,ver session.log,24,51.92
+9,2026-07-10T22:29:23.217922+02:00,random_run03,random,1003,abrir_url,"{""url"": ""https://www.elmundo.es""}",random,ok,,ok,,17,6.38
+10,2026-07-10T22:29:47.504316+02:00,random_run03,random,1003,usar_twitter,{},random,ok,,ok,,24,13.81
+11,2026-07-10T22:30:28.606527+02:00,random_run03,random,1003,ver_streaming,{},random,ok,,ok,,9,65.03
+12,2026-07-10T22:31:45.576705+02:00,random_run03,random,1003,ver_streaming,{},random,ok,,ok,,15,59.01
+13,2026-07-10T22:33:02.297162+02:00,random_run03,random,1003,ver_streaming,{},random,ok,,ok,,25,72.03
+14,2026-07-10T22:34:42.637666+02:00,random_run03,random,1003,usar_twitter,{},random,ok,,ok,,9,13.43
+15,2026-07-10T22:35:05.981072+02:00,random_run03,random,1003,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,15,72.87
+1,2026-07-10T23:09:24.784624+02:00,random_run04,random,1004,revisar_correo,{},random,ok,,fallo,ver session.log,11,51.29
+2,2026-07-10T23:10:28.369584+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,25,69.03
+3,2026-07-10T23:12:04.965001+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,24,72.52
+4,2026-07-10T23:13:41.622045+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,14,68.24
+5,2026-07-10T23:15:05.882421+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,18,58.82
+6,2026-07-10T23:16:23.487994+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,12,66.64
+7,2026-07-10T23:17:42.333608+02:00,random_run04,random,1004,usar_twitter,{},random,ok,,ok,,19,12.73
+8,2026-07-10T23:18:15.543640+02:00,random_run04,random,1004,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,24,6.77
+9,2026-07-10T23:18:47.834224+02:00,random_run04,random,1004,ver_streaming,{},random,ok,,ok,,8,67.16
+10,2026-07-10T23:20:03.167344+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""python asyncio tutorial""}",random,ok,,ok,,8,74.26
+11,2026-07-10T23:21:28.920595+02:00,random_run04,random,1004,buscar_google,"{""termino"": ""mejores frameworks python 2025""}",random,ok,,ok,,10,103.58
+12,2026-07-10T23:23:24.388306+02:00,random_run04,random,1004,revisar_correo,{},random,ok,,fallo,ver session.log,17,51.57
+1,2026-07-10T23:56:57.848650+02:00,random_run05,random,1005,revisar_correo,{},random,ok,,fallo,ver session.log,20,51.18
+2,2026-07-10T23:58:11.102764+02:00,random_run05,random,1005,usar_twitter,{},random,ok,,ok,,21,15.22
+3,2026-07-10T23:58:50.007446+02:00,random_run05,random,1005,usar_twitter,{},random,ok,,ok,,17,15.03
+4,2026-07-10T23:59:23.767205+02:00,random_run05,random,1005,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,25,73.16
+5,2026-07-11T00:01:02.102522+02:00,random_run05,random,1005,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,23,60.27
+6,2026-07-11T00:02:26.632268+02:00,random_run05,random,1005,usar_twitter,{},random,ok,,ok,,18,13.68
+7,2026-07-11T00:03:02.212323+02:00,random_run05,random,1005,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",random,ok,,ok,,14,35.8
+8,2026-07-11T00:03:53.416221+02:00,random_run05,random,1005,ver_streaming,{},random,ok,,ok,,9,63.14
+9,2026-07-11T00:05:06.978766+02:00,random_run05,random,1005,mirar_youtube,"{""busqueda"": ""tutorial python""}",random,ok,,ok,,9,68.95
+10,2026-07-11T00:06:26.583536+02:00,random_run05,random,1005,revisar_correo,{},random,ok,,fallo,ver session.log,11,50.58
+11,2026-07-11T00:07:28.663135+02:00,random_run05,random,1005,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",random,ok,,ok,,15,35.45
+12,2026-07-11T00:08:22.116539+02:00,random_run05,random,1005,mirar_youtube,"{""busqueda"": ""programación en vivo""}",random,ok,,ok,,11,64.99
+13,2026-07-11T00:09:41.083334+02:00,random_run05,random,1005,buscar_google,"{""termino"": ""mejores frameworks python 2025""}",random,ok,,ok,,20,104.35
+14,2026-07-11T00:11:47.273243+02:00,random_run05,random,1005,ver_streaming,{},random,ok,,ok,,25,34.18
+1,2026-07-11T00:44:02.622492+02:00,random_run06,random,1006,mirar_youtube,"{""busqueda"": ""ciberseguridad""}",random,ok,,ok,,9,76.51
+2,2026-07-11T00:45:30.293144+02:00,random_run06,random,1006,revisar_correo,{},random,ok,,fallo,ver session.log,8,51.46
+3,2026-07-11T00:46:30.912540+02:00,random_run06,random,1006,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,18,22.06
+4,2026-07-11T00:47:12.203933+02:00,random_run06,random,1006,buscar_google,"{""termino"": ""ciberseguridad hoy""}",random,ok,,ok,,24,59.41
+5,2026-07-11T00:48:38.107028+02:00,random_run06,random,1006,ver_streaming,{},random,ok,,ok,,12,34.12
+6,2026-07-11T00:49:25.099252+02:00,random_run06,random,1006,usar_twitter,{},random,ok,,ok,,10,13.59
+7,2026-07-11T00:49:50.447374+02:00,random_run06,random,1006,revisar_correo,{},random,ok,,fallo,ver session.log,8,52.31
+8,2026-07-11T00:50:50.823675+02:00,random_run06,random,1006,mirar_youtube,"{""busqueda"": ""tutorial python""}",random,ok,,ok,,8,66.54
+9,2026-07-11T00:52:07.869849+02:00,random_run06,random,1006,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",random,ok,,ok,,17,6.13
+10,2026-07-11T00:52:33.182719+02:00,random_run06,random,1006,abrir_url,"{""url"": ""https://www.elmundo.es""}",random,ok,,ok,,16,6.27
+11,2026-07-11T00:52:59.028202+02:00,random_run06,random,1006,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,10,4.58
+12,2026-07-11T00:53:14.600322+02:00,random_run06,random,1006,revisar_correo,{},random,ok,,fallo,ver session.log,8,51.89
+13,2026-07-11T00:54:14.831632+02:00,random_run06,random,1006,revisar_correo,{},random,ok,,fallo,ver session.log,20,51.93
+14,2026-07-11T00:55:28.258614+02:00,random_run06,random,1006,revisar_correo,{},random,ok,,fallo,ver session.log,19,51.65
+15,2026-07-11T00:56:40.581419+02:00,random_run06,random,1006,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",random,ok,,ok,,20,35.47
+16,2026-07-11T00:57:40.493778+02:00,random_run06,random,1006,usar_twitter,{},random,ok,,ok,,21,13.95
+17,2026-07-11T00:58:16.186589+02:00,random_run06,random,1006,ver_streaming,{},random,ok,,ok,,13,35.69
+1,2026-07-11T01:31:59.590671+02:00,random_run07,random,1007,abrir_url,"{""url"": ""https://www.elmundo.es""}",random,ok,,ok,,13,6.09
+2,2026-07-11T01:32:21.832536+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,13,56.88
+3,2026-07-11T01:33:32.568619+02:00,random_run07,random,1007,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,24,75.42
+4,2026-07-11T01:35:13.964354+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,14,57.45
+5,2026-07-11T01:36:27.465654+02:00,random_run07,random,1007,usar_twitter,{},random,ok,,ok,,9,15.15
+6,2026-07-11T01:36:53.342620+02:00,random_run07,random,1007,revisar_correo,{},random,ok,,fallo,ver session.log,17,51.91
+7,2026-07-11T01:38:05.050322+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,9,35.34
+8,2026-07-11T01:38:50.979534+02:00,random_run07,random,1007,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,21,103.76
+9,2026-07-11T01:40:58.153901+02:00,random_run07,random,1007,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,10,87.25
+10,2026-07-11T01:42:36.536504+02:00,random_run07,random,1007,ver_streaming,{},random,ok,,ok,,9,60.36
+11,2026-07-11T01:43:47.399661+02:00,random_run07,random,1007,mirar_youtube,"{""busqueda"": ""tutorial python""}",random,ok,,ok,,21,71.21
+12,2026-07-11T01:45:20.665867+02:00,random_run07,random,1007,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,15,76.18
+1,2026-07-11T02:19:59.056526+02:00,random_run08,random,1008,usar_twitter,{},random,ok,,ok,,22,16.35
+2,2026-07-11T02:20:38.789755+02:00,random_run08,random,1008,mirar_youtube,"{""busqueda"": ""música en vivo""}",random,ok,,ok,,10,68.05
+3,2026-07-11T02:21:56.993323+02:00,random_run08,random,1008,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,9,107.0
+4,2026-07-11T02:23:54.276468+02:00,random_run08,random,1008,ver_streaming,{},random,ok,,ok,,11,71.19
+5,2026-07-11T02:25:16.908157+02:00,random_run08,random,1008,usar_twitter,{},random,ok,,ok,,19,15.67
+6,2026-07-11T02:25:53.979768+02:00,random_run08,random,1008,ver_streaming,{},random,ok,,ok,,8,60.42
+7,2026-07-11T02:27:05.972923+02:00,random_run08,random,1008,usar_twitter,{},random,ok,,ok,,18,15.61
+8,2026-07-11T02:27:42.099497+02:00,random_run08,random,1008,mirar_youtube,"{""busqueda"": ""programación en vivo""}",random,ok,,ok,,15,59.43
+9,2026-07-11T02:28:58.235285+02:00,random_run08,random,1008,buscar_google,"{""termino"": ""últimas noticias de IA""}",random,ok,,ok,,25,20.37
+10,2026-07-11T02:29:44.327274+02:00,random_run08,random,1008,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,12,61.3
+11,2026-07-11T02:30:59.395613+02:00,random_run08,random,1008,buscar_google,"{""termino"": ""mejores frameworks python 2025""}",random,ok,,ok,,20,93.33
+12,2026-07-11T02:32:53.756439+02:00,random_run08,random,1008,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,11,104.74
+13,2026-07-11T02:34:51.243157+02:00,random_run08,random,1008,buscar_google,"{""termino"": ""últimas noticias tecnología""}",random,ok,,ok,,19,113.46
+1,2026-07-11T03:10:06.929975+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""noticias tecnología""}",random,ok,,ok,,8,14.15
+2,2026-07-11T03:10:30.156441+02:00,random_run09,random,1009,abrir_url,"{""url"": ""https://www.xataka.com""}",random,ok,,ok,,24,5.09
+3,2026-07-11T03:11:00.721978+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""últimas noticias tecnología""}",random,ok,,ok,,24,88.49
+4,2026-07-11T03:12:56.110537+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,16,57.15
+5,2026-07-11T03:14:11.952885+02:00,random_run09,random,1009,abrir_url,"{""url"": ""https://elpais.com""}",random,ok,,ok,,14,6.53
+6,2026-07-11T03:14:34.888044+02:00,random_run09,random,1009,usar_twitter,{},random,ok,,ok,,10,13.66
+7,2026-07-11T03:15:00.114910+02:00,random_run09,random,1009,ver_streaming,{},random,ok,,ok,,23,64.27
+8,2026-07-11T03:16:31.100272+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,24,58.91
+9,2026-07-11T03:17:57.631240+02:00,random_run09,random,1009,usar_twitter,{},random,ok,,ok,,18,15.71
+10,2026-07-11T03:18:33.920498+02:00,random_run09,random,1009,revisar_correo,{},random,ok,,fallo,ver session.log,8,50.2
+11,2026-07-11T03:19:34.180003+02:00,random_run09,random,1009,usar_twitter,{},random,ok,,ok,,12,15.62
+12,2026-07-11T03:20:03.188382+02:00,random_run09,random,1009,usar_twitter,{},random,ok,,ok,,19,15.83
+13,2026-07-11T03:20:40.145880+02:00,random_run09,random,1009,ver_streaming,{},random,ok,,ok,,12,69.25
+14,2026-07-11T03:22:03.981147+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""últimas noticias tecnología""}",random,ok,,ok,,22,18.2
+15,2026-07-11T03:22:47.032488+02:00,random_run09,random,1009,revisar_correo,{},random,ok,,fallo,ver session.log,8,48.79
+16,2026-07-11T03:23:44.095878+02:00,random_run09,random,1009,buscar_google,"{""termino"": ""noticias tecnología""}",random,ok,,ok,,22,99.07
+1,2026-07-11T03:57:35.804636+02:00,random_run10,random,1010,ver_streaming,{},random,ok,,ok,,15,63.54
+2,2026-07-11T03:58:56.901249+02:00,random_run10,random,1010,usar_twitter,{},random,ok,,ok,,10,14.73
+3,2026-07-11T03:59:22.977065+02:00,random_run10,random,1010,revisar_correo,{},random,ok,,fallo,ver session.log,21,50.55
+4,2026-07-11T04:00:36.940380+02:00,random_run10,random,1010,revisar_correo,{},random,ok,,fallo,ver session.log,13,50.12
+5,2026-07-11T04:01:43.546129+02:00,random_run10,random,1010,buscar_google,"{""termino"": ""últimas noticias tecnología""}",random,ok,,ok,,21,15.62
+6,2026-07-11T04:02:23.325239+02:00,random_run10,random,1010,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,24,4.56
+7,2026-07-11T04:02:54.627551+02:00,random_run10,random,1010,mirar_youtube,"{""busqueda"": ""noticias en vivo""}",random,ok,,ok,,16,35.81
+8,2026-07-11T04:03:49.809423+02:00,random_run10,random,1010,ver_streaming,{},random,ok,,ok,,12,61.09
+9,2026-07-11T04:05:04.347957+02:00,random_run10,random,1010,revisar_correo,{},random,ok,,fallo,ver session.log,23,51.6
+10,2026-07-11T04:06:19.376819+02:00,random_run10,random,1010,usar_twitter,{},random,ok,,ok,,19,12.86
+11,2026-07-11T04:06:52.957509+02:00,random_run10,random,1010,usar_twitter,{},random,ok,,ok,,10,12.92
+12,2026-07-11T04:07:18.386164+02:00,random_run10,random,1010,abrir_url,"{""url"": ""https://www.genbeta.com""}",random,ok,,ok,,24,4.2
+13,2026-07-11T04:07:48.563279+02:00,random_run10,random,1010,usar_twitter,{},random,ok,,ok,,17,12.74
+14,2026-07-11T04:08:19.345187+02:00,random_run10,random,1010,ver_streaming,{},random,ok,,ok,,12,61.32
+15,2026-07-11T04:09:36.808151+02:00,random_run10,random,1010,buscar_google,"{""termino"": ""python asyncio tutorial""}",random,ok,,ok,,24,76.57
+16,2026-07-11T04:11:18.031598+02:00,random_run10,random,1010,ver_streaming,{},random,ok,,ok,,8,36.6
+17,2026-07-11T04:12:05.740921+02:00,random_run10,random,1010,buscar_google,"{""termino"": ""tendencias ciberseguridad 2025""}",random,ok,,ok,,21,57.23
+1,2026-07-10T21:01:37.510723+02:00,rule_run01,rule,1001,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,9,20.87
+2,2026-07-10T21:02:11.251282+02:00,rule_run01,rule,1001,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,14,5.94
+3,2026-07-10T21:02:32.760453+02:00,rule_run01,rule,1001,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,10,34.1
+4,2026-07-10T21:03:18.606131+02:00,rule_run01,rule,1001,revisar_correo,{},rule,ok,,fallo,ver session.log,25,49.13
+5,2026-07-10T21:04:35.376816+02:00,rule_run01,rule,1001,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,20,57.52
+6,2026-07-10T21:05:53.476960+02:00,rule_run01,rule,1001,usar_twitter,{},rule,ok,,ok,,13,14.0
+7,2026-07-10T21:06:23.629866+02:00,rule_run01,rule,1001,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,21,108.72
+8,2026-07-10T21:08:36.036609+02:00,rule_run01,rule,1001,ver_streaming,{},rule,ok,,ok,,19,70.69
+9,2026-07-10T21:10:07.933326+02:00,rule_run01,rule,1001,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,20,16.0
+10,2026-07-10T21:10:46.383462+02:00,rule_run01,rule,1001,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,14,6.16
+11,2026-07-10T21:11:07.181094+02:00,rule_run01,rule,1001,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,9,35.18
+12,2026-07-10T21:11:53.004955+02:00,rule_run01,rule,1001,revisar_correo,{},rule,ok,,fallo,ver session.log,8,51.08
+13,2026-07-10T21:12:53.357665+02:00,rule_run01,rule,1001,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,23,56.26
+14,2026-07-10T21:14:15.928923+02:00,rule_run01,rule,1001,usar_twitter,{},rule,ok,,ok,,14,15.52
+15,2026-07-10T21:14:49.096366+02:00,rule_run01,rule,1001,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,24,106.23
+1,2026-07-10T21:48:34.695184+02:00,rule_run02,rule,1002,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,24,15.84
+2,2026-07-10T21:49:17.015105+02:00,rule_run02,rule,1002,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,21,5.85
+3,2026-07-10T21:49:45.128881+02:00,rule_run02,rule,1002,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,15,33.02
+4,2026-07-10T21:50:33.312099+02:00,rule_run02,rule,1002,revisar_correo,{},rule,ok,,fallo,ver session.log,12,50.62
+5,2026-07-10T21:51:36.782764+02:00,rule_run02,rule,1002,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,12,55.43
+6,2026-07-10T21:52:44.334179+02:00,rule_run02,rule,1002,usar_twitter,{},rule,ok,,ok,,16,15.64
+7,2026-07-10T21:53:17.293399+02:00,rule_run02,rule,1002,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,23,105.55
+8,2026-07-10T21:55:26.597034+02:00,rule_run02,rule,1002,ver_streaming,{},rule,ok,,ok,,12,67.56
+9,2026-07-10T21:56:47.222015+02:00,rule_run02,rule,1002,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,10,15.83
+10,2026-07-10T21:57:16.754815+02:00,rule_run02,rule,1002,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,21,5.84
+11,2026-07-10T21:57:45.773652+02:00,rule_run02,rule,1002,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,24,35.92
+12,2026-07-10T21:58:45.771986+02:00,rule_run02,rule,1002,revisar_correo,{},rule,ok,,fallo,ver session.log,9,49.5
+13,2026-07-10T21:59:45.268874+02:00,rule_run02,rule,1002,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,15,51.66
+14,2026-07-10T22:00:52.538039+02:00,rule_run02,rule,1002,usar_twitter,{},rule,ok,,ok,,15,13.74
+15,2026-07-10T22:01:22.476093+02:00,rule_run02,rule,1002,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,9,102.7
+16,2026-07-10T22:03:14.421369+02:00,rule_run02,rule,1002,ver_streaming,{},rule,ok,,ok,,21,63.98
+1,2026-07-10T22:36:56.922970+02:00,rule_run03,rule,1003,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,23,13.08
+2,2026-07-10T22:37:35.444516+02:00,rule_run03,rule,1003,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,25,5.96
+3,2026-07-10T22:38:08.954557+02:00,rule_run03,rule,1003,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,19,33.2
+4,2026-07-10T22:39:05.973002+02:00,rule_run03,rule,1003,revisar_correo,{},rule,ok,,fallo,ver session.log,15,51.22
+5,2026-07-10T22:40:14.308195+02:00,rule_run03,rule,1003,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,22,61.56
+6,2026-07-10T22:41:39.186765+02:00,rule_run03,rule,1003,usar_twitter,{},rule,ok,,ok,,22,14.55
+7,2026-07-10T22:42:16.659946+02:00,rule_run03,rule,1003,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,25,105.63
+8,2026-07-10T22:44:30.937716+02:00,rule_run03,rule,1003,ver_streaming,{},rule,ok,,ok,,22,71.31
+9,2026-07-10T22:46:04.859214+02:00,rule_run03,rule,1003,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,20,25.74
+10,2026-07-10T22:46:51.759528+02:00,rule_run03,rule,1003,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,8,5.85
+11,2026-07-10T22:47:09.959875+02:00,rule_run03,rule,1003,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,18,36.55
+12,2026-07-10T22:48:06.061372+02:00,rule_run03,rule,1003,revisar_correo,{},rule,ok,,fallo,ver session.log,10,51.08
+13,2026-07-10T22:49:08.301270+02:00,rule_run03,rule,1003,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,23,76.26
+14,2026-07-10T22:50:49.259019+02:00,rule_run03,rule,1003,usar_twitter,{},rule,ok,,ok,,24,15.02
+15,2026-07-10T22:51:31.248707+02:00,rule_run03,rule,1003,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,22,102.08
+1,2026-07-10T23:24:51.365162+02:00,rule_run04,rule,1004,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,21,20.93
+2,2026-07-10T23:25:35.865670+02:00,rule_run04,rule,1004,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,11,5.95
+3,2026-07-10T23:25:54.317075+02:00,rule_run04,rule,1004,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,25,34.68
+4,2026-07-10T23:26:58.207987+02:00,rule_run04,rule,1004,revisar_correo,{},rule,ok,,fallo,ver session.log,24,50.82
+5,2026-07-10T23:28:13.949956+02:00,rule_run04,rule,1004,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,14,58.57
+6,2026-07-10T23:29:28.444270+02:00,rule_run04,rule,1004,usar_twitter,{},rule,ok,,ok,,14,15.36
+7,2026-07-10T23:29:59.707577+02:00,rule_run04,rule,1004,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,18,105.46
+8,2026-07-10T23:32:05.546536+02:00,rule_run04,rule,1004,ver_streaming,{},rule,ok,,ok,,9,61.68
+9,2026-07-10T23:33:16.633228+02:00,rule_run04,rule,1004,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,12,21.07
+10,2026-07-10T23:33:53.096564+02:00,rule_run04,rule,1004,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,19,6.3
+11,2026-07-10T23:34:20.969164+02:00,rule_run04,rule,1004,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,10,34.03
+12,2026-07-10T23:35:09.112639+02:00,rule_run04,rule,1004,revisar_correo,{},rule,ok,,fallo,ver session.log,24,51.83
+13,2026-07-10T23:36:26.760629+02:00,rule_run04,rule,1004,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,15,73.16
+14,2026-07-10T23:37:56.032409+02:00,rule_run04,rule,1004,usar_twitter,{},rule,ok,,ok,,8,13.42
+15,2026-07-10T23:38:21.613903+02:00,rule_run04,rule,1004,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,12,6.54
+16,2026-07-10T23:38:41.231531+02:00,rule_run04,rule,1004,ver_streaming,{},rule,ok,,ok,,8,71.02
+1,2026-07-11T00:12:56.325494+02:00,rule_run05,rule,1005,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,23,18.1
+2,2026-07-11T00:13:39.532966+02:00,rule_run05,rule,1005,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,20,5.87
+3,2026-07-11T00:14:06.778590+02:00,rule_run05,rule,1005,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,25,34.58
+4,2026-07-11T00:15:07.079381+02:00,rule_run05,rule,1005,revisar_correo,{},rule,ok,,fallo,ver session.log,21,54.05
+5,2026-07-11T00:16:22.138203+02:00,rule_run05,rule,1005,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,17,57.82
+6,2026-07-11T00:17:39.416191+02:00,rule_run05,rule,1005,usar_twitter,{},rule,ok,,ok,,19,12.61
+7,2026-07-11T00:18:14.582184+02:00,rule_run05,rule,1005,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,25,108.61
+8,2026-07-11T00:20:28.577252+02:00,rule_run05,rule,1005,ver_streaming,{},rule,ok,,ok,,13,59.32
+9,2026-07-11T00:21:42.355931+02:00,rule_run05,rule,1005,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,23,13.78
+10,2026-07-11T00:22:20.581086+02:00,rule_run05,rule,1005,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,11,5.88
+11,2026-07-11T00:22:38.536596+02:00,rule_run05,rule,1005,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,18,37.13
+12,2026-07-11T00:23:36.871516+02:00,rule_run05,rule,1005,revisar_correo,{},rule,ok,,fallo,ver session.log,19,52.25
+13,2026-07-11T00:24:49.496066+02:00,rule_run05,rule,1005,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,14,49.25
+14,2026-07-11T00:25:54.468845+02:00,rule_run05,rule,1005,usar_twitter,{},rule,ok,,ok,,9,12.42
+15,2026-07-11T00:26:17.156697+02:00,rule_run05,rule,1005,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,9,104.3
+1,2026-07-11T00:59:38.543982+02:00,rule_run06,rule,1006,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,19,14.89
+2,2026-07-11T01:00:14.297252+02:00,rule_run06,rule,1006,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,9,6.06
+3,2026-07-11T01:00:29.517555+02:00,rule_run06,rule,1006,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,15,35.26
+4,2026-07-11T01:01:22.246089+02:00,rule_run06,rule,1006,revisar_correo,{},rule,ok,,fallo,ver session.log,22,50.53
+5,2026-07-11T01:02:35.858503+02:00,rule_run06,rule,1006,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,8,53.48
+6,2026-07-11T01:03:39.352757+02:00,rule_run06,rule,1006,usar_twitter,{},rule,ok,,ok,,14,15.12
+7,2026-07-11T01:04:09.484466+02:00,rule_run06,rule,1006,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,18,105.08
+8,2026-07-11T01:06:13.218305+02:00,rule_run06,rule,1006,ver_streaming,{},rule,ok,,ok,,8,69.77
+9,2026-07-11T01:07:34.430388+02:00,rule_run06,rule,1006,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,14,92.32
+10,2026-07-11T01:09:21.208111+02:00,rule_run06,rule,1006,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,24,6.09
+11,2026-07-11T01:09:51.888892+02:00,rule_run06,rule,1006,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,17,33.75
+12,2026-07-11T01:10:44.654534+02:00,rule_run06,rule,1006,revisar_correo,{},rule,ok,,fallo,ver session.log,12,50.36
+13,2026-07-11T01:11:47.659079+02:00,rule_run06,rule,1006,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,10,53.09
+14,2026-07-11T01:12:52.057714+02:00,rule_run06,rule,1006,usar_twitter,{},rule,ok,,ok,,20,15.11
+15,2026-07-11T01:13:29.341177+02:00,rule_run06,rule,1006,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,8,102.94
+1,2026-07-11T01:47:29.417707+02:00,rule_run07,rule,1007,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,9,89.6
+2,2026-07-11T01:49:08.923651+02:00,rule_run07,rule,1007,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,13,6.06
+3,2026-07-11T01:49:29.922331+02:00,rule_run07,rule,1007,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,17,35.79
+4,2026-07-11T01:50:23.889353+02:00,rule_run07,rule,1007,revisar_correo,{},rule,ok,,fallo,ver session.log,13,53.65
+5,2026-07-11T01:51:33.487744+02:00,rule_run07,rule,1007,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,15,58.29
+6,2026-07-11T01:52:47.541441+02:00,rule_run07,rule,1007,usar_twitter,{},rule,ok,,ok,,24,14.35
+7,2026-07-11T01:53:26.177787+02:00,rule_run07,rule,1007,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,9,105.93
+8,2026-07-11T01:55:23.747933+02:00,rule_run07,rule,1007,ver_streaming,{},rule,ok,,ok,,14,36.8
+9,2026-07-11T01:56:17.281753+02:00,rule_run07,rule,1007,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,25,78.12
+10,2026-07-11T01:58:02.126269+02:00,rule_run07,rule,1007,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,9,6.08
+11,2026-07-11T01:58:17.440574+02:00,rule_run07,rule,1007,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,22,34.42
+12,2026-07-11T01:59:16.375337+02:00,rule_run07,rule,1007,revisar_correo,{},rule,ok,,fallo,ver session.log,17,51.15
+13,2026-07-11T02:00:28.045826+02:00,rule_run07,rule,1007,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,9,60.56
+14,2026-07-11T02:01:39.588433+02:00,rule_run07,rule,1007,usar_twitter,{},rule,ok,,ok,,9,14.21
+15,2026-07-11T02:02:04.615066+02:00,rule_run07,rule,1007,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,21,104.17
+1,2026-07-11T02:37:24.523432+02:00,rule_run08,rule,1008,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,24,63.12
+2,2026-07-11T02:38:54.728373+02:00,rule_run08,rule,1008,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,22,5.88
+3,2026-07-11T02:39:26.500954+02:00,rule_run08,rule,1008,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,18,36.78
+4,2026-07-11T02:40:24.081985+02:00,rule_run08,rule,1008,revisar_correo,{},rule,ok,,fallo,ver session.log,10,51.98
+5,2026-07-11T02:41:26.060611+02:00,rule_run08,rule,1008,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,11,58.42
+6,2026-07-11T02:42:38.498081+02:00,rule_run08,rule,1008,usar_twitter,{},rule,ok,,ok,,9,13.22
+7,2026-07-11T02:43:04.829843+02:00,rule_run08,rule,1008,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,12,106.03
+8,2026-07-11T02:45:04.335368+02:00,rule_run08,rule,1008,ver_streaming,{},rule,ok,,ok,,11,34.93
+9,2026-07-11T02:45:50.557447+02:00,rule_run08,rule,1008,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,19,92.84
+10,2026-07-11T02:47:43.774013+02:00,rule_run08,rule,1008,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,8,5.97
+11,2026-07-11T02:48:00.987716+02:00,rule_run08,rule,1008,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,25,34.2
+12,2026-07-11T02:49:01.073529+02:00,rule_run08,rule,1008,revisar_correo,{},rule,ok,,fallo,ver session.log,18,51.45
+13,2026-07-11T02:50:11.566628+02:00,rule_run08,rule,1008,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,16,74.42
+14,2026-07-11T02:51:42.781735+02:00,rule_run08,rule,1008,usar_twitter,{},rule,ok,,ok,,15,13.55
+15,2026-07-11T02:52:14.396746+02:00,rule_run08,rule,1008,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,23,103.11
+1,2026-07-11T03:26:01.543409+02:00,rule_run09,rule,1009,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,13,18.4
+2,2026-07-11T03:26:34.435165+02:00,rule_run09,rule,1009,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,8,5.91
+3,2026-07-11T03:26:50.810883+02:00,rule_run09,rule,1009,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,23,35.98
+4,2026-07-11T03:27:51.670934+02:00,rule_run09,rule,1009,revisar_correo,{},rule,ok,,fallo,ver session.log,10,49.02
+5,2026-07-11T03:28:53.504027+02:00,rule_run09,rule,1009,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,24,58.06
+6,2026-07-11T03:30:17.665416+02:00,rule_run09,rule,1009,usar_twitter,{},rule,ok,,ok,,23,16.08
+7,2026-07-11T03:30:57.266132+02:00,rule_run09,rule,1009,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,13,6.51
+8,2026-07-11T03:31:17.713968+02:00,rule_run09,rule,1009,ver_streaming,{},rule,ok,,ok,,24,60.35
+9,2026-07-11T03:32:43.825409+02:00,rule_run09,rule,1009,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,15,15.11
+10,2026-07-11T03:33:13.995549+02:00,rule_run09,rule,1009,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,14,6.01
+11,2026-07-11T03:33:35.598833+02:00,rule_run09,rule,1009,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,16,34.25
+12,2026-07-11T03:34:28.270115+02:00,rule_run09,rule,1009,revisar_correo,{},rule,ok,,fallo,ver session.log,10,51.19
+13,2026-07-11T03:35:31.594677+02:00,rule_run09,rule,1009,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,9,52.05
+14,2026-07-11T03:36:37.036529+02:00,rule_run09,rule,1009,usar_twitter,{},rule,ok,,ok,,14,16.48
+15,2026-07-11T03:37:09.978067+02:00,rule_run09,rule,1009,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,14,6.49
+16,2026-07-11T03:37:34.132935+02:00,rule_run09,rule,1009,ver_streaming,{},rule,ok,,ok,,10,67.41
+17,2026-07-11T03:38:53.279773+02:00,rule_run09,rule,1009,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,23,90.59
+18,2026-07-11T03:40:49.923925+02:00,rule_run09,rule,1009,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,13,6.27
+1,2026-07-11T04:13:38.747193+02:00,rule_run10,rule,1010,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,15,88.3
+2,2026-07-11T04:15:24.413965+02:00,rule_run10,rule,1010,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,25,6.61
+3,2026-07-11T04:15:58.810127+02:00,rule_run10,rule,1010,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,10,34.67
+4,2026-07-11T04:16:43.913997+02:00,rule_run10,rule,1010,revisar_correo,{},rule,ok,,fallo,ver session.log,21,52.59
+5,2026-07-11T04:18:00.297181+02:00,rule_run10,rule,1010,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,21,54.06
+6,2026-07-11T04:19:18.516817+02:00,rule_run10,rule,1010,usar_twitter,{},rule,ok,,ok,,21,13.35
+7,2026-07-11T04:19:55.424485+02:00,rule_run10,rule,1010,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,13,6.55
+8,2026-07-11T04:20:18.354276+02:00,rule_run10,rule,1010,ver_streaming,{},rule,ok,,ok,,12,61.18
+9,2026-07-11T04:21:33.984601+02:00,rule_run10,rule,1010,buscar_google,"{""termino"": ""últimas noticias tecnología""}",rule,ok,,ok,,21,79.27
+10,2026-07-11T04:23:16.802770+02:00,rule_run10,rule,1010,abrir_url,"{""url"": ""https://www.bbc.com/mundo""}",rule,ok,,ok,,14,6.09
+11,2026-07-11T04:23:41.128800+02:00,rule_run10,rule,1010,mirar_youtube,"{""busqueda"": ""noticias tecnología""}",rule,ok,,ok,,11,33.47
+12,2026-07-11T04:24:27.229207+02:00,rule_run10,rule,1010,revisar_correo,{},rule,ok,,fallo,ver session.log,24,56.4
+13,2026-07-11T04:25:50.187150+02:00,rule_run10,rule,1010,buscar_google,"{""termino"": ""ciberseguridad hoy""}",rule,ok,,ok,,24,62.87
+14,2026-07-11T04:27:19.843302+02:00,rule_run10,rule,1010,usar_twitter,{},rule,ok,,ok,,19,14.68
+15,2026-07-11T04:27:55.042241+02:00,rule_run10,rule,1010,abrir_url,"{""url"": ""https://elpais.com""}",rule,ok,,ok,,16,105.67

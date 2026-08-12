@@ -1,0 +1,19 @@
+{
+  "run_id": "script_run03",
+  "status": "completed",
+  "baseline": "script_simple_sin_navegador",
+  "seed": 3003,
+  "commit": "8a1ef84",
+  "inicio_utc": "2026-07-14T19:09:04+00:00",
+  "duracion_solicitada_s": 900,
+  "duracion_real_s": 902.0,
+  "intervalo_fijo_s": 10.0,
+  "n_urls_catalogo": 10,
+  "iface_captura": "5",
+  "pcap": "C:\\Users\\juanc\\Desktop\\tfm\\exp2\\baseline_script\\run_03\\capture.pcap",
+  "pcap_bytes": 67963860,
+  "peticiones": 90,
+  "ok": 81,
+  "fallidas": 9,
+  "bytes_leidos": 41693095
+}

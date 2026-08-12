@@ -1,0 +1,286 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [llm_run01] Nueva acción (20:28:49)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+⚠️ No encontré resultados orgánicos válidos en Google.
+⏳ Simulando actividad 12s…
+🕒 [llm_run01] Nueva acción (20:29:13)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+❌ Error acción navegador: Message: element not interactable
+  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x52b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x52b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x331cde]
+	undetected_chromedriver!(No symbol) [0x37c3d4]
+	undetected_chromedriver!(No symbol) [0x372368]
+	undetected_chromedriver!(No symbol) [0x39d77c]
+	undetected_chromedriver!(No symbol) [0x371da4]
+	undetected_chromedriver!(No symbol) [0x39d944]
+	undetected_chromedriver!(No symbol) [0x3ba936]
+	undetected_chromedriver!(No symbol) [0x39d516]
+	undetected_chromedriver!(No symbol) [0x3708e9]
+	undetected_chromedriver!(No symbol) [0x3716a4]
+	undetected_chromedriver!GetHandleVerifier [0x7b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x7ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x7cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x5454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x54cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x533e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x534015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x51d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+⬇️ Scroll 352px
+⬇️ Scroll 124px
+⬇️ Scroll 282px
+⬇️ Scroll 145px
+🕒 [llm_run01] Nueva acción (20:30:06)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos educativos de programación",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos educativos de programación', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 275px
+⬇️ Scroll 257px
+⬇️ Scroll 266px
+🕒 [llm_run01] Nueva acción (20:32:50)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+❌ Error en login Twitter email/password: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x52b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x52b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x331ea0]
+	undetected_chromedriver!(No symbol) [0x37b28a]
+	undetected_chromedriver!(No symbol) [0x37b52b]
+	undetected_chromedriver!(No symbol) [0x3bd052]
+	undetected_chromedriver!(No symbol) [0x39d7c4]
+	undetected_chromedriver!(No symbol) [0x3ba936]
+	undetected_chromedriver!(No symbol) [0x39d516]
+	undetected_chromedriver!(No symbol) [0x3708e9]
+	undetected_chromedriver!(No symbol) [0x3716a4]
+	undetected_chromedriver!GetHandleVerifier [0x7b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x7ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x7cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x5454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x54cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x533e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x534015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x51d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⚠️ No se pudo iniciar sesión (quizá challenge/2FA).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 130px
+⬇️ Scroll 252px
+⬇️ Scroll 157px
+🕒 [llm_run01] Nueva acción (20:33:39)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+❌ Error en login Twitter email/password: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x52b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x52b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x331ea0]
+	undetected_chromedriver!(No symbol) [0x37b28a]
+	undetected_chromedriver!(No symbol) [0x37b52b]
+	undetected_chromedriver!(No symbol) [0x3bd052]
+	undetected_chromedriver!(No symbol) [0x39d7c4]
+	undetected_chromedriver!(No symbol) [0x3ba936]
+	undetected_chromedriver!(No symbol) [0x39d516]
+	undetected_chromedriver!(No symbol) [0x3708e9]
+	undetected_chromedriver!(No symbol) [0x3716a4]
+	undetected_chromedriver!GetHandleVerifier [0x7b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x7ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x7cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x5454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x54cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x533e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x534015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x51d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⚠️ No se pudo iniciar sesión (quizá challenge/2FA).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 339px
+⬇️ Scroll 319px
+🕒 [llm_run01] Nueva acción (20:34:25)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo de tecnología', 'delay': 12}
+❌ Error acción navegador: Message: element not interactable
+  (Session info: chrome=148.0.7778.217); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0x52b593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0x52b6c4+10704]
+	undetected_chromedriver!(No symbol) [0x331cde]
+	undetected_chromedriver!(No symbol) [0x37c3d4]
+	undetected_chromedriver!(No symbol) [0x372368]
+	undetected_chromedriver!(No symbol) [0x39d77c]
+	undetected_chromedriver!(No symbol) [0x371da4]
+	undetected_chromedriver!(No symbol) [0x39d944]
+	undetected_chromedriver!(No symbol) [0x3ba936]
+	undetected_chromedriver!(No symbol) [0x39d516]
+	undetected_chromedriver!(No symbol) [0x3708e9]
+	undetected_chromedriver!(No symbol) [0x3716a4]
+	undetected_chromedriver!GetHandleVerifier [0x7b3014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x7ae603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x7cea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0x5454e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0x54cd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0x533e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0x534015+19055]
+	undetected_chromedriver!GetHandleVerifier [0x51d65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 12s…
+🕒 [llm_run01] Nueva acción (20:35:34)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://www.xataka.com/tag/inteligencia-artificial
+⏳ Simulando actividad 12s…
+⬇️ Scroll 320px
+⬇️ Scroll 351px
+⬇️ Scroll 342px
+🕒 [llm_run01] Nueva acción (20:36:54)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimas noticias de tecnología",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias de tecnología', 'delay': 12}
+⚠️ No encontré resultados orgánicos válidos en Google.
+⏳ Simulando actividad 12s…
+⬇️ Scroll 237px
+⬇️ Scroll 289px
+⬇️ Scroll 136px
+🕒 [llm_run01] Nueva acción (20:37:19)
+📦 LLM:
+ {
+"tipo": "usar_twitter",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'usar_twitter', 'delay': 12}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 12s…
+⬇️ Scroll 272px
+⬇️ Scroll 357px
+🕒 [llm_run01] Nueva acción (20:37:48)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "últimos avances en inteligencia artificial",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimos avances en inteligencia artificial', 'delay': 12}
+🔗 Clic aleatorio en: https://mexico.unir.net/noticias/ingenieria/avances-inteligencia-artificial/#:~:text=Entre%20los%20avances%20de%20la,aprendizaje%20adaptativo%2C%20entre%20muchos%20m%C3%A1s.
+⏳ Simulando actividad 12s…
+⬇️ Scroll 231px
+⬇️ Scroll 347px
+🕒 [llm_run01] Nueva acción (20:39:16)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "streaming en vivo conciertos",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'streaming en vivo conciertos', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 350px
+⬇️ Scroll 346px
+⬇️ Scroll 347px
+🕒 [llm_run01] Nueva acción (20:40:05)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnologia",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnologia', 'delay': 12}
+🔗 Clic aleatorio en: https://www.instagram.com/reel/DZBVXUmnX99/?hl=es
+⏳ Simulando actividad 12s…
+⬇️ Scroll 255px
+⬇️ Scroll 278px
+🕒 [llm_run01] Nueva acción (20:40:35)
+📦 LLM:
+ {
+"tipo": "buscar_google",
+  "termino": "noticias de tecnologia",
+  "delay": 12
+}
+🔎 [llm] Acción decidida: {'tipo': 'buscar_google', 'termino': 'noticias de tecnologia', 'delay': 12}
+🔗 Clic aleatorio en: https://www.youtube.com/watch?v=ZWwPB5suvtU&t=166
+⏳ Simulando actividad 12s…
+⬇️ Scroll 223px
+⬇️ Scroll 234px
+⬇️ Scroll 240px
+🕒 [llm_run01] Nueva acción (20:41:12)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "últimos avances en inteligencia artificial",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'últimos avances en inteligencia artificial', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 262px
+⬇️ Scroll 128px
+⬇️ Scroll 330px
+⬇️ Scroll 307px
+🕒 [llm_run01] Nueva acción (20:42:40)
+📦 LLM:
+ {
+"tipo": "mirar_youtube",
+  "busqueda": "videos de ciencia ficción",
+  "delay": 18
+}
+🔎 [llm] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'videos de ciencia ficción', 'delay': 18}
+✅ Sesión terminada: {'emitidas': 15, 'validas': 15, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 11, 'ejecutadas_fallo': 4} | errores=0

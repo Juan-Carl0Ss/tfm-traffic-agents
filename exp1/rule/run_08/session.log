@@ -1,0 +1,154 @@
+🔍 Chrome detectado: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe | versión mayor: 148
+🕒 [rule_run08] Nueva acción (02:37:24)
+🔎 [rule] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias tecnología', 'delay': 24}
+🔗 Clic aleatorio en: https://elpais.com/economia/2026-07-10/apple-demanda-a-open-ai-ante-un-tribunal-de-ee-uu-por-robo-de-informacion-confidencial.html
+⏳ Simulando actividad 24s…
+⬇️ Scroll 132px
+⬇️ Scroll 343px
+⬇️ Scroll 271px
+⬇️ Scroll 258px
+⬇️ Scroll 175px
+⬇️ Scroll 178px
+🕒 [rule_run08] Nueva acción (02:38:54)
+🔎 [rule] Acción decidida: {'tipo': 'abrir_url', 'url': 'https://www.bbc.com/mundo', 'delay': 22}
+⏳ Simulando actividad 22s…
+⬇️ Scroll 157px
+⬇️ Scroll 357px
+⬇️ Scroll 232px
+🕒 [rule_run08] Nueva acción (02:39:26)
+🔎 [rule] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'noticias tecnología', 'delay': 18}
+⏳ Simulando actividad 18s…
+⬇️ Scroll 247px
+⬇️ Scroll 176px
+⬇️ Scroll 257px
+⬇️ Scroll 347px
+🕒 [rule_run08] Nueva acción (02:40:24)
+🔎 [rule] Acción decidida: {'tipo': 'revisar_correo', 'delay': 10}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0xecb593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0xecb6c4+10704]
+	undetected_chromedriver!(No symbol) [0xcd1ea0]
+	undetected_chromedriver!(No symbol) [0xd1b28a]
+	undetected_chromedriver!(No symbol) [0xd1b52b]
+	undetected_chromedriver!(No symbol) [0xd5d052]
+	undetected_chromedriver!(No symbol) [0xd3d7c4]
+	undetected_chromedriver!(No symbol) [0xd5a936]
+	undetected_chromedriver!(No symbol) [0xd3d516]
+	undetected_chromedriver!(No symbol) [0xd108e9]
+	undetected_chromedriver!(No symbol) [0xd116a4]
+	undetected_chromedriver!GetHandleVerifier [0x1153014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x114e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x116ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0xee54e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0xeecd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0xed3e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0xed4015+19055]
+	undetected_chromedriver!GetHandleVerifier [0xebd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 10s…
+⬇️ Scroll 260px
+⬇️ Scroll 133px
+🕒 [rule_run08] Nueva acción (02:41:26)
+🔎 [rule] Acción decidida: {'tipo': 'buscar_google', 'termino': 'ciberseguridad hoy', 'delay': 11}
+🔗 Clic aleatorio en: https://www.escudodigital.com/ciberseguridad/
+⏳ Simulando actividad 11s…
+⬇️ Scroll 162px
+⬇️ Scroll 125px
+🕒 [rule_run08] Nueva acción (02:42:38)
+🔎 [rule] Acción decidida: {'tipo': 'usar_twitter', 'delay': 9}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 9s…
+⬇️ Scroll 335px
+🕒 [rule_run08] Nueva acción (02:43:04)
+🔎 [rule] Acción decidida: {'tipo': 'abrir_url', 'url': 'https://elpais.com', 'delay': 12}
+⏳ Simulando actividad 12s…
+⬇️ Scroll 246px
+⬇️ Scroll 249px
+🕒 [rule_run08] Nueva acción (02:45:04)
+🔎 [rule] Acción decidida: {'tipo': 'ver_streaming', 'delay': 11}
+⏳ Simulando actividad 11s…
+⬇️ Scroll 191px
+⬇️ Scroll 174px
+⬇️ Scroll 253px
+🕒 [rule_run08] Nueva acción (02:45:50)
+🔎 [rule] Acción decidida: {'tipo': 'buscar_google', 'termino': 'últimas noticias tecnología', 'delay': 19}
+🔗 Clic aleatorio en: https://www.muycomputer.com/2026/07/10/openai-cerrara-chatgpt-atlas-y-trasladara-sus-funciones-a-chatgpt/
+⏳ Simulando actividad 19s…
+⬇️ Scroll 272px
+⬇️ Scroll 360px
+🕒 [rule_run08] Nueva acción (02:47:43)
+🔎 [rule] Acción decidida: {'tipo': 'abrir_url', 'url': 'https://www.bbc.com/mundo', 'delay': 8}
+⏳ Simulando actividad 8s…
+⬇️ Scroll 166px
+🕒 [rule_run08] Nueva acción (02:48:00)
+🔎 [rule] Acción decidida: {'tipo': 'mirar_youtube', 'busqueda': 'noticias tecnología', 'delay': 25}
+⏳ Simulando actividad 25s…
+⬇️ Scroll 277px
+⬇️ Scroll 196px
+⬇️ Scroll 323px
+⬇️ Scroll 302px
+⬇️ Scroll 337px
+⬇️ Scroll 272px
+🕒 [rule_run08] Nueva acción (02:49:01)
+🔎 [rule] Acción decidida: {'tipo': 'revisar_correo', 'delay': 18}
+❌ Error al revisar el correo: Message: 
+Stacktrace:
+	undetected_chromedriver!GetHandleVerifier [0xecb593+105d3]
+	undetected_chromedriver!GetHandleVerifier [0xecb6c4+10704]
+	undetected_chromedriver!(No symbol) [0xcd1ea0]
+	undetected_chromedriver!(No symbol) [0xd1b28a]
+	undetected_chromedriver!(No symbol) [0xd1b52b]
+	undetected_chromedriver!(No symbol) [0xd5d052]
+	undetected_chromedriver!(No symbol) [0xd3d7c4]
+	undetected_chromedriver!(No symbol) [0xd5a936]
+	undetected_chromedriver!(No symbol) [0xd3d516]
+	undetected_chromedriver!(No symbol) [0xd108e9]
+	undetected_chromedriver!(No symbol) [0xd116a4]
+	undetected_chromedriver!GetHandleVerifier [0x1153014+298054]
+	undetected_chromedriver!GetHandleVerifier [0x114e603+293643]
+	undetected_chromedriver!GetHandleVerifier [0x116ea05+2b3a45]
+	undetected_chromedriver!GetHandleVerifier [0xee54e8+2a528]
+	undetected_chromedriver!GetHandleVerifier [0xeecd1d+31d5d]
+	undetected_chromedriver!GetHandleVerifier [0xed3e68+18ea8]
+	undetected_chromedriver!GetHandleVerifier [0xed4015+19055]
+	undetected_chromedriver!GetHandleVerifier [0xebd65f+269f]
+	KERNEL32!BaseThreadInitThunk [0x762b5d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77ade12b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77ade0b1+231]
+
+⏳ Simulando actividad 18s…
+⬇️ Scroll 168px
+⬇️ Scroll 183px
+⬇️ Scroll 120px
+⬇️ Scroll 135px
+🕒 [rule_run08] Nueva acción (02:50:11)
+🔎 [rule] Acción decidida: {'tipo': 'buscar_google', 'termino': 'ciberseguridad hoy', 'delay': 16}
+🔗 Clic aleatorio en: https://www.incibe.es/
+⏳ Simulando actividad 16s…
+⬇️ Scroll 229px
+⬇️ Scroll 269px
+⬇️ Scroll 236px
+🕒 [rule_run08] Nueva acción (02:51:42)
+🔎 [rule] Acción decidida: {'tipo': 'usar_twitter', 'delay': 15}
+✅ Ya estás logueado en Twitter/X (sesión activa).
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+⬇️ Scroll en Twitter/X
+🐦 Scroll en Twitter/X completado (sin abrir tweets).
+⏳ Simulando actividad 15s…
+⬇️ Scroll 289px
+⬇️ Scroll 231px
+⬇️ Scroll 284px
+⬇️ Scroll 124px
+⬇️ Scroll 133px
+🕒 [rule_run08] Nueva acción (02:52:14)
+🔎 [rule] Acción decidida: {'tipo': 'abrir_url', 'url': 'https://elpais.com', 'delay': 23}
+✅ Sesión terminada: {'emitidas': 15, 'validas': 15, 'rechazadas_validacion': 0, 'llm_intentos_rechazados': 0, 'fallbacks': 0, 'ejecutadas_ok': 13, 'ejecutadas_fallo': 2} | errores=0
