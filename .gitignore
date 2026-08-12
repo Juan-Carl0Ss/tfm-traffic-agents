@@ -13,7 +13,11 @@ chromedriver.exe
 
 # ── Instaladores / drivers de terceros ──────────────────────────
 VBCABLE_Driver_Pack45/
-VBCABLE_Driver_Pack45.zip
+
+# ── Archivos ZIP (exp1.zip ~2.1 GB, exp2.zip ~1.2 GB, drivers) ──
+# Los experimentos se versionan como carpetas (sin los PCAP crudos),
+# no como ZIP. Reproducibles con los scripts de exp1/ y exp2/.
+*.zip
 
 # ── Credenciales y variables de entorno ─────────────────────────
 .env
@@ -39,3 +43,8 @@ build/
 
 # ── Capturas de pantalla de depuración (solo raíz del proyecto) ─
 /*.png
+
+# ── Datasets públicos de exp2 (775 MB; se rebajan con fetch_public.py) ──
+# Se versiona solo procedencia.json: URLs y SHA-256 para poder reproducirlos.
+exp2/public/*
+!exp2/public/procedencia.json
