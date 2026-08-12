@@ -1,198 +1,225 @@
-<h1 align="center">Generación de tráfico de red benigno etiquetado mediante agentes autónomos</h1>
+<h1 align="center">Labeled Benign Network Traffic Generation with Autonomous Agents</h1>
 
 <p align="center">
-  <em>Trabajo de Fin de Máster (TFM)</em><br>
-  Simulación de comportamiento humano en red para entrenar clasificadores de tráfico basados en IA/ML.
+  <em>Master's Thesis (TFM)</em><br>
+  Simulating human network behavior to train AI/ML traffic classifiers.
 </p>
 
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-blue">
-  <img alt="Estado" src="https://img.shields.io/badge/estado-en%20desarrollo-orange">
-  <img alt="Ámbito" src="https://img.shields.io/badge/ámbito-investigación%20académica-purple">
+  <img alt="Status" src="https://img.shields.io/badge/status-in%20development-orange">
+  <img alt="Scope" src="https://img.shields.io/badge/scope-academic%20research-purple">
 </p>
 
 ---
 
-## 📌 Objetivo
+## 📌 Goal
 
-Los datasets públicos de tráfico de red suelen estar desbalanceados: abundan los
-ejemplos de ataques, pero el tráfico **benigno** es escaso, poco variado o
-sintético de baja calidad. Este proyecto genera **tráfico benigno realista y
-etiquetado** ejecutando agentes autónomos que imitan tres perfiles de usuario
-distintos, capturando su tráfico en PCAP y extrayendo *features* de flujo para
-alimentar modelos de clasificación.
+Public network-traffic datasets are usually imbalanced: attack samples abound,
+but **benign** traffic is scarce, poorly varied, or low-quality synthetic. This
+project generates **realistic, labeled benign traffic** by running autonomous
+agents that mimic three distinct user profiles, capturing their traffic to PCAP,
+and extracting flow-level features to feed classification models.
 
-La idea central: **lo que deja huella de red característica es el _agente_ y su
-_perfil de comportamiento_**, no la sofisticación del planificador. Los
-experimentos [`exp1`](exp1/) y [`exp2`](exp2/) cuantifican y acotan esta afirmación.
+The central idea: **what leaves a characteristic network fingerprint is the
+_agent_ and its _behavioral profile_**, not the sophistication of the planner.
+Experiments [`exp1`](exp1/) and [`exp2`](exp2/) quantify and bound this claim.
 
 ---
 
-## 🤖 Los tres agentes
+## 🤖 The three agents
 
-| Perfil | Script principal | Qué hace | Tráfico que genera |
+| Profile | Main script | What it does | Traffic it generates |
 |---|---|---|---|
-| 🌐 **Usuario web** | [`agentev7.py`](agentev7.py) | Un **planner LLM** (Groq · Llama 4 Scout) decide acciones: buscar en Google, ver YouTube, revisar correo, streaming, Twitter/X. Navega con `undetected-chromedriver` y perfil persistente. | HTTPS/QUIC, DNS, TLS, tráfico de CDNs y vídeo |
-| 🎮 **Gamer** | [`agentegamer3.py`](agentegamer3.py) | Lanza **Discord** (voz push-to-talk con voz sintética por VB-CABLE) y un juego de **Steam** (Astroflux); reproduce input grabado. | UDP de juego/voz, WebRTC, tráfico de Steam/Discord |
-| 🛠️ **Admin de red** | [`AgenteAdminDeRed.py`](AgenteAdminDeRed.py) | Multi-**SSH** paralelo (Paramiko) sobre un inventario `hosts.yaml`: comandos de administración con tecleo humano, más ICMP/DNS/HTTP fuera de SSH. | SSH, SFTP, Syslog, ICMP, DNS, HTTP |
+| 🌐 **Web user** | [`agentev7.py`](agentev7.py) | An **LLM planner** (Groq · Llama 4 Scout) decides actions: Google searches, YouTube, email, streaming, Twitter/X. Browses with `undetected-chromedriver` and a persistent profile. | HTTPS/QUIC, DNS, TLS, CDN and video traffic |
+| 🎮 **Gamer** | [`agentegamer3.py`](agentegamer3.py) | Launches **Discord** (push-to-talk with synthetic voice via VB-CABLE) and a **Steam** game (Astroflux); replays recorded input. | Game/voice UDP, WebRTC, Steam/Discord traffic |
+| 🛠️ **Network admin** | [`AgenteAdminDeRed.py`](AgenteAdminDeRed.py) | Parallel multi-**SSH** (Paramiko) over a `hosts.yaml` inventory: admin commands with human-like typing, plus out-of-SSH ICMP/DNS/HTTP. | SSH, SFTP, Syslog, ICMP, DNS, HTTP |
 
-Cada agente lee su configuración de **variables de entorno** (ver [`.env.example`](.env.example)),
-por lo que **no hay credenciales en el código**.
-
-<p align="center">
-  <img src="assets/esquema_agente_admin.png" width="80%" alt="Esquema del agente administrador de red">
-  <br><sub>Esquema del agente administrador de red (multi-SSH sobre VMs).</sub>
-</p>
+Each agent reads its configuration from **environment variables** (see
+[`.env.example`](.env.example)), so **there are no credentials in the code**.
 
 ---
 
-## 🧪 Experimentos
+## 🏗️ Architecture
 
-### [`exp1/`](exp1/) — ¿Aporta valor el planner LLM?
+```mermaid
+flowchart TD
+    subgraph Agents["Autonomous agents · behavioral profiles"]
+        WEB["🌐 Web user<br/>agentev7.py<br/>LLM planner (Groq)"]
+        GAMER["🎮 Gamer<br/>agentegamer3.py<br/>Discord + Steam"]
+        ADMIN["🛠️ Network admin<br/>AgenteAdminDeRed.py<br/>multi-SSH"]
+    end
 
-Compara, cambiando **solo el planner** y manteniendo todo lo demás constante,
-tres formas de decidir las acciones del agente web:
+    subgraph Orchestration["Orchestration & capture"]
+        ORCH["Orchestrators<br/>agentegameravanzado.py · agenteadminavanzado.py"]
+        CAP["captura_combinada.py<br/>tshark (host) + tcpdump (VM)"]
+        MERGE["mergecapturas.py<br/>single merged PCAP"]
+    end
 
-| Planner | Descripción |
+    subgraph Analysis["Analysis & experiments"]
+        STATS["estadisticas4.py · pcap_quality.py"]
+        EXP["exp1/ · exp2/<br/>flow features · KS / JS / Wasserstein"]
+        ML["Labeled benign dataset<br/>→ ML traffic classifiers"]
+    end
+
+    WEB --> ORCH
+    GAMER --> ORCH
+    ADMIN --> ORCH
+    ORCH --> CAP --> MERGE
+    MERGE --> STATS
+    MERGE --> EXP
+    STATS --> ML
+    EXP --> ML
+```
+
+---
+
+## 🧪 Experiments
+
+### [`exp1/`](exp1/) — Does the LLM planner add value?
+
+Changing **only the planner** while keeping everything else constant, it compares
+three ways of deciding the web agent's actions:
+
+| Planner | Description |
 |---|---|
-| `llm` | El actual (Groq / Llama 4 Scout, temp. 0.2) |
-| `random` | Muestreo uniforme del mismo catálogo de acciones |
-| `rule` | Guion cíclico fijo de 8 pasos |
+| `llm` | The current one (Groq / Llama 4 Scout, temp. 0.2) |
+| `random` | Uniform sampling from the same action catalog |
+| `rule` | Fixed cyclic 8-step script |
 
-**Resultado:** el tráfico del agente **sí se separa** de un script simple sin
-navegador, pero el planner LLM **no** se distingue de uno aleatorio con el mismo
-navegador (KS D = 0,036). → Detalle en [`exp1/README.md`](exp1/README.md).
+**Result:** the agent's traffic **does separate** from a simple browserless
+script, but the LLM planner is **not** distinguishable from a random one using
+the same browser (KS D = 0.036). → Details in [`exp1/README.md`](exp1/README.md).
 
-### [`exp2/`](exp2/) — Plausibilidad frente a datasets reales
+### [`exp2/`](exp2/) — Plausibility against real datasets
 
-Con el **mismo extractor de features**, contrasta nuestros tres perfiles frente a
-un baseline interno simple y a **dos datasets benignos públicos**
-(Stratosphere CTU-Normal-7 y CSE-CIC-IDS2018). Mide distancias de distribución
-(KS, Jensen-Shannon, Wasserstein) sobre 12 *features* de flujo.
+Using the **same feature extractor**, it contrasts our three profiles against a
+simple internal baseline and **two public benign datasets** (Stratosphere
+CTU-Normal-7 and CSE-CIC-IDS2018). It measures distribution distances
+(KS, Jensen–Shannon, Wasserstein) over 12 flow features.
 
-**Afirmación acotada:** nuestro tráfico se separa del baseline simple y sus
-distribuciones caen en **rangos plausibles** frente al tráfico benigno real —
-*no* se afirma que replique tráfico empresarial. → Detalle y lectura honesta en
-[`exp2/README.md`](exp2/README.md) y [`exp2/LIMITACIONES.md`](exp2/LIMITACIONES.md).
-
-> 🔒 Los **PCAP crudos** y el dataset público de 342 MB **no se versionan**
-> (ver `.gitignore`); se regeneran con los scripts de cada experimento. El repo
-> incluye los *features* de flujo, agregados, gráficas y documentación.
+**Bounded claim:** our traffic separates from the simple baseline and its
+distributions fall within **plausible ranges** relative to real benign traffic —
+it is *not* claimed to replicate enterprise traffic. → Details and an honest
+reading in [`exp2/README.md`](exp2/README.md) and
+[`exp2/LIMITACIONES.md`](exp2/LIMITACIONES.md).
 
 <p align="center">
-  <img src="assets/throughput_agente_admin.png" width="48%" alt="Throughput agente admin">
-  <img src="assets/throughput_agente_gamer.png" width="48%" alt="Throughput agente gamer">
-  <br><sub>Throughput por segundo — agente admin (izq.) y agente gamer (der.).</sub>
+  <img src="exp2/plots_en/servicios.png" width="88%" alt="Service distribution by source">
+  <br><sub>Service distribution per source: our three profiles vs. baselines and public datasets (exp2).</sub>
 </p>
+
+> 🔒 **Raw PCAPs** and the 342 MB public dataset are **not versioned** (see
+> `.gitignore`); they are regenerated with each experiment's scripts. The repo
+> ships the flow features, aggregates, plots, and documentation.
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Repository layout
 
 ```
 tfm/
-├── agentev7.py                 # 🌐 Agente web (LLM planner)          ← ACTUAL
-├── agentegamer3.py             # 🎮 Agente gamer (Discord + Steam)     ← ACTUAL
-├── AgenteAdminDeRed.py         # 🛠️ Agente admin de red                ← ACTUAL
-├── agentegameravanzado.py      # 🎛️ Orquestador web + gamer por turnos
-├── agenteadminavanzado.py      # 🎛️ Orquestador admin (+web opcional)
-├── captura_combinada.py        # 🎬 Captura PCAP simultánea de todos los agentes
-├── mergecapturas.py            # 🔗 Fusiona PCAPs con timestamps continuos
-├── test_vms.py                 # ✅ Prueba arranque de VMs y SSH (VirtualBox)
-├── grabador.py                 # ⏺️ Grabador de secuencias de input (gamer)
+├── agentev7.py                 # 🌐 Web agent (LLM planner)            ← CURRENT
+├── agentegamer3.py             # 🎮 Gamer agent (Discord + Steam)      ← CURRENT
+├── AgenteAdminDeRed.py         # 🛠️ Network admin agent                ← CURRENT
+├── agentegameravanzado.py      # 🎛️ Orchestrator: web + gamer in turns
+├── agenteadminavanzado.py      # 🎛️ Orchestrator: admin (+optional web)
+├── captura_combinada.py        # 🎬 Simultaneous PCAP capture of all agents
+├── mergecapturas.py            # 🔗 Merge PCAPs with continuous timestamps
+├── test_vms.py                 # ✅ VM boot & SSH connectivity check (VirtualBox)
+├── grabador.py                 # ⏺️ Input sequence recorder (gamer)
 │
-├── estadisticas4.py            # 📊 Análisis/estadísticas de PCAP (última versión)
-├── pcap_quality.py             # 📈 Evaluación de calidad de PCAP
+├── estadisticas4.py            # 📊 PCAP statistics/analysis (latest version)
+├── pcap_quality.py             # 📈 PCAP quality assessment
 │
-├── exp1/                       # 🧪 Experimento 1: LLM vs random vs rule
-├── exp2/                       # 🧪 Experimento 2: plausibilidad vs datasets reales
+├── exp1/                       # 🧪 Experiment 1: LLM vs random vs rule
+├── exp2/                       # 🧪 Experiment 2: plausibility vs real datasets
 │
-├── salidas_graficas*/          # Gráficas por captura (5m/15m/1h × perfil)
-├── plots/                      # Gráficas agregadas
-├── resultados*.json            # Resultados por sesión (admin/gamer)
-├── assets/                     # Imágenes del README
+├── salidas_graficas*/          # Per-capture plots (5m/15m/1h × profile)
+├── plots/                      # Aggregated plots
+├── resultados*.json            # Per-session results (admin/gamer)
 │
-├── .env.example                # Plantilla de variables de entorno
-├── requirements.txt            # Dependencias de Python
+├── .env.example                # Environment-variable template
+├── requirements.txt            # Python dependencies
 └── README.md
 ```
 
-> 🗂️ **Versiones antiguas.** Los ficheros `agente.py`, `agente2.py`,
+> 🗂️ **Legacy versions.** The files `agente.py`, `agente2.py`,
 > `agentev3.py`–`agentev6.py`, `AgenteNormal.py`, `agentegamer.py`,
-> `agentegamer2.py`, `agenteadmin.py` y `estadisticas.py`–`estadisticas3.py` son
-> **iteraciones previas** conservadas por trazabilidad del TFM. Para uso real,
-> emplea siempre las marcadas como **ACTUAL** arriba.
+> `agentegamer2.py`, `agenteadmin.py`, and `estadisticas.py`–`estadisticas3.py`
+> are **earlier iterations** kept for thesis traceability. For real use, always
+> pick the ones marked **CURRENT** above.
 
 ---
 
-## ⚙️ Requisitos e instalación
+## ⚙️ Requirements & installation
 
 **Software:** Python 3.10+, Google Chrome, [Wireshark](https://www.wireshark.org/)
-(para `tshark`/`mergecap`), y opcionalmente VirtualBox (agente admin) y
-[VB-CABLE](https://vb-audio.com/Cable/) (voz del agente gamer).
+(for `tshark`/`mergecap`), and optionally VirtualBox (admin agent) and
+[VB-CABLE](https://vb-audio.com/Cable/) (gamer agent voice).
 
 ```bash
-# 1) Clonar y crear entorno virtual
-git clone <url-del-repo> tfm && cd tfm
+# 1) Clone and create a virtual environment
+git clone https://github.com/Juan-Carl0Ss/tfm-traffic-agents.git tfm && cd tfm
 python -m venv .venv
 # Windows:  .venv\Scripts\activate     ·  Linux/macOS:  source .venv/bin/activate
 
-# 2) Instalar dependencias
+# 2) Install dependencies
 pip install -r requirements.txt
 
-# 3) Configurar credenciales (nunca se suben al repo)
-cp .env.example .env      # y rellena tus valores
+# 3) Configure credentials (never committed)
+cp .env.example .env      # then fill in your values
 ```
 
-### Configuración
+### Configuration
 
-| Fichero | Para qué | Notas |
+| File | Purpose | Notes |
 |---|---|---|
-| [`.env`](.env.example) | API key de Groq, credenciales Gmail/Twitter, IDs de Discord, duraciones | **En `.gitignore`.** Parte de `.env.example` |
-| `hosts.yaml` | Inventario SSH del agente admin (host, usuario, puerto, rol) | **No incluido** por seguridad; créalo localmente |
+| [`.env`](.env.example) | Groq API key, Gmail/Twitter credentials, Discord IDs, durations | **Git-ignored.** Start from `.env.example` |
+| `hosts.yaml` | Admin agent's SSH inventory (host, user, port, role) | **Not included** for security; create it locally |
 
 ---
 
-## ▶️ Uso
+## ▶️ Usage
 
 ```bash
-# 🌐 Agente web (1 hora por defecto)
+# 🌐 Web agent (1 hour by default)
 GROQ_API_KEY=... DURACION_WEB_S=3600 python agentev7.py
 
-# 🛠️ Agente admin de red (requiere hosts.yaml)
+# 🛠️ Network admin agent (requires hosts.yaml)
 RUN_DURATION_S=900 python AgenteAdminDeRed.py
 
-# 🎛️ Orquestador admin + web en paralelo durante 1 h
+# 🎛️ Orchestrator: admin + web in parallel for 1 hour
 INCLUIR_WEB=1 MODO_WEB=paralelo MODO=tiempo_total TIEMPO_TOTAL_S=3600 python agenteadminavanzado.py
 
-# 🎬 Captura PCAP combinada de todos los agentes (15 min, todos los perfiles)
+# 🎬 Combined PCAP capture of all agents (15 min, all profiles)
 MODO_AGENTES=todos DURACION_S=900 python captura_combinada.py
 ```
 
-### Análisis de las capturas
+### Analyzing the captures
 
 ```bash
-python estadisticas4.py captura.pcapng      # descriptivos + gráficas
-python pcap_quality.py  captura.pcapng      # métricas de calidad del PCAP
+python estadisticas4.py capture.pcapng      # descriptive stats + plots
+python pcap_quality.py  capture.pcapng      # PCAP quality metrics
 ```
 
-Para reproducir los experimentos completos, sigue las instrucciones de
-[`exp1/README.md`](exp1/README.md) y [`exp2/README.md`](exp2/README.md).
+To reproduce the full experiments, follow the instructions in
+[`exp1/README.md`](exp1/README.md) and [`exp2/README.md`](exp2/README.md).
 
 ---
 
-## 🔐 Seguridad y ética
+## 🔐 Security & ethics
 
-- **Sin credenciales en el código:** todo se lee de variables de entorno; `.env`
-  y `hosts.yaml` están fuera del control de versiones.
-- El tráfico generado es **benigno**: navegación, juego, administración rutinaria.
-  El proyecto no genera ni distribuye tráfico malicioso.
-- Los datasets públicos (CTU, CSE-CIC-IDS2018) se usan bajo sus licencias
-  respectivas; solo se versiona su **procedencia** (URLs + SHA-256), no los datos.
-- Ejecuta los agentes únicamente en entornos y cuentas de tu propiedad.
+- **No credentials in the code:** everything is read from environment variables;
+  `.env` and `hosts.yaml` are kept out of version control.
+- The generated traffic is **benign**: browsing, gaming, routine administration.
+  The project neither generates nor distributes malicious traffic.
+- Public datasets (CTU, CSE-CIC-IDS2018) are used under their respective
+  licenses; only their **provenance** (URLs + SHA-256) is versioned, not the data.
+- Run the agents only on environments and accounts you own.
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Proyecto académico (TFM). Uso con fines de investigación y educativos.
+Academic project (Master's Thesis). For research and educational use.
